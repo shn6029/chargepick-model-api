@@ -256,7 +256,7 @@ float64로 되돌려 피크를 **11GB**로 낮췄다 — 디스크 6.09GB → 12
 | 모델 | scikit-learn 1.9.0 (HistGradientBoosting), numpy memmap 단계 적재 |
 | 서빙 | FastAPI, Uvicorn, Pydantic v2 |
 | 데이터 | MariaDB, PyMySQL, pandas (`merge_asof` 기반 시계열 조인) |
-| 인프라 | Docker Compose (8 서비스), AWS Lightsail |
+| 인프라 | Docker Compose (7 서비스), AWS Lightsail |
 | 데이터 출처 | 한국환경공단 충전기 API, 기상청 ASOS, 지자체 주차장 API |
 
 ---
