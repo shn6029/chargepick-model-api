@@ -1,7 +1,17 @@
 # EV 충전소 도착시점 가용성 예측 API
 
 > 목적지에 **도착했을 때** 그 충전기가 비어 있을 확률을 예측해, 경로상 충전소를 100점으로 랭킹하는 추천 API.
-> 대구광역시 충전기 약 25,000대를 5분 주기로 수집해 ETA 5~60분 구간의 가용 확률을 예측한다.
+> 대구광역시 충전기 약 25,000대를 대상으로 상태 변경분을 5분마다 수집하고,
+> 6시간마다 전량 스냅샷으로 보정해 ETA 5~60분 구간의 가용 확률을 예측한다.
+
+## 한눈에 보기
+
+- **역할**: 4인 팀의 팀장 / 데이터 수집·모델링·추천 API 담당
+- **규모**: 약 25,000대 / 5분 변경분 + 6시간 전량 스냅샷 / 파생 피처 4분 갱신
+- **모델**: 시계열 피처 25개 / HistGradientBoosting / ETA 7구간
+- **성능**: 워크포워드 ROC-AUC 0.9735 / 사용불가 Recall 0.8677
+- **서빙**: FastAPI / MariaDB / Docker Compose 7개 서비스 / AWS Lightsail
+- **결과물**: [EV SafeCharge 지도 서비스](https://chargerpick-5fpc.vercel.app/map)
 
 ![AI 추천 충전소 — 목적지 칠곡경북대학교병원](docs/portfolio/images/demo_ai_recommend.png)
 
