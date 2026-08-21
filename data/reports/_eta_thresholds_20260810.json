@@ -1,0 +1,4261 @@
+{
+  "generated_at": "2026-08-10T21:05:32",
+  "source": "staged cache (X_f32.memmap + parts)",
+  "test_dates": [
+    "2026-08-07",
+    "2026-08-08",
+    "2026-08-09",
+    "2026-08-10"
+  ],
+  "n_rapid_test": 1253883,
+  "rapid_unavailable_rate": 0.09606159426357963,
+  "current_common_threshold": 0.58,
+  "policy_target_recall": 0.7,
+  "warn_cap": 0.12,
+  "per_eta": {
+    "5": {
+      "n": 178893,
+      "unavailable_rate": 0.1104514989407076,
+      "at_common_058": {
+        "threshold": 0.58,
+        "unavailable_recall": 0.9313730451945949,
+        "unavailable_precision": 0.916210295728368,
+        "warning_rate": 0.11227940724343602
+      },
+      "target_r70": {
+        "threshold": 0.08,
+        "unavailable_recall": 0.704742142820993,
+        "unavailable_precision": 0.9532447973713034,
+        "warning_rate": 0.08165775072249892
+      },
+      "warn_capped": {
+        "threshold": 0.88,
+        "unavailable_recall": 0.9448858747912344,
+        "unavailable_precision": 0.8708022388059702,
+        "warning_rate": 0.11984817740213424
+      },
+      "at_current_config": {
+        "threshold": 0.27,
+        "unavailable_recall": 0.9146717951313326,
+        "unavailable_precision": 0.9307343701720053,
+        "warning_rate": 0.1085453315669143
+      },
+      "curve": [
+        {
+          "threshold": 0.05,
+          "unavailable_recall": 0.4538691229313224,
+          "unavailable_precision": 0.9647160068846816,
+          "warning_rate": 0.05196402318704477
+        },
+        {
+          "threshold": 0.06,
+          "unavailable_recall": 0.5570119945341363,
+          "unavailable_precision": 0.960216367126156,
+          "warning_rate": 0.06407181946750293
+        },
+        {
+          "threshold": 0.07,
+          "unavailable_recall": 0.6369755554430893,
+          "unavailable_precision": 0.9578386605783866,
+          "warning_rate": 0.07345172812798711
+        },
+        {
+          "threshold": 0.08,
+          "unavailable_recall": 0.704742142820993,
+          "unavailable_precision": 0.9532447973713034,
+          "warning_rate": 0.08165775072249892
+        },
+        {
+          "threshold": 0.09,
+          "unavailable_recall": 0.7583885824181386,
+          "unavailable_precision": 0.9494994297300723,
+          "warning_rate": 0.08822033282464938
+        },
+        {
+          "threshold": 0.1,
+          "unavailable_recall": 0.7967508477149653,
+          "unavailable_precision": 0.9459232109595626,
+          "warning_rate": 0.0930332656951362
+        },
+        {
+          "threshold": 0.11,
+          "unavailable_recall": 0.823928336454274,
+          "unavailable_precision": 0.944206008583691,
+          "warning_rate": 0.09638163594998127
+        },
+        {
+          "threshold": 0.12,
+          "unavailable_recall": 0.8413887342476846,
+          "unavailable_precision": 0.9427809912668709,
+          "warning_rate": 0.09857288993979642
+        },
+        {
+          "threshold": 0.13,
+          "unavailable_recall": 0.8579381547649173,
+          "unavailable_precision": 0.9407325194228635,
+          "warning_rate": 0.10073060432772662
+        },
+        {
+          "threshold": 0.14,
+          "unavailable_recall": 0.8690217116250822,
+          "unavailable_precision": 0.9396924424013572,
+          "warning_rate": 0.10214485754054099
+        },
+        {
+          "threshold": 0.15,
+          "unavailable_recall": 0.87742294650539,
+          "unavailable_precision": 0.9388097687767368,
+          "warning_rate": 0.1032293046681536
+        },
+        {
+          "threshold": 0.16,
+          "unavailable_recall": 0.8853180828989321,
+          "unavailable_precision": 0.9378618914861677,
+          "warning_rate": 0.10426344239293879
+        },
+        {
+          "threshold": 0.17,
+          "unavailable_recall": 0.8912394351940888,
+          "unavailable_precision": 0.9373004045135193,
+          "warning_rate": 0.10502367336899711
+        },
+        {
+          "threshold": 0.18,
+          "unavailable_recall": 0.8951363935421833,
+          "unavailable_precision": 0.9369603220850771,
+          "warning_rate": 0.10552117746362351
+        },
+        {
+          "threshold": 0.19,
+          "unavailable_recall": 0.8977174958246875,
+          "unavailable_precision": 0.9363386824324325,
+          "warning_rate": 0.10589570301800517
+        },
+        {
+          "threshold": 0.2,
+          "unavailable_recall": 0.9003492079558683,
+          "unavailable_precision": 0.9354787821422937,
+          "warning_rate": 0.10630376817427177
+        },
+        {
+          "threshold": 0.21,
+          "unavailable_recall": 0.9031327496330785,
+          "unavailable_precision": 0.9349785182856544,
+          "warning_rate": 0.10668947359594842
+        },
+        {
+          "threshold": 0.22,
+          "unavailable_recall": 0.9047522647907282,
+          "unavailable_precision": 0.9349895397489539,
+          "warning_rate": 0.10687953133996299
+        },
+        {
+          "threshold": 0.23,
+          "unavailable_recall": 0.9064223897970545,
+          "unavailable_precision": 0.9336391596726268,
+          "warning_rate": 0.10723169715975471
+        },
+        {
+          "threshold": 0.24,
+          "unavailable_recall": 0.9075864163166152,
+          "unavailable_precision": 0.9331841598584587,
+          "warning_rate": 0.10742175490376929
+        },
+        {
+          "threshold": 0.25,
+          "unavailable_recall": 0.909762639809707,
+          "unavailable_precision": 0.9326553906817474,
+          "warning_rate": 0.10774038112167608
+        },
+        {
+          "threshold": 0.26,
+          "unavailable_recall": 0.9117364239080925,
+          "unavailable_precision": 0.9319710294878427,
+          "warning_rate": 0.1080534174059354
+        },
+        {
+          "threshold": 0.27,
+          "unavailable_recall": 0.9146717951313326,
+          "unavailable_precision": 0.9307343701720053,
+          "warning_rate": 0.1085453315669143
+        },
+        {
+          "threshold": 0.28,
+          "unavailable_recall": 0.9173541171111899,
+          "unavailable_precision": 0.9300631125250141,
+          "warning_rate": 0.10894221685588593
+        },
+        {
+          "threshold": 0.29,
+          "unavailable_recall": 0.9193279012095754,
+          "unavailable_precision": 0.929156010230179,
+          "warning_rate": 0.10928320280838266
+        },
+        {
+          "threshold": 0.3,
+          "unavailable_recall": 0.9203400981831065,
+          "unavailable_precision": 0.928516721981108,
+          "warning_rate": 0.10947885048604473
+        },
+        {
+          "threshold": 0.31,
+          "unavailable_recall": 0.9211498557619313,
+          "unavailable_precision": 0.9280069341763116,
+          "warning_rate": 0.10963536862817438
+        },
+        {
+          "threshold": 0.32,
+          "unavailable_recall": 0.921858393643403,
+          "unavailable_precision": 0.9276801629742806,
+          "warning_rate": 0.1097583471684191
+        },
+        {
+          "threshold": 0.33,
+          "unavailable_recall": 0.9225669315248748,
+          "unavailable_precision": 0.9271182992574509,
+          "warning_rate": 0.10990927537690127
+        },
+        {
+          "threshold": 0.34,
+          "unavailable_recall": 0.9231742497089934,
+          "unavailable_precision": 0.9265505155686493,
+          "warning_rate": 0.11004902371808846
+        },
+        {
+          "threshold": 0.35,
+          "unavailable_recall": 0.9242370565312009,
+          "unavailable_precision": 0.9257363005018503,
+          "warning_rate": 0.11027262106398797
+        },
+        {
+          "threshold": 0.36,
+          "unavailable_recall": 0.9251480338073789,
+          "unavailable_precision": 0.9248203986643732,
+          "warning_rate": 0.11049062847623999
+        },
+        {
+          "threshold": 0.37,
+          "unavailable_recall": 0.9260084012348803,
+          "unavailable_precision": 0.9235778103074049,
+          "warning_rate": 0.11074217549037693
+        },
+        {
+          "threshold": 0.38,
+          "unavailable_recall": 0.927172427754441,
+          "unavailable_precision": 0.9224107547454811,
+          "warning_rate": 0.11102167217275132
+        },
+        {
+          "threshold": 0.39,
+          "unavailable_recall": 0.9282352345766486,
+          "unavailable_precision": 0.9212879244524814,
+          "warning_rate": 0.11128439905418323
+        },
+        {
+          "threshold": 0.4,
+          "unavailable_recall": 0.9287413330634141,
+          "unavailable_precision": 0.9205879402026688,
+          "warning_rate": 0.11142973732901791
+        },
+        {
+          "threshold": 0.41,
+          "unavailable_recall": 0.9292474315501796,
+          "unavailable_precision": 0.9203047466292417,
+          "warning_rate": 0.1115247662010252
+        },
+        {
+          "threshold": 0.42,
+          "unavailable_recall": 0.9294498709448858,
+          "unavailable_precision": 0.9199519110354155,
+          "warning_rate": 0.11159184540479504
+        },
+        {
+          "threshold": 0.43,
+          "unavailable_recall": 0.9297029201882686,
+          "unavailable_precision": 0.9194194194194194,
+          "warning_rate": 0.11168687427680234
+        },
+        {
+          "threshold": 0.44,
+          "unavailable_recall": 0.9298547497342983,
+          "unavailable_precision": 0.918925677703311,
+          "warning_rate": 0.11176513334786715
+        },
+        {
+          "threshold": 0.45,
+          "unavailable_recall": 0.930107798977681,
+          "unavailable_precision": 0.9184407796101949,
+          "warning_rate": 0.11185457228622696
+        },
+        {
+          "threshold": 0.46,
+          "unavailable_recall": 0.9303102383723872,
+          "unavailable_precision": 0.9184111916062953,
+          "warning_rate": 0.1118825219544644
+        },
+        {
+          "threshold": 0.47,
+          "unavailable_recall": 0.9304114580697403,
+          "unavailable_precision": 0.9179607529834724,
+          "warning_rate": 0.11194960115823425
+        },
+        {
+          "threshold": 0.48,
+          "unavailable_recall": 0.9304114580697403,
+          "unavailable_precision": 0.9178232651023465,
+          "warning_rate": 0.11196637095917672
+        },
+        {
+          "threshold": 0.49,
+          "unavailable_recall": 0.93056328761577,
+          "unavailable_precision": 0.9176981433419844,
+          "warning_rate": 0.11199991056106164
+        },
+        {
+          "threshold": 0.5,
+          "unavailable_recall": 0.9306645073131231,
+          "unavailable_precision": 0.9177063579199521,
+          "warning_rate": 0.11201109042835662
+        },
+        {
+          "threshold": 0.51,
+          "unavailable_recall": 0.9307657270104762,
+          "unavailable_precision": 0.9174398882570088,
+          "warning_rate": 0.11205580989753651
+        },
+        {
+          "threshold": 0.52,
+          "unavailable_recall": 0.9309175565565059,
+          "unavailable_precision": 0.9174064837905237,
+          "warning_rate": 0.11207816963212647
+        },
+        {
+          "threshold": 0.53,
+          "unavailable_recall": 0.9309681664051824,
+          "unavailable_precision": 0.9172276240339068,
+          "warning_rate": 0.1121061193003639
+        },
+        {
+          "threshold": 0.54,
+          "unavailable_recall": 0.9311199959512121,
+          "unavailable_precision": 0.9171028363491351,
+          "warning_rate": 0.11213965890224883
+        },
+        {
+          "threshold": 0.55,
+          "unavailable_recall": 0.9312212156485652,
+          "unavailable_precision": 0.916928290227737,
+          "warning_rate": 0.11217319850413375
+        },
+        {
+          "threshold": 0.56,
+          "unavailable_recall": 0.9312718254972417,
+          "unavailable_precision": 0.9167953764137312,
+          "warning_rate": 0.11219555823872371
+        },
+        {
+          "threshold": 0.57,
+          "unavailable_recall": 0.9312718254972417,
+          "unavailable_precision": 0.916749701076126,
+          "warning_rate": 0.11220114817237119
+        },
+        {
+          "threshold": 0.58,
+          "unavailable_recall": 0.9313730451945949,
+          "unavailable_precision": 0.916210295728368,
+          "warning_rate": 0.11227940724343602
+        },
+        {
+          "threshold": 0.59,
+          "unavailable_recall": 0.9313730451945949,
+          "unavailable_precision": 0.9161646836262259,
+          "warning_rate": 0.11228499717708351
+        },
+        {
+          "threshold": 0.6,
+          "unavailable_recall": 0.9314236550432714,
+          "unavailable_precision": 0.9157585709309847,
+          "warning_rate": 0.11234089651355839
+        },
+        {
+          "threshold": 0.61,
+          "unavailable_recall": 0.931474264891948,
+          "unavailable_precision": 0.9153528621872979,
+          "warning_rate": 0.11239679585003326
+        },
+        {
+          "threshold": 0.62,
+          "unavailable_recall": 0.9316767042866542,
+          "unavailable_precision": 0.9150966843962818,
+          "warning_rate": 0.11245269518650813
+        },
+        {
+          "threshold": 0.63,
+          "unavailable_recall": 0.9316767042866542,
+          "unavailable_precision": 0.9149602385685884,
+          "warning_rate": 0.1124694649874506
+        },
+        {
+          "threshold": 0.64,
+          "unavailable_recall": 0.9316767042866542,
+          "unavailable_precision": 0.9145511451140146,
+          "warning_rate": 0.112519774390278
+        },
+        {
+          "threshold": 0.65,
+          "unavailable_recall": 0.9316767042866542,
+          "unavailable_precision": 0.9141424173204886,
+          "warning_rate": 0.11257008379310537
+        },
+        {
+          "threshold": 0.66,
+          "unavailable_recall": 0.9316767042866542,
+          "unavailable_precision": 0.914051638530288,
+          "warning_rate": 0.11258126366040035
+        },
+        {
+          "threshold": 0.67,
+          "unavailable_recall": 0.9317273141353307,
+          "unavailable_precision": 0.9139197776012709,
+          "warning_rate": 0.1126036233949903
+        },
+        {
+          "threshold": 0.68,
+          "unavailable_recall": 0.9318285338326838,
+          "unavailable_precision": 0.913792247754231,
+          "warning_rate": 0.11263157306322774
+        },
+        {
+          "threshold": 0.69,
+          "unavailable_recall": 0.9318791436813604,
+          "unavailable_precision": 0.9137965260545906,
+          "warning_rate": 0.11263716299687522
+        },
+        {
+          "threshold": 0.7,
+          "unavailable_recall": 0.9319297535300369,
+          "unavailable_precision": 0.913528798928412,
+          "warning_rate": 0.11267629253240764
+        },
+        {
+          "threshold": 0.71,
+          "unavailable_recall": 0.9319803633787135,
+          "unavailable_precision": 0.9135330886000596,
+          "warning_rate": 0.11268188246605512
+        },
+        {
+          "threshold": 0.72,
+          "unavailable_recall": 0.9319803633787135,
+          "unavailable_precision": 0.9135330886000596,
+          "warning_rate": 0.11268188246605512
+        },
+        {
+          "threshold": 0.73,
+          "unavailable_recall": 0.9320815830760666,
+          "unavailable_precision": 0.9134963543475026,
+          "warning_rate": 0.11269865226699759
+        },
+        {
+          "threshold": 0.74,
+          "unavailable_recall": 0.9321321929247431,
+          "unavailable_precision": 0.9135006447773039,
+          "warning_rate": 0.11270424220064508
+        },
+        {
+          "threshold": 0.75,
+          "unavailable_recall": 0.9321828027734197,
+          "unavailable_precision": 0.9135049347815305,
+          "warning_rate": 0.11270983213429256
+        },
+        {
+          "threshold": 0.76,
+          "unavailable_recall": 0.9322334126220962,
+          "unavailable_precision": 0.9134186254091045,
+          "warning_rate": 0.11272660193523502
+        },
+        {
+          "threshold": 0.77,
+          "unavailable_recall": 0.9323346323194494,
+          "unavailable_precision": 0.9118447755283868,
+          "warning_rate": 0.11293342948019207
+        },
+        {
+          "threshold": 0.78,
+          "unavailable_recall": 0.9325370717141556,
+          "unavailable_precision": 0.9098360655737705,
+          "warning_rate": 0.11320733622891896
+        },
+        {
+          "threshold": 0.79,
+          "unavailable_recall": 0.9326382914115087,
+          "unavailable_precision": 0.9066220604152317,
+          "warning_rate": 0.11362099131883305
+        },
+        {
+          "threshold": 0.8,
+          "unavailable_recall": 0.9328913406548914,
+          "unavailable_precision": 0.9044207840635886,
+          "warning_rate": 0.11392843766944487
+        },
+        {
+          "threshold": 0.81,
+          "unavailable_recall": 0.9333468292929804,
+          "unavailable_precision": 0.9012804222461147,
+          "warning_rate": 0.11438122229489137
+        },
+        {
+          "threshold": 0.82,
+          "unavailable_recall": 0.9343590262665115,
+          "unavailable_precision": 0.8989628475434581,
+          "warning_rate": 0.11480046731845293
+        },
+        {
+          "threshold": 0.83,
+          "unavailable_recall": 0.9356242724834253,
+          "unavailable_precision": 0.8962959371666829,
+          "warning_rate": 0.11529797141307932
+        },
+        {
+          "threshold": 0.84,
+          "unavailable_recall": 0.9388633027987247,
+          "unavailable_precision": 0.8918321234556031,
+          "warning_rate": 0.11627620980138965
+        },
+        {
+          "threshold": 0.85,
+          "unavailable_recall": 0.9401285490156385,
+          "unavailable_precision": 0.8881239242685026,
+          "warning_rate": 0.11691905217085073
+        },
+        {
+          "threshold": 0.86,
+          "unavailable_recall": 0.9415962346272585,
+          "unavailable_precision": 0.8836380907147946,
+          "warning_rate": 0.11769605294785151
+        },
+        {
+          "threshold": 0.87,
+          "unavailable_recall": 0.9430639202388785,
+          "unavailable_precision": 0.87813383600377,
+          "warning_rate": 0.11861839199968696
+        },
+        {
+          "threshold": 0.88,
+          "unavailable_recall": 0.9448858747912344,
+          "unavailable_precision": 0.8708022388059702,
+          "warning_rate": 0.11984817740213424
+        },
+        {
+          "threshold": 0.89,
+          "unavailable_recall": 0.9455944126727062,
+          "unavailable_precision": 0.8674900176432352,
+          "warning_rate": 0.12039599089958802
+        },
+        {
+          "threshold": 0.9,
+          "unavailable_recall": 0.9470620982843261,
+          "unavailable_precision": 0.8625092182890856,
+          "warning_rate": 0.12127920041589106
+        },
+        {
+          "threshold": 0.91,
+          "unavailable_recall": 0.9478718558631509,
+          "unavailable_precision": 0.8588526619892695,
+          "warning_rate": 0.12189968305076218
+        },
+        {
+          "threshold": 0.92,
+          "unavailable_recall": 0.9484791740472696,
+          "unavailable_precision": 0.8529492080830148,
+          "warning_rate": 0.12282202210259764
+        },
+        {
+          "threshold": 0.93,
+          "unavailable_recall": 0.9499974695075661,
+          "unavailable_precision": 0.8447794779477947,
+          "warning_rate": 0.12420832564717457
+        },
+        {
+          "threshold": 0.94,
+          "unavailable_recall": 0.9513639354218331,
+          "unavailable_precision": 0.8282516743038421,
+          "warning_rate": 0.12686913406337866
+        },
+        {
+          "threshold": 0.95,
+          "unavailable_recall": 0.9535401589149248,
+          "unavailable_precision": 0.8067223292656819,
+          "warning_rate": 0.130552900337073
+        },
+        {
+          "threshold": 0.96,
+          "unavailable_recall": 0.9559188218027228,
+          "unavailable_precision": 0.7803668815071889,
+          "warning_rate": 0.13529875400378996
+        },
+        {
+          "threshold": 0.97,
+          "unavailable_recall": 0.9602206589402298,
+          "unavailable_precision": 0.7282742207891908,
+          "warning_rate": 0.14562895138434706
+        },
+        {
+          "threshold": 0.98,
+          "unavailable_recall": 0.9690267726099498,
+          "unavailable_precision": 0.6198847448847449,
+          "warning_rate": 0.17266187050359713
+        },
+        {
+          "threshold": 0.99,
+          "unavailable_recall": 0.981223746140999,
+          "unavailable_precision": 0.4118796736913664,
+          "warning_rate": 0.2631293566545365
+        }
+      ]
+    },
+    "10": {
+      "n": 179176,
+      "unavailable_rate": 0.10790507657275528,
+      "at_common_058": {
+        "threshold": 0.58,
+        "unavailable_recall": 0.8732285093617461,
+        "unavailable_precision": 0.8512580043362074,
+        "warning_rate": 0.11069004777425548
+      },
+      "target_r70": {
+        "threshold": 0.17,
+        "unavailable_recall": 0.7135616013240923,
+        "unavailable_precision": 0.8988793328120928,
+        "warning_rate": 0.08565879358842703
+      },
+      "warn_capped": {
+        "threshold": 0.8,
+        "unavailable_recall": 0.8983655736009103,
+        "unavailable_precision": 0.8081235751174801,
+        "warning_rate": 0.11995468143054873
+      },
+      "at_current_config": {
+        "threshold": 0.5,
+        "unavailable_recall": 0.8681079962759904,
+        "unavailable_precision": 0.8589999488203081,
+        "warning_rate": 0.10904920301826138
+      },
+      "curve": [
+        {
+          "threshold": 0.05,
+          "unavailable_recall": 0.06822178545567394,
+          "unavailable_precision": 0.977761304670126,
+          "warning_rate": 0.007528910121891325
+        },
+        {
+          "threshold": 0.06,
+          "unavailable_recall": 0.1163752974035378,
+          "unavailable_precision": 0.969409737182249,
+          "warning_rate": 0.012953743804973881
+        },
+        {
+          "threshold": 0.07,
+          "unavailable_recall": 0.21252715423606083,
+          "unavailable_precision": 0.9498381877022654,
+          "warning_rate": 0.024143858552484708
+        },
+        {
+          "threshold": 0.08,
+          "unavailable_recall": 0.34498810385848766,
+          "unavailable_precision": 0.9358776483794022,
+          "warning_rate": 0.03977653257132652
+        },
+        {
+          "threshold": 0.09,
+          "unavailable_recall": 0.4412434053998138,
+          "unavailable_precision": 0.9254719027988718,
+          "warning_rate": 0.05144662231548868
+        },
+        {
+          "threshold": 0.1,
+          "unavailable_recall": 0.49875866349436226,
+          "unavailable_precision": 0.9216285960049699,
+          "warning_rate": 0.05839509755770862
+        },
+        {
+          "threshold": 0.11,
+          "unavailable_recall": 0.5437571118237302,
+          "unavailable_precision": 0.9176850558659218,
+          "warning_rate": 0.0639371344376479
+        },
+        {
+          "threshold": 0.12,
+          "unavailable_recall": 0.5840488259025551,
+          "unavailable_precision": 0.9140359397765906,
+          "warning_rate": 0.06894896637942581
+        },
+        {
+          "threshold": 0.13,
+          "unavailable_recall": 0.6183407468707975,
+          "unavailable_precision": 0.9114126705801632,
+          "warning_rate": 0.07320734919855337
+        },
+        {
+          "threshold": 0.14,
+          "unavailable_recall": 0.6490638253853316,
+          "unavailable_precision": 0.9086235609296938,
+          "warning_rate": 0.07708063579943743
+        },
+        {
+          "threshold": 0.15,
+          "unavailable_recall": 0.672959553118858,
+          "unavailable_precision": 0.9049241897343163,
+          "warning_rate": 0.08024512211456891
+        },
+        {
+          "threshold": 0.16,
+          "unavailable_recall": 0.6942691631323058,
+          "unavailable_precision": 0.9012353968040822,
+          "warning_rate": 0.08312497209447695
+        },
+        {
+          "threshold": 0.17,
+          "unavailable_recall": 0.7135616013240923,
+          "unavailable_precision": 0.8988793328120928,
+          "warning_rate": 0.08565879358842703
+        },
+        {
+          "threshold": 0.18,
+          "unavailable_recall": 0.7328540395158788,
+          "unavailable_precision": 0.8954686216267459,
+          "warning_rate": 0.08830981827923383
+        },
+        {
+          "threshold": 0.19,
+          "unavailable_recall": 0.7494051929243819,
+          "unavailable_precision": 0.89261951700345,
+          "warning_rate": 0.09059249006563379
+        },
+        {
+          "threshold": 0.2,
+          "unavailable_recall": 0.7607323885383263,
+          "unavailable_precision": 0.8901531198934818,
+          "warning_rate": 0.09221659150779123
+        },
+        {
+          "threshold": 0.21,
+          "unavailable_recall": 0.7722147512154753,
+          "unavailable_precision": 0.887897710377639,
+          "warning_rate": 0.09384627405456088
+        },
+        {
+          "threshold": 0.22,
+          "unavailable_recall": 0.7825074997413882,
+          "unavailable_precision": 0.8858246969963113,
+          "warning_rate": 0.09531968567218824
+        },
+        {
+          "threshold": 0.23,
+          "unavailable_recall": 0.7914037446984586,
+          "unavailable_precision": 0.8843997456794405,
+          "warning_rate": 0.09655869089610215
+        },
+        {
+          "threshold": 0.24,
+          "unavailable_recall": 0.7971449260370332,
+          "unavailable_precision": 0.8833610362813091,
+          "warning_rate": 0.09737353216948698
+        },
+        {
+          "threshold": 0.25,
+          "unavailable_recall": 0.8037136650460329,
+          "unavailable_precision": 0.8825467143749645,
+          "warning_rate": 0.09826650890744296
+        },
+        {
+          "threshold": 0.26,
+          "unavailable_recall": 0.8087307334229854,
+          "unavailable_precision": 0.8811496196111581,
+          "warning_rate": 0.09903670134392999
+        },
+        {
+          "threshold": 0.27,
+          "unavailable_recall": 0.8133340229647253,
+          "unavailable_precision": 0.8800649205283188,
+          "warning_rate": 0.09972317721123365
+        },
+        {
+          "threshold": 0.28,
+          "unavailable_recall": 0.8175752560256543,
+          "unavailable_precision": 0.8792902041497469,
+          "warning_rate": 0.10033151761396615
+        },
+        {
+          "threshold": 0.29,
+          "unavailable_recall": 0.8220233785041895,
+          "unavailable_precision": 0.8789403827010287,
+          "warning_rate": 0.10091753359824976
+        },
+        {
+          "threshold": 0.3,
+          "unavailable_recall": 0.824506051515465,
+          "unavailable_precision": 0.8784372072518873,
+          "warning_rate": 0.10128030539804438
+        },
+        {
+          "threshold": 0.31,
+          "unavailable_recall": 0.8280231716147719,
+          "unavailable_precision": 0.8772054794520548,
+          "warning_rate": 0.10185515917310355
+        },
+        {
+          "threshold": 0.32,
+          "unavailable_recall": 0.8313851246508741,
+          "unavailable_precision": 0.8768752386667394,
+          "warning_rate": 0.10230722864669375
+        },
+        {
+          "threshold": 0.33,
+          "unavailable_recall": 0.834178131788559,
+          "unavailable_precision": 0.8760932152751372,
+          "warning_rate": 0.1027425548064473
+        },
+        {
+          "threshold": 0.34,
+          "unavailable_recall": 0.837436640115858,
+          "unavailable_precision": 0.8749527154823021,
+          "warning_rate": 0.10327834084922088
+        },
+        {
+          "threshold": 0.35,
+          "unavailable_recall": 0.840591703734354,
+          "unavailable_precision": 0.8736694979034513,
+          "warning_rate": 0.10381970799660668
+        },
+        {
+          "threshold": 0.36,
+          "unavailable_recall": 0.8430226543912279,
+          "unavailable_precision": 0.8726776248862237,
+          "warning_rate": 0.10423829084252355
+        },
+        {
+          "threshold": 0.37,
+          "unavailable_recall": 0.8451432709216924,
+          "unavailable_precision": 0.8716061236464501,
+          "warning_rate": 0.1046289681653793
+        },
+        {
+          "threshold": 0.38,
+          "unavailable_recall": 0.8476259439329679,
+          "unavailable_precision": 0.8704520104105805,
+          "warning_rate": 0.10507545653435728
+        },
+        {
+          "threshold": 0.39,
+          "unavailable_recall": 0.8498500051722354,
+          "unavailable_precision": 0.8694110799513202,
+          "warning_rate": 0.10547729606643746
+        },
+        {
+          "threshold": 0.4,
+          "unavailable_recall": 0.8523326781835109,
+          "unavailable_precision": 0.8681382362237909,
+          "warning_rate": 0.10594052774925213
+        },
+        {
+          "threshold": 0.41,
+          "unavailable_recall": 0.8540912382331644,
+          "unavailable_precision": 0.8673705221136674,
+          "warning_rate": 0.10625306960753672
+        },
+        {
+          "threshold": 0.42,
+          "unavailable_recall": 0.8557980759284163,
+          "unavailable_precision": 0.8665549387242065,
+          "warning_rate": 0.10656561146582132
+        },
+        {
+          "threshold": 0.43,
+          "unavailable_recall": 0.857401468914865,
+          "unavailable_precision": 0.8655944859276278,
+          "warning_rate": 0.10688373442871814
+        },
+        {
+          "threshold": 0.44,
+          "unavailable_recall": 0.8589014171925106,
+          "unavailable_precision": 0.8649859360350036,
+          "warning_rate": 0.1071460463454927
+        },
+        {
+          "threshold": 0.45,
+          "unavailable_recall": 0.859935864280542,
+          "unavailable_precision": 0.8640923028948599,
+          "warning_rate": 0.10738603384381837
+        },
+        {
+          "threshold": 0.46,
+          "unavailable_recall": 0.861280645494983,
+          "unavailable_precision": 0.8632004561712716,
+          "warning_rate": 0.1076650890744296
+        },
+        {
+          "threshold": 0.47,
+          "unavailable_recall": 0.8628323161270302,
+          "unavailable_precision": 0.8628323161270302,
+          "warning_rate": 0.10790507657275528
+        },
+        {
+          "threshold": 0.48,
+          "unavailable_recall": 0.864901210303093,
+          "unavailable_precision": 0.861603462489695,
+          "warning_rate": 0.10831807831405992
+        },
+        {
+          "threshold": 0.49,
+          "unavailable_recall": 0.8671769938967622,
+          "unavailable_precision": 0.860324302134647,
+          "warning_rate": 0.10876456668303791
+        },
+        {
+          "threshold": 0.5,
+          "unavailable_recall": 0.8681079962759904,
+          "unavailable_precision": 0.8589999488203081,
+          "warning_rate": 0.10904920301826138
+        },
+        {
+          "threshold": 0.51,
+          "unavailable_recall": 0.8691941657184235,
+          "unavailable_precision": 0.858229916756039,
+          "warning_rate": 0.10928360941197482
+        },
+        {
+          "threshold": 0.52,
+          "unavailable_recall": 0.8698148339712424,
+          "unavailable_precision": 0.8572666564714279,
+          "warning_rate": 0.10948452917801492
+        },
+        {
+          "threshold": 0.53,
+          "unavailable_recall": 0.8703320575152581,
+          "unavailable_precision": 0.8567718940936864,
+          "warning_rate": 0.10961289458409608
+        },
+        {
+          "threshold": 0.54,
+          "unavailable_recall": 0.8710561704768801,
+          "unavailable_precision": 0.8561769191662431,
+          "warning_rate": 0.10978032772246284
+        },
+        {
+          "threshold": 0.55,
+          "unavailable_recall": 0.8714699493120927,
+          "unavailable_precision": 0.8551923662572327,
+          "warning_rate": 0.10995892307005402
+        },
+        {
+          "threshold": 0.56,
+          "unavailable_recall": 0.8719354505017068,
+          "unavailable_precision": 0.854348266774782,
+          "warning_rate": 0.11012635620842078
+        },
+        {
+          "threshold": 0.57,
+          "unavailable_recall": 0.8726078411089273,
+          "unavailable_precision": 0.852889136039634,
+          "warning_rate": 0.11039983033441979
+        },
+        {
+          "threshold": 0.58,
+          "unavailable_recall": 0.8732285093617461,
+          "unavailable_precision": 0.8512580043362074,
+          "warning_rate": 0.11069004777425548
+        },
+        {
+          "threshold": 0.59,
+          "unavailable_recall": 0.8739008999689666,
+          "unavailable_precision": 0.8495148071798482,
+          "warning_rate": 0.11100258963254007
+        },
+        {
+          "threshold": 0.6,
+          "unavailable_recall": 0.8743146788041791,
+          "unavailable_precision": 0.8475307094509902,
+          "warning_rate": 0.11131513149082467
+        },
+        {
+          "threshold": 0.61,
+          "unavailable_recall": 0.8754008482466122,
+          "unavailable_precision": 0.8461653834616538,
+          "warning_rate": 0.11163325445372148
+        },
+        {
+          "threshold": 0.62,
+          "unavailable_recall": 0.8761249612082342,
+          "unavailable_precision": 0.8453016617595689,
+          "warning_rate": 0.1118397553243738
+        },
+        {
+          "threshold": 0.63,
+          "unavailable_recall": 0.876745629461053,
+          "unavailable_precision": 0.8442573961549955,
+          "warning_rate": 0.11205741840425057
+        },
+        {
+          "threshold": 0.64,
+          "unavailable_recall": 0.878090410675494,
+          "unavailable_precision": 0.8424473997618103,
+          "warning_rate": 0.11247042014555521
+        },
+        {
+          "threshold": 0.65,
+          "unavailable_recall": 0.8796938036619427,
+          "unavailable_precision": 0.8404823087566713,
+          "warning_rate": 0.1129392329329821
+        },
+        {
+          "threshold": 0.66,
+          "unavailable_recall": 0.8821764766732182,
+          "unavailable_precision": 0.8384210785036622,
+          "warning_rate": 0.11353641112649016
+        },
+        {
+          "threshold": 0.67,
+          "unavailable_recall": 0.8840384814316747,
+          "unavailable_precision": 0.837063519271267,
+          "warning_rate": 0.11396057507701925
+        },
+        {
+          "threshold": 0.68,
+          "unavailable_recall": 0.8851763732285094,
+          "unavailable_precision": 0.8364205073065832,
+          "warning_rate": 0.11419498147073269
+        },
+        {
+          "threshold": 0.69,
+          "unavailable_recall": 0.8866763215061549,
+          "unavailable_precision": 0.8352660300136425,
+          "warning_rate": 0.11454659106130285
+        },
+        {
+          "threshold": 0.7,
+          "unavailable_recall": 0.8879693803661942,
+          "unavailable_precision": 0.8339648304673078,
+          "warning_rate": 0.1148926195472608
+        },
+        {
+          "threshold": 0.71,
+          "unavailable_recall": 0.8886417709734147,
+          "unavailable_precision": 0.8306018854242204,
+          "warning_rate": 0.11544514890387106
+        },
+        {
+          "threshold": 0.72,
+          "unavailable_recall": 0.8900899968966587,
+          "unavailable_precision": 0.8293094308708014,
+          "warning_rate": 0.11581350180827789
+        },
+        {
+          "threshold": 0.73,
+          "unavailable_recall": 0.8907106651494776,
+          "unavailable_precision": 0.8263832237631364,
+          "warning_rate": 0.11630463901415368
+        },
+        {
+          "threshold": 0.74,
+          "unavailable_recall": 0.8915899451743043,
+          "unavailable_precision": 0.8236811926605505,
+          "warning_rate": 0.1168013573246417
+        },
+        {
+          "threshold": 0.75,
+          "unavailable_recall": 0.8922623357815248,
+          "unavailable_precision": 0.8198365174413078,
+          "warning_rate": 0.11743760325043533
+        },
+        {
+          "threshold": 0.76,
+          "unavailable_recall": 0.8943312299575876,
+          "unavailable_precision": 0.8159981123171307,
+          "warning_rate": 0.1182636067330446
+        },
+        {
+          "threshold": 0.77,
+          "unavailable_recall": 0.8956760111720286,
+          "unavailable_precision": 0.8140748401654757,
+          "warning_rate": 0.11872125731124704
+        },
+        {
+          "threshold": 0.78,
+          "unavailable_recall": 0.8966587359056585,
+          "unavailable_precision": 0.8122950051541561,
+          "warning_rate": 0.11911193463410279
+        },
+        {
+          "threshold": 0.79,
+          "unavailable_recall": 0.8976414606392883,
+          "unavailable_precision": 0.8105646630236795,
+          "warning_rate": 0.1194970308523463
+        },
+        {
+          "threshold": 0.8,
+          "unavailable_recall": 0.8983655736009103,
+          "unavailable_precision": 0.8081235751174801,
+          "warning_rate": 0.11995468143054873
+        },
+        {
+          "threshold": 0.81,
+          "unavailable_recall": 0.8989862418537292,
+          "unavailable_precision": 0.8059071729957806,
+          "warning_rate": 0.12036768317185337
+        },
+        {
+          "threshold": 0.82,
+          "unavailable_recall": 0.8998137995241543,
+          "unavailable_precision": 0.8039279112754159,
+          "warning_rate": 0.12077510380854578
+        },
+        {
+          "threshold": 0.83,
+          "unavailable_recall": 0.9011068583841937,
+          "unavailable_precision": 0.8011219938382306,
+          "warning_rate": 0.12137228200205384
+        },
+        {
+          "threshold": 0.84,
+          "unavailable_recall": 0.903124030205855,
+          "unavailable_precision": 0.7971239443049533,
+          "warning_rate": 0.12225409653078537
+        },
+        {
+          "threshold": 0.85,
+          "unavailable_recall": 0.9044170890658942,
+          "unavailable_precision": 0.793879960047217,
+          "warning_rate": 0.12292941018886458
+        },
+        {
+          "threshold": 0.86,
+          "unavailable_recall": 0.9057101479259336,
+          "unavailable_precision": 0.7885706565793029,
+          "warning_rate": 0.12393400901906505
+        },
+        {
+          "threshold": 0.87,
+          "unavailable_recall": 0.9064859832419572,
+          "unavailable_precision": 0.7842663444757686,
+          "warning_rate": 0.12472094476938876
+        },
+        {
+          "threshold": 0.88,
+          "unavailable_recall": 0.9073652632667839,
+          "unavailable_precision": 0.7796195893698338,
+          "warning_rate": 0.12558601598428362
+        },
+        {
+          "threshold": 0.89,
+          "unavailable_recall": 0.9091755456708389,
+          "unavailable_precision": 0.7721163138012826,
+          "warning_rate": 0.12705942760191097
+        },
+        {
+          "threshold": 0.9,
+          "unavailable_recall": 0.9105203268852798,
+          "unavailable_precision": 0.7667247386759581,
+          "warning_rate": 0.1281421618966826
+        },
+        {
+          "threshold": 0.91,
+          "unavailable_recall": 0.9118651080997207,
+          "unavailable_precision": 0.7589977613225417,
+          "warning_rate": 0.12963789793275884
+        },
+        {
+          "threshold": 0.92,
+          "unavailable_recall": 0.9130029998965553,
+          "unavailable_precision": 0.7517567394915038,
+          "warning_rate": 0.13104991739965174
+        },
+        {
+          "threshold": 0.93,
+          "unavailable_recall": 0.914968449363815,
+          "unavailable_precision": 0.7419057205166918,
+          "warning_rate": 0.13307585837388936
+        },
+        {
+          "threshold": 0.94,
+          "unavailable_recall": 0.9186407365263267,
+          "unavailable_precision": 0.7230205577040505,
+          "warning_rate": 0.1370998347993035
+        },
+        {
+          "threshold": 0.95,
+          "unavailable_recall": 0.9251577531809247,
+          "unavailable_precision": 0.6838845345058306,
+          "warning_rate": 0.145973791132741
+        },
+        {
+          "threshold": 0.96,
+          "unavailable_recall": 0.9351401675804283,
+          "unavailable_precision": 0.624913590488041,
+          "warning_rate": 0.1614725186408894
+        },
+        {
+          "threshold": 0.97,
+          "unavailable_recall": 0.9424847419054515,
+          "unavailable_precision": 0.5702750915407004,
+          "warning_rate": 0.1783330356744207
+        },
+        {
+          "threshold": 0.98,
+          "unavailable_recall": 0.954639495189821,
+          "unavailable_precision": 0.47074576617016933,
+          "warning_rate": 0.218823949636112
+        },
+        {
+          "threshold": 0.99,
+          "unavailable_recall": 0.9768283852280956,
+          "unavailable_precision": 0.28178806958909014,
+          "warning_rate": 0.374056793320534
+        }
+      ]
+    },
+    "15": {
+      "n": 179221,
+      "unavailable_rate": 0.10497653734774381,
+      "at_common_058": {
+        "threshold": 0.58,
+        "unavailable_recall": 0.8258743488891251,
+        "unavailable_precision": 0.7941326791372789,
+        "warning_rate": 0.10917247420782163
+      },
+      "target_r70": {
+        "threshold": 0.27,
+        "unavailable_recall": 0.7010205166365473,
+        "unavailable_precision": 0.8405991077119184,
+        "warning_rate": 0.08754554432795264
+      },
+      "warn_capped": {
+        "threshold": 0.74,
+        "unavailable_recall": 0.8554268098224727,
+        "unavailable_precision": 0.7524428444527561,
+        "warning_rate": 0.11934427327154742
+      },
+      "at_current_config": {
+        "threshold": 0.59,
+        "unavailable_recall": 0.8281067290315722,
+        "unavailable_precision": 0.7926332926332926,
+        "warning_rate": 0.10967464750224583
+      },
+      "curve": [
+        {
+          "threshold": 0.05,
+          "unavailable_recall": 0.040926969278197084,
+          "unavailable_precision": 0.9821428571428571,
+          "warning_rate": 0.004374487364761942
+        },
+        {
+          "threshold": 0.06,
+          "unavailable_recall": 0.04975018603167854,
+          "unavailable_precision": 0.972972972972973,
+          "warning_rate": 0.005367674547067587
+        },
+        {
+          "threshold": 0.07,
+          "unavailable_recall": 0.06372913787604975,
+          "unavailable_precision": 0.9724249797242498,
+          "warning_rate": 0.006879774133611575
+        },
+        {
+          "threshold": 0.08,
+          "unavailable_recall": 0.08902944615711704,
+          "unavailable_precision": 0.9727061556329849,
+          "warning_rate": 0.009608249033316408
+        },
+        {
+          "threshold": 0.09,
+          "unavailable_recall": 0.11029020941851812,
+          "unavailable_precision": 0.962430426716141,
+          "warning_rate": 0.01202984025309534
+        },
+        {
+          "threshold": 0.1,
+          "unavailable_recall": 0.15137663442117572,
+          "unavailable_precision": 0.9439840901557839,
+          "warning_rate": 0.016833964769753545
+        },
+        {
+          "threshold": 0.11,
+          "unavailable_recall": 0.2003295418305517,
+          "unavailable_precision": 0.9262718112558368,
+          "warning_rate": 0.022703812611245332
+        },
+        {
+          "threshold": 0.12,
+          "unavailable_recall": 0.2699585415116403,
+          "unavailable_precision": 0.9063169164882227,
+          "warning_rate": 0.031268657132813675
+        },
+        {
+          "threshold": 0.13,
+          "unavailable_recall": 0.34261719995747847,
+          "unavailable_precision": 0.8968971754556839,
+          "warning_rate": 0.04010132741140826
+        },
+        {
+          "threshold": 0.14,
+          "unavailable_recall": 0.40533645157861165,
+          "unavailable_precision": 0.8890184192119375,
+          "warning_rate": 0.04786269466189788
+        },
+        {
+          "threshold": 0.15,
+          "unavailable_recall": 0.45221643457000105,
+          "unavailable_precision": 0.8834890965732087,
+          "warning_rate": 0.05373254250338967
+        },
+        {
+          "threshold": 0.16,
+          "unavailable_recall": 0.48713723822685234,
+          "unavailable_precision": 0.8782942022041208,
+          "warning_rate": 0.058224203636850595
+        },
+        {
+          "threshold": 0.17,
+          "unavailable_recall": 0.5154140533645157,
+          "unavailable_precision": 0.8722676981199964,
+          "warning_rate": 0.06202956126793177
+        },
+        {
+          "threshold": 0.18,
+          "unavailable_recall": 0.5429998936961837,
+          "unavailable_precision": 0.8701873935264055,
+          "warning_rate": 0.06550571640600153
+        },
+        {
+          "threshold": 0.19,
+          "unavailable_recall": 0.5677155309875624,
+          "unavailable_precision": 0.8666125760649087,
+          "warning_rate": 0.06876984281975884
+        },
+        {
+          "threshold": 0.2,
+          "unavailable_recall": 0.589135749973424,
+          "unavailable_precision": 0.8624338624338624,
+          "warning_rate": 0.07171034644377612
+        },
+        {
+          "threshold": 0.21,
+          "unavailable_recall": 0.6105559689592857,
+          "unavailable_precision": 0.8601917028605661,
+          "warning_rate": 0.0745113574860089
+        },
+        {
+          "threshold": 0.22,
+          "unavailable_recall": 0.6294248963537791,
+          "unavailable_precision": 0.8574945691527879,
+          "warning_rate": 0.07705570217775819
+        },
+        {
+          "threshold": 0.23,
+          "unavailable_recall": 0.647071329860742,
+          "unavailable_precision": 0.8534772854739203,
+          "warning_rate": 0.07958888746296472
+        },
+        {
+          "threshold": 0.24,
+          "unavailable_recall": 0.6617944084192623,
+          "unavailable_precision": 0.8504200532750495,
+          "warning_rate": 0.081692435596275
+        },
+        {
+          "threshold": 0.25,
+          "unavailable_recall": 0.6753481449984055,
+          "unavailable_precision": 0.847631754503002,
+          "warning_rate": 0.08363975203798663
+        },
+        {
+          "threshold": 0.26,
+          "unavailable_recall": 0.6883703624960136,
+          "unavailable_precision": 0.8442083306173,
+          "warning_rate": 0.08559822788624101
+        },
+        {
+          "threshold": 0.27,
+          "unavailable_recall": 0.7010205166365473,
+          "unavailable_precision": 0.8405991077119184,
+          "warning_rate": 0.08754554432795264
+        },
+        {
+          "threshold": 0.28,
+          "unavailable_recall": 0.7115445944509408,
+          "unavailable_precision": 0.8379968701095462,
+          "warning_rate": 0.08913575976029595
+        },
+        {
+          "threshold": 0.29,
+          "unavailable_recall": 0.7213245455511853,
+          "unavailable_precision": 0.8356527093596059,
+          "warning_rate": 0.09061438112721165
+        },
+        {
+          "threshold": 0.3,
+          "unavailable_recall": 0.7289784203252897,
+          "unavailable_precision": 0.8337386018237082,
+          "warning_rate": 0.09178611881420146
+        },
+        {
+          "threshold": 0.31,
+          "unavailable_recall": 0.7370043584564686,
+          "unavailable_precision": 0.8319932797311892,
+          "warning_rate": 0.09299133472081955
+        },
+        {
+          "threshold": 0.32,
+          "unavailable_recall": 0.744658233230573,
+          "unavailable_precision": 0.8306159957313096,
+          "warning_rate": 0.09411285507836693
+        },
+        {
+          "threshold": 0.33,
+          "unavailable_recall": 0.7499202721377698,
+          "unavailable_precision": 0.8292582579052545,
+          "warning_rate": 0.09493307145925979
+        },
+        {
+          "threshold": 0.34,
+          "unavailable_recall": 0.7546507919634314,
+          "unavailable_precision": 0.827823450527666,
+          "warning_rate": 0.09569749080743886
+        },
+        {
+          "threshold": 0.35,
+          "unavailable_recall": 0.7586903369830977,
+          "unavailable_precision": 0.8263285863146926,
+          "warning_rate": 0.09638379430981861
+        },
+        {
+          "threshold": 0.36,
+          "unavailable_recall": 0.7620920591049218,
+          "unavailable_precision": 0.82549369566469,
+          "warning_rate": 0.09691386612059971
+        },
+        {
+          "threshold": 0.37,
+          "unavailable_recall": 0.76570638885936,
+          "unavailable_precision": 0.8250386575797491,
+          "warning_rate": 0.09742719882156667
+        },
+        {
+          "threshold": 0.38,
+          "unavailable_recall": 0.7690018071648772,
+          "unavailable_precision": 0.8237772590104196,
+          "warning_rate": 0.09799632855524743
+        },
+        {
+          "threshold": 0.39,
+          "unavailable_recall": 0.7717125544807059,
+          "unavailable_precision": 0.8226062322946176,
+          "warning_rate": 0.0984817627398575
+        },
+        {
+          "threshold": 0.4,
+          "unavailable_recall": 0.774263846072074,
+          "unavailable_precision": 0.8215554678247138,
+          "warning_rate": 0.09893371870483927
+        },
+        {
+          "threshold": 0.41,
+          "unavailable_recall": 0.7771340491123632,
+          "unavailable_precision": 0.8202064400314147,
+          "warning_rate": 0.09946379051562038
+        },
+        {
+          "threshold": 0.42,
+          "unavailable_recall": 0.7796853407037313,
+          "unavailable_precision": 0.8190853760678988,
+          "warning_rate": 0.09992690588714492
+        },
+        {
+          "threshold": 0.43,
+          "unavailable_recall": 0.7824492399277134,
+          "unavailable_precision": 0.8179696616102684,
+          "warning_rate": 0.10041791977502637
+        },
+        {
+          "threshold": 0.44,
+          "unavailable_recall": 0.7864356330392261,
+          "unavailable_precision": 0.8171425415585133,
+          "warning_rate": 0.10103168713487817
+        },
+        {
+          "threshold": 0.45,
+          "unavailable_recall": 0.7902094185181248,
+          "unavailable_precision": 0.8153896780562716,
+          "warning_rate": 0.10173472974707205
+        },
+        {
+          "threshold": 0.46,
+          "unavailable_recall": 0.7927075582013394,
+          "unavailable_precision": 0.8137276298559581,
+          "warning_rate": 0.10226480155785315
+        },
+        {
+          "threshold": 0.47,
+          "unavailable_recall": 0.7966939513128521,
+          "unavailable_precision": 0.8128524945770065,
+          "warning_rate": 0.10288972832424771
+        },
+        {
+          "threshold": 0.48,
+          "unavailable_recall": 0.8007866482406718,
+          "unavailable_precision": 0.8110028529902568,
+          "warning_rate": 0.10365414767242678
+        },
+        {
+          "threshold": 0.49,
+          "unavailable_recall": 0.804082066546189,
+          "unavailable_precision": 0.8095034246575342,
+          "warning_rate": 0.10427349473554996
+        },
+        {
+          "threshold": 0.5,
+          "unavailable_recall": 0.8070054214946316,
+          "unavailable_precision": 0.8083803641784687,
+          "warning_rate": 0.10479798684305969
+        },
+        {
+          "threshold": 0.51,
+          "unavailable_recall": 0.8104602955246093,
+          "unavailable_precision": 0.8067298026559442,
+          "warning_rate": 0.10546197153235391
+        },
+        {
+          "threshold": 0.52,
+          "unavailable_recall": 0.8128521313915169,
+          "unavailable_precision": 0.8048100199978949,
+          "warning_rate": 0.10602552156276329
+        },
+        {
+          "threshold": 0.53,
+          "unavailable_recall": 0.8152439672584246,
+          "unavailable_precision": 0.8033731405824429,
+          "warning_rate": 0.1065276948571875
+        },
+        {
+          "threshold": 0.54,
+          "unavailable_recall": 0.8179015626660997,
+          "unavailable_precision": 0.8011245314452311,
+          "warning_rate": 0.10717494043666757
+        },
+        {
+          "threshold": 0.55,
+          "unavailable_recall": 0.8200276389922398,
+          "unavailable_precision": 0.7990884135287719,
+          "warning_rate": 0.1077273310605342
+        },
+        {
+          "threshold": 0.56,
+          "unavailable_recall": 0.8219411076857659,
+          "unavailable_precision": 0.797318896622841,
+          "warning_rate": 0.10821834494841565
+        },
+        {
+          "threshold": 0.57,
+          "unavailable_recall": 0.823960880195599,
+          "unavailable_precision": 0.7953822473063109,
+          "warning_rate": 0.10874841675919675
+        },
+        {
+          "threshold": 0.58,
+          "unavailable_recall": 0.8258743488891251,
+          "unavailable_precision": 0.7941326791372789,
+          "warning_rate": 0.10917247420782163
+        },
+        {
+          "threshold": 0.59,
+          "unavailable_recall": 0.8281067290315722,
+          "unavailable_precision": 0.7926332926332926,
+          "warning_rate": 0.10967464750224583
+        },
+        {
+          "threshold": 0.6,
+          "unavailable_recall": 0.8302859572658658,
+          "unavailable_precision": 0.790576446176426,
+          "warning_rate": 0.11024935693919798
+        },
+        {
+          "threshold": 0.61,
+          "unavailable_recall": 0.833262464122462,
+          "unavailable_precision": 0.7876306270096463,
+          "warning_rate": 0.11105841391354808
+        },
+        {
+          "threshold": 0.62,
+          "unavailable_recall": 0.8362389709790582,
+          "unavailable_precision": 0.7851190179150657,
+          "warning_rate": 0.11181167385518438
+        },
+        {
+          "threshold": 0.63,
+          "unavailable_recall": 0.8391091740193473,
+          "unavailable_precision": 0.7825030978934324,
+          "warning_rate": 0.11257051350009206
+        },
+        {
+          "threshold": 0.64,
+          "unavailable_recall": 0.8418199213351759,
+          "unavailable_precision": 0.780158612876213,
+          "warning_rate": 0.11327355611228594
+        },
+        {
+          "threshold": 0.65,
+          "unavailable_recall": 0.8435739343042415,
+          "unavailable_precision": 0.7771901473972871,
+          "warning_rate": 0.11394312050485156
+        },
+        {
+          "threshold": 0.66,
+          "unavailable_recall": 0.8450090358243861,
+          "unavailable_precision": 0.7737006034650574,
+          "warning_rate": 0.11465174282031682
+        },
+        {
+          "threshold": 0.67,
+          "unavailable_recall": 0.8466035930689911,
+          "unavailable_precision": 0.7720420726091803,
+          "warning_rate": 0.11511485819184136
+        },
+        {
+          "threshold": 0.68,
+          "unavailable_recall": 0.8478792388646752,
+          "unavailable_precision": 0.7681047765793528,
+          "warning_rate": 0.11587927754002042
+        },
+        {
+          "threshold": 0.69,
+          "unavailable_recall": 0.8493143403848198,
+          "unavailable_precision": 0.7649114408808042,
+          "warning_rate": 0.11656000133912879
+        },
+        {
+          "threshold": 0.7,
+          "unavailable_recall": 0.8502710747315828,
+          "unavailable_precision": 0.7623064093400048,
+          "warning_rate": 0.11709007314990989
+        },
+        {
+          "threshold": 0.71,
+          "unavailable_recall": 0.8513341128946529,
+          "unavailable_precision": 0.759819734345351,
+          "warning_rate": 0.117620144960691
+        },
+        {
+          "threshold": 0.72,
+          "unavailable_recall": 0.8528223663229509,
+          "unavailable_precision": 0.7572325263108216,
+          "warning_rate": 0.11822833261727142
+        },
+        {
+          "threshold": 0.73,
+          "unavailable_recall": 0.8541511640267886,
+          "unavailable_precision": 0.7549917782475922,
+          "warning_rate": 0.1187639841313239
+        },
+        {
+          "threshold": 0.74,
+          "unavailable_recall": 0.8554268098224727,
+          "unavailable_precision": 0.7524428444527561,
+          "warning_rate": 0.11934427327154742
+        },
+        {
+          "threshold": 0.75,
+          "unavailable_recall": 0.8576591899649197,
+          "unavailable_precision": 0.7488745533020839,
+          "warning_rate": 0.12022586638842546
+        },
+        {
+          "threshold": 0.76,
+          "unavailable_recall": 0.8603167853725949,
+          "unavailable_precision": 0.7457611500184298,
+          "warning_rate": 0.12110187980203213
+        },
+        {
+          "threshold": 0.77,
+          "unavailable_recall": 0.8611672159030509,
+          "unavailable_precision": 0.7431087465027748,
+          "warning_rate": 0.12165427042589876
+        },
+        {
+          "threshold": 0.78,
+          "unavailable_recall": 0.8626023174231955,
+          "unavailable_precision": 0.7383194577134798,
+          "warning_rate": 0.12264745760820439
+        },
+        {
+          "threshold": 0.79,
+          "unavailable_recall": 0.8638248113107261,
+          "unavailable_precision": 0.735118509136964,
+          "warning_rate": 0.12335607992366966
+        },
+        {
+          "threshold": 0.8,
+          "unavailable_recall": 0.8648346975656426,
+          "unavailable_precision": 0.7316755103876248,
+          "warning_rate": 0.12408144134894906
+        },
+        {
+          "threshold": 0.81,
+          "unavailable_recall": 0.8663229509939406,
+          "unavailable_precision": 0.7273092369477911,
+          "warning_rate": 0.12504115031162644
+        },
+        {
+          "threshold": 0.82,
+          "unavailable_recall": 0.8677049006059318,
+          "unavailable_precision": 0.7238183914161568,
+          "warning_rate": 0.12584462758270515
+        },
+        {
+          "threshold": 0.83,
+          "unavailable_recall": 0.8686084830445413,
+          "unavailable_precision": 0.7200705001101564,
+          "warning_rate": 0.12663136574396974
+        },
+        {
+          "threshold": 0.84,
+          "unavailable_recall": 0.8697778250239183,
+          "unavailable_precision": 0.7168389696863501,
+          "warning_rate": 0.1273734662790633
+        },
+        {
+          "threshold": 0.85,
+          "unavailable_recall": 0.8709471670032954,
+          "unavailable_precision": 0.7142358992241304,
+          "warning_rate": 0.1280095524520006
+        },
+        {
+          "threshold": 0.86,
+          "unavailable_recall": 0.8717975975337514,
+          "unavailable_precision": 0.7106893712899173,
+          "warning_rate": 0.12877397180017966
+        },
+        {
+          "threshold": 0.87,
+          "unavailable_recall": 0.8729669395131285,
+          "unavailable_precision": 0.7076260232658337,
+          "warning_rate": 0.12950491292873045
+        },
+        {
+          "threshold": 0.88,
+          "unavailable_recall": 0.8740831295843521,
+          "unavailable_precision": 0.7034692218847586,
+          "warning_rate": 0.1304367233750509
+        },
+        {
+          "threshold": 0.89,
+          "unavailable_recall": 0.8759434463697247,
+          "unavailable_precision": 0.6994312876665818,
+          "warning_rate": 0.13146896848025622
+        },
+        {
+          "threshold": 0.9,
+          "unavailable_recall": 0.8776974593387903,
+          "unavailable_precision": 0.6941151744430433,
+          "warning_rate": 0.13274114082613087
+        },
+        {
+          "threshold": 0.91,
+          "unavailable_recall": 0.8801955990220048,
+          "unavailable_precision": 0.6846936244108162,
+          "warning_rate": 0.13495070332159737
+        },
+        {
+          "threshold": 0.92,
+          "unavailable_recall": 0.8848198150313596,
+          "unavailable_precision": 0.6665465465465465,
+          "warning_rate": 0.1393530892027162
+        },
+        {
+          "threshold": 0.93,
+          "unavailable_recall": 0.8926331455299246,
+          "unavailable_precision": 0.6383366908662435,
+          "warning_rate": 0.14679641336673716
+        },
+        {
+          "threshold": 0.94,
+          "unavailable_recall": 0.9023599447220155,
+          "unavailable_precision": 0.6002121265688527,
+          "warning_rate": 0.1578219070309841
+        },
+        {
+          "threshold": 0.95,
+          "unavailable_recall": 0.9098543637716594,
+          "unavailable_precision": 0.5653236459709379,
+          "warning_rate": 0.16895341505738726
+        },
+        {
+          "threshold": 0.96,
+          "unavailable_recall": 0.9180929095354523,
+          "unavailable_precision": 0.5239640842079718,
+          "warning_rate": 0.183940498044314
+        },
+        {
+          "threshold": 0.97,
+          "unavailable_recall": 0.931061975124907,
+          "unavailable_precision": 0.4496149897330595,
+          "warning_rate": 0.2173852394529659
+        },
+        {
+          "threshold": 0.98,
+          "unavailable_recall": 0.9478048261932603,
+          "unavailable_precision": 0.3487648888106554,
+          "warning_rate": 0.28528464856238944
+        },
+        {
+          "threshold": 0.99,
+          "unavailable_recall": 0.9796428191772084,
+          "unavailable_precision": 0.21343292223959237,
+          "warning_rate": 0.4818352760000223
+        }
+      ]
+    },
+    "20": {
+      "n": 179251,
+      "unavailable_rate": 0.10086415138548743,
+      "at_common_058": {
+        "threshold": 0.58,
+        "unavailable_recall": 0.7719026548672566,
+        "unavailable_precision": 0.7430518581620701,
+        "warning_rate": 0.10478044752888407
+      },
+      "target_r70": {
+        "threshold": 0.42,
+        "unavailable_recall": 0.7037610619469027,
+        "unavailable_precision": 0.774295624657701,
+        "warning_rate": 0.09167591812597978
+      },
+      "warn_capped": {
+        "threshold": 0.72,
+        "unavailable_recall": 0.8186393805309734,
+        "unavailable_precision": 0.6905706154061494,
+        "warning_rate": 0.11956976530116986
+      },
+      "at_current_config": {
+        "threshold": 0.63,
+        "unavailable_recall": 0.789325221238938,
+        "unavailable_precision": 0.7284839203675345,
+        "warning_rate": 0.1092880932323948
+      },
+      "curve": [
+        {
+          "threshold": 0.05,
+          "unavailable_recall": 0.029258849557522122,
+          "unavailable_precision": 0.9851024208566108,
+          "warning_rate": 0.002995799186615416
+        },
+        {
+          "threshold": 0.06,
+          "unavailable_recall": 0.037887168141592924,
+          "unavailable_precision": 0.9827833572453372,
+          "warning_rate": 0.0038884022962214996
+        },
+        {
+          "threshold": 0.07,
+          "unavailable_recall": 0.048672566371681415,
+          "unavailable_precision": 0.975609756097561,
+          "warning_rate": 0.005032050030404293
+        },
+        {
+          "threshold": 0.08,
+          "unavailable_recall": 0.06327433628318584,
+          "unavailable_precision": 0.9727891156462585,
+          "warning_rate": 0.006560632855604711
+        },
+        {
+          "threshold": 0.09,
+          "unavailable_recall": 0.07549778761061947,
+          "unavailable_precision": 0.9756969263759828,
+          "warning_rate": 0.007804698439618189
+        },
+        {
+          "threshold": 0.1,
+          "unavailable_recall": 0.08617256637168141,
+          "unavailable_precision": 0.9743589743589743,
+          "warning_rate": 0.008920452326625793
+        },
+        {
+          "threshold": 0.11,
+          "unavailable_recall": 0.09292035398230089,
+          "unavailable_precision": 0.9733487833140209,
+          "warning_rate": 0.009628956044875622
+        },
+        {
+          "threshold": 0.12,
+          "unavailable_recall": 0.10105088495575221,
+          "unavailable_precision": 0.9671784012705135,
+          "warning_rate": 0.010538295462786819
+        },
+        {
+          "threshold": 0.13,
+          "unavailable_recall": 0.10934734513274336,
+          "unavailable_precision": 0.9615758754863813,
+          "warning_rate": 0.011469949958438167
+        },
+        {
+          "threshold": 0.14,
+          "unavailable_recall": 0.11858407079646018,
+          "unavailable_precision": 0.9537366548042705,
+          "warning_rate": 0.012541073689965468
+        },
+        {
+          "threshold": 0.15,
+          "unavailable_recall": 0.13246681415929204,
+          "unavailable_precision": 0.9395841506473127,
+          "warning_rate": 0.01422028328991191
+        },
+        {
+          "threshold": 0.16,
+          "unavailable_recall": 0.16244469026548672,
+          "unavailable_precision": 0.9123951537744641,
+          "warning_rate": 0.017958058811387383
+        },
+        {
+          "threshold": 0.17,
+          "unavailable_recall": 0.19717920353982302,
+          "unavailable_precision": 0.8982111363063744,
+          "warning_rate": 0.0221421358876659
+        },
+        {
+          "threshold": 0.18,
+          "unavailable_recall": 0.23384955752212389,
+          "unavailable_precision": 0.886744966442953,
+          "warning_rate": 0.026599572666261277
+        },
+        {
+          "threshold": 0.19,
+          "unavailable_recall": 0.2816924778761062,
+          "unavailable_precision": 0.8722383969857852,
+          "warning_rate": 0.03257443473118699
+        },
+        {
+          "threshold": 0.2,
+          "unavailable_recall": 0.33722345132743364,
+          "unavailable_precision": 0.8546397532940847,
+          "warning_rate": 0.03979894114956123
+        },
+        {
+          "threshold": 0.21,
+          "unavailable_recall": 0.388108407079646,
+          "unavailable_precision": 0.8448109800144474,
+          "warning_rate": 0.04633725892742579
+        },
+        {
+          "threshold": 0.22,
+          "unavailable_recall": 0.42765486725663715,
+          "unavailable_precision": 0.8405261441461028,
+          "warning_rate": 0.05131910003291474
+        },
+        {
+          "threshold": 0.23,
+          "unavailable_recall": 0.4632190265486726,
+          "unavailable_precision": 0.8343295477186691,
+          "warning_rate": 0.05599968758891164
+        },
+        {
+          "threshold": 0.24,
+          "unavailable_recall": 0.4892146017699115,
+          "unavailable_precision": 0.8295816919902458,
+          "warning_rate": 0.05948083971637536
+        },
+        {
+          "threshold": 0.25,
+          "unavailable_recall": 0.5116703539823009,
+          "unavailable_precision": 0.824069125244967,
+          "warning_rate": 0.0626272656777368
+        },
+        {
+          "threshold": 0.26,
+          "unavailable_recall": 0.5313606194690266,
+          "unavailable_precision": 0.8208304853041695,
+          "warning_rate": 0.06529391746768498
+        },
+        {
+          "threshold": 0.27,
+          "unavailable_recall": 0.5495575221238939,
+          "unavailable_precision": 0.8158305279579604,
+          "warning_rate": 0.06794383294932804
+        },
+        {
+          "threshold": 0.28,
+          "unavailable_recall": 0.5661504424778762,
+          "unavailable_precision": 0.8120587068623563,
+          "warning_rate": 0.07032038872865423
+        },
+        {
+          "threshold": 0.29,
+          "unavailable_recall": 0.5820243362831858,
+          "unavailable_precision": 0.8082802058529841,
+          "warning_rate": 0.07262999927475998
+        },
+        {
+          "threshold": 0.3,
+          "unavailable_recall": 0.5956858407079646,
+          "unavailable_precision": 0.8044517478338811,
+          "warning_rate": 0.074688565196289
+        },
+        {
+          "threshold": 0.31,
+          "unavailable_recall": 0.6083517699115044,
+          "unavailable_precision": 0.8010924981791697,
+          "warning_rate": 0.07659650434307201
+        },
+        {
+          "threshold": 0.32,
+          "unavailable_recall": 0.6198561946902655,
+          "unavailable_precision": 0.7975377170509536,
+          "warning_rate": 0.07839286810115424
+        },
+        {
+          "threshold": 0.33,
+          "unavailable_recall": 0.6284845132743363,
+          "unavailable_precision": 0.7948377168438724,
+          "warning_rate": 0.07975408784330353
+        },
+        {
+          "threshold": 0.34,
+          "unavailable_recall": 0.636891592920354,
+          "unavailable_precision": 0.7917354235423543,
+          "warning_rate": 0.08113762266319295
+        },
+        {
+          "threshold": 0.35,
+          "unavailable_recall": 0.6443030973451327,
+          "unavailable_precision": 0.7892276422764227,
+          "warning_rate": 0.08234263686116117
+        },
+        {
+          "threshold": 0.36,
+          "unavailable_recall": 0.6528761061946903,
+          "unavailable_precision": 0.7860948321790091,
+          "warning_rate": 0.08377080183653089
+        },
+        {
+          "threshold": 0.37,
+          "unavailable_recall": 0.6599557522123893,
+          "unavailable_precision": 0.7842776390166951,
+          "warning_rate": 0.08487539818466842
+        },
+        {
+          "threshold": 0.38,
+          "unavailable_recall": 0.6678097345132743,
+          "unavailable_precision": 0.782450910504828,
+          "warning_rate": 0.08608599115207168
+        },
+        {
+          "threshold": 0.39,
+          "unavailable_recall": 0.6767146017699115,
+          "unavailable_precision": 0.7800446286260758,
+          "warning_rate": 0.08750299858857133
+        },
+        {
+          "threshold": 0.4,
+          "unavailable_recall": 0.685674778761062,
+          "unavailable_precision": 0.7777289836888331,
+          "warning_rate": 0.08892558479450603
+        },
+        {
+          "threshold": 0.41,
+          "unavailable_recall": 0.6945243362831859,
+          "unavailable_precision": 0.7761775250339968,
+          "warning_rate": 0.09025333192004507
+        },
+        {
+          "threshold": 0.42,
+          "unavailable_recall": 0.7037610619469027,
+          "unavailable_precision": 0.774295624657701,
+          "warning_rate": 0.09167591812597978
+        },
+        {
+          "threshold": 0.43,
+          "unavailable_recall": 0.7105088495575221,
+          "unavailable_precision": 0.7728776848565069,
+          "warning_rate": 0.09272472677976693
+        },
+        {
+          "threshold": 0.44,
+          "unavailable_recall": 0.7168141592920354,
+          "unavailable_precision": 0.7715663511341311,
+          "warning_rate": 0.09370659020033362
+        },
+        {
+          "threshold": 0.45,
+          "unavailable_recall": 0.7228982300884956,
+          "unavailable_precision": 0.7696384407019197,
+          "warning_rate": 0.09473866254581564
+        },
+        {
+          "threshold": 0.46,
+          "unavailable_recall": 0.7279867256637168,
+          "unavailable_precision": 0.7668375670006992,
+          "warning_rate": 0.09575399858299256
+        },
+        {
+          "threshold": 0.47,
+          "unavailable_recall": 0.7327433628318584,
+          "unavailable_precision": 0.7650285846278224,
+          "warning_rate": 0.09660755030655338
+        },
+        {
+          "threshold": 0.48,
+          "unavailable_recall": 0.7368362831858407,
+          "unavailable_precision": 0.7623025864042114,
+          "warning_rate": 0.09749457464672442
+        },
+        {
+          "threshold": 0.49,
+          "unavailable_recall": 0.7414269911504425,
+          "unavailable_precision": 0.76125844738486,
+          "warning_rate": 0.09823655098158449
+        },
+        {
+          "threshold": 0.5,
+          "unavailable_recall": 0.7458517699115044,
+          "unavailable_precision": 0.7597611133021579,
+          "warning_rate": 0.09901757870248981
+        },
+        {
+          "threshold": 0.51,
+          "unavailable_recall": 0.7492809734513274,
+          "unavailable_precision": 0.7574927309326772,
+          "warning_rate": 0.09977071257621994
+        },
+        {
+          "threshold": 0.52,
+          "unavailable_recall": 0.7534845132743363,
+          "unavailable_precision": 0.7557417064240541,
+          "warning_rate": 0.10056289783599534
+        },
+        {
+          "threshold": 0.53,
+          "unavailable_recall": 0.756858407079646,
+          "unavailable_precision": 0.7533168180567025,
+          "warning_rate": 0.10133834678746562
+        },
+        {
+          "threshold": 0.54,
+          "unavailable_recall": 0.7591814159292035,
+          "unavailable_precision": 0.7510396147953601,
+          "warning_rate": 0.10195759019475484
+        },
+        {
+          "threshold": 0.55,
+          "unavailable_recall": 0.7626106194690265,
+          "unavailable_precision": 0.7488594394959809,
+          "warning_rate": 0.10271630283792
+        },
+        {
+          "threshold": 0.56,
+          "unavailable_recall": 0.7650995575221239,
+          "unavailable_precision": 0.7470836033700583,
+          "warning_rate": 0.10329649485916396
+        },
+        {
+          "threshold": 0.57,
+          "unavailable_recall": 0.7690265486725664,
+          "unavailable_precision": 0.7452031300246543,
+          "warning_rate": 0.10408868011893936
+        },
+        {
+          "threshold": 0.58,
+          "unavailable_recall": 0.7719026548672566,
+          "unavailable_precision": 0.7430518581620701,
+          "warning_rate": 0.10478044752888407
+        },
+        {
+          "threshold": 0.59,
+          "unavailable_recall": 0.7754424778761062,
+          "unavailable_precision": 0.7410539669115703,
+          "warning_rate": 0.10554473894148429
+        },
+        {
+          "threshold": 0.6,
+          "unavailable_recall": 0.7782632743362832,
+          "unavailable_precision": 0.7386351706036746,
+          "warning_rate": 0.10627555773747427
+        },
+        {
+          "threshold": 0.61,
+          "unavailable_recall": 0.7808628318584071,
+          "unavailable_precision": 0.7350445150205654,
+          "warning_rate": 0.10715142453877524
+        },
+        {
+          "threshold": 0.62,
+          "unavailable_recall": 0.7850110619469026,
+          "unavailable_precision": 0.7306187583650777,
+          "warning_rate": 0.10837317504504856
+        },
+        {
+          "threshold": 0.63,
+          "unavailable_recall": 0.789325221238938,
+          "unavailable_precision": 0.7284839203675345,
+          "warning_rate": 0.1092880932323948
+        },
+        {
+          "threshold": 0.64,
+          "unavailable_recall": 0.792754424778761,
+          "unavailable_precision": 0.7256847754544073,
+          "warning_rate": 0.11018627511143592
+        },
+        {
+          "threshold": 0.65,
+          "unavailable_recall": 0.7958517699115044,
+          "unavailable_precision": 0.7199179466653325,
+          "warning_rate": 0.11150286469810489
+        },
+        {
+          "threshold": 0.66,
+          "unavailable_recall": 0.7992809734513274,
+          "unavailable_precision": 0.7153606257115984,
+          "warning_rate": 0.11269672135720303
+        },
+        {
+          "threshold": 0.67,
+          "unavailable_recall": 0.8025442477876106,
+          "unavailable_precision": 0.7112396451154355,
+          "warning_rate": 0.11381247524421063
+        },
+        {
+          "threshold": 0.68,
+          "unavailable_recall": 0.80625,
+          "unavailable_precision": 0.7061815715531441,
+          "warning_rate": 0.1151569586780548
+        },
+        {
+          "threshold": 0.69,
+          "unavailable_recall": 0.8099004424778761,
+          "unavailable_precision": 0.7022347976213313,
+          "warning_rate": 0.11632850025941278
+        },
+        {
+          "threshold": 0.7,
+          "unavailable_recall": 0.8128871681415929,
+          "unavailable_precision": 0.6987923164701407,
+          "warning_rate": 0.11733267875771962
+        },
+        {
+          "threshold": 0.71,
+          "unavailable_recall": 0.8157079646017699,
+          "unavailable_precision": 0.6946119065561417,
+          "warning_rate": 0.11844843264472722
+        },
+        {
+          "threshold": 0.72,
+          "unavailable_recall": 0.8186393805309734,
+          "unavailable_precision": 0.6905706154061494,
+          "warning_rate": 0.11956976530116986
+        },
+        {
+          "threshold": 0.73,
+          "unavailable_recall": 0.8219026548672567,
+          "unavailable_precision": 0.6854243542435424,
+          "warning_rate": 0.12094772135162427
+        },
+        {
+          "threshold": 0.74,
+          "unavailable_recall": 0.8240597345132743,
+          "unavailable_precision": 0.681066008411044,
+          "warning_rate": 0.12204116016089171
+        },
+        {
+          "threshold": 0.75,
+          "unavailable_recall": 0.8255530973451327,
+          "unavailable_precision": 0.6767012739719817,
+          "warning_rate": 0.1230509174286336
+        },
+        {
+          "threshold": 0.76,
+          "unavailable_recall": 0.827433628318584,
+          "unavailable_precision": 0.6726013847675568,
+          "warning_rate": 0.12408298977411562
+        },
+        {
+          "threshold": 0.77,
+          "unavailable_recall": 0.8288716814159292,
+          "unavailable_precision": 0.6695259795380423,
+          "warning_rate": 0.12486959626445598
+        },
+        {
+          "threshold": 0.78,
+          "unavailable_recall": 0.8308075221238939,
+          "unavailable_precision": 0.6666814610980427,
+          "warning_rate": 0.12569525414084162
+        },
+        {
+          "threshold": 0.79,
+          "unavailable_recall": 0.8319690265486726,
+          "unavailable_precision": 0.662613981762918,
+          "warning_rate": 0.12664364494479807
+        },
+        {
+          "threshold": 0.8,
+          "unavailable_recall": 0.8332964601769911,
+          "unavailable_precision": 0.6592569903294972,
+          "warning_rate": 0.12749161789892385
+        },
+        {
+          "threshold": 0.81,
+          "unavailable_recall": 0.8347345132743362,
+          "unavailable_precision": 0.656516443361754,
+          "warning_rate": 0.128244751772654
+        },
+        {
+          "threshold": 0.82,
+          "unavailable_recall": 0.8361172566371682,
+          "unavailable_precision": 0.6539909149902661,
+          "warning_rate": 0.1289532554909038
+        },
+        {
+          "threshold": 0.83,
+          "unavailable_recall": 0.8370575221238938,
+          "unavailable_precision": 0.6516254036598493,
+          "warning_rate": 0.129566920128758
+        },
+        {
+          "threshold": 0.84,
+          "unavailable_recall": 0.8385508849557523,
+          "unavailable_precision": 0.6495437213486998,
+          "warning_rate": 0.13021405738322242
+        },
+        {
+          "threshold": 0.85,
+          "unavailable_recall": 0.8399336283185841,
+          "unavailable_precision": 0.6465429155313351,
+          "warning_rate": 0.131034136490173
+        },
+        {
+          "threshold": 0.86,
+          "unavailable_recall": 0.8417035398230088,
+          "unavailable_precision": 0.6440936217039828,
+          "warning_rate": 0.13180958544164328
+        },
+        {
+          "threshold": 0.87,
+          "unavailable_recall": 0.8427544247787611,
+          "unavailable_precision": 0.6405599697313659,
+          "warning_rate": 0.13270218855124938
+        },
+        {
+          "threshold": 0.88,
+          "unavailable_recall": 0.8443030973451328,
+          "unavailable_precision": 0.6353004827701015,
+          "warning_rate": 0.13404667198509354
+        },
+        {
+          "threshold": 0.89,
+          "unavailable_recall": 0.847179203539823,
+          "unavailable_precision": 0.6287250636236762,
+          "warning_rate": 0.13590998097639623
+        },
+        {
+          "threshold": 0.9,
+          "unavailable_recall": 0.8519911504424779,
+          "unavailable_precision": 0.6161107111431086,
+          "warning_rate": 0.13948039341482055
+        },
+        {
+          "threshold": 0.91,
+          "unavailable_recall": 0.8599004424778761,
+          "unavailable_precision": 0.5949866054343667,
+          "warning_rate": 0.14577324533754343
+        },
+        {
+          "threshold": 0.92,
+          "unavailable_recall": 0.8688053097345133,
+          "unavailable_precision": 0.5683068017366136,
+          "warning_rate": 0.15419718718445086
+        },
+        {
+          "threshold": 0.93,
+          "unavailable_recall": 0.8763274336283186,
+          "unavailable_precision": 0.5415085956457842,
+          "warning_rate": 0.1632292148997774
+        },
+        {
+          "threshold": 0.94,
+          "unavailable_recall": 0.8853429203539823,
+          "unavailable_precision": 0.5123879641485275,
+          "warning_rate": 0.17428075715058772
+        },
+        {
+          "threshold": 0.95,
+          "unavailable_recall": 0.8945796460176991,
+          "unavailable_precision": 0.47567790129992354,
+          "warning_rate": 0.18968931833016273
+        },
+        {
+          "threshold": 0.96,
+          "unavailable_recall": 0.9085176991150442,
+          "unavailable_precision": 0.41831563399292027,
+          "warning_rate": 0.2190615394056379
+        },
+        {
+          "threshold": 0.97,
+          "unavailable_recall": 0.9265486725663716,
+          "unavailable_precision": 0.3433490469358475,
+          "warning_rate": 0.27218816073550495
+        },
+        {
+          "threshold": 0.98,
+          "unavailable_recall": 0.9527654867256637,
+          "unavailable_precision": 0.2586331151282205,
+          "warning_rate": 0.37156835945127226
+        },
+        {
+          "threshold": 0.99,
+          "unavailable_recall": 0.9821349557522124,
+          "unavailable_precision": 0.17946333821820204,
+          "warning_rate": 0.5519913417498368
+        }
+      ]
+    },
+    "30": {
+      "n": 179295,
+      "unavailable_rate": 0.09204941576731085,
+      "at_common_058": {
+        "threshold": 0.58,
+        "unavailable_recall": 0.6345734367426078,
+        "unavailable_precision": 0.6462820117247763,
+        "warning_rate": 0.09038177305557879
+      },
+      "target_r70": {
+        "threshold": 0.7,
+        "unavailable_recall": 0.704920019389239,
+        "unavailable_precision": 0.597841726618705,
+        "warning_rate": 0.10853621127192616
+      },
+      "warn_capped": {
+        "threshold": 0.77,
+        "unavailable_recall": 0.7363063499757635,
+        "unavailable_precision": 0.5653933838924301,
+        "warning_rate": 0.11987506623162944
+      },
+      "at_current_config": {
+        "threshold": 0.71,
+        "unavailable_recall": 0.7106156083373728,
+        "unavailable_precision": 0.5928621979577393,
+        "warning_rate": 0.11033213419225299
+      },
+      "curve": [
+        {
+          "threshold": 0.05,
+          "unavailable_recall": 0.022903538536112458,
+          "unavailable_precision": 0.9717223650385605,
+          "warning_rate": 0.002169608745363786
+        },
+        {
+          "threshold": 0.06,
+          "unavailable_recall": 0.03580950072709646,
+          "unavailable_precision": 0.9736408566721582,
+          "warning_rate": 0.0033854820268272956
+        },
+        {
+          "threshold": 0.07,
+          "unavailable_recall": 0.04501938923897237,
+          "unavailable_precision": 0.9725130890052356,
+          "warning_rate": 0.00426113388549597
+        },
+        {
+          "threshold": 0.08,
+          "unavailable_recall": 0.05937954435288415,
+          "unavailable_precision": 0.9751243781094527,
+          "warning_rate": 0.005605287375554254
+        },
+        {
+          "threshold": 0.09,
+          "unavailable_recall": 0.06822588463402811,
+          "unavailable_precision": 0.9765828274067649,
+          "warning_rate": 0.0064307426308597565
+        },
+        {
+          "threshold": 0.1,
+          "unavailable_recall": 0.07464857004362578,
+          "unavailable_precision": 0.9770023790642347,
+          "warning_rate": 0.007033101871217825
+        },
+        {
+          "threshold": 0.11,
+          "unavailable_recall": 0.08507028599127485,
+          "unavailable_precision": 0.9756775538568451,
+          "warning_rate": 0.008025879137733902
+        },
+        {
+          "threshold": 0.12,
+          "unavailable_recall": 0.08888754241396025,
+          "unavailable_precision": 0.9728116710875332,
+          "warning_rate": 0.008410719763518225
+        },
+        {
+          "threshold": 0.13,
+          "unavailable_recall": 0.09312893843916627,
+          "unavailable_precision": 0.9588271990018715,
+          "warning_rate": 0.008940572799018378
+        },
+        {
+          "threshold": 0.14,
+          "unavailable_recall": 0.09646146388754241,
+          "unavailable_precision": 0.9515839808726838,
+          "warning_rate": 0.009330990825176385
+        },
+        {
+          "threshold": 0.15,
+          "unavailable_recall": 0.10064226854095977,
+          "unavailable_precision": 0.9529546758462422,
+          "warning_rate": 0.009721408851334393
+        },
+        {
+          "threshold": 0.16,
+          "unavailable_recall": 0.10276296655356278,
+          "unavailable_precision": 0.949076664801343,
+          "warning_rate": 0.00996681446777657
+        },
+        {
+          "threshold": 0.17,
+          "unavailable_recall": 0.10452011633543383,
+          "unavailable_precision": 0.9462424574876577,
+          "warning_rate": 0.010167600881229259
+        },
+        {
+          "threshold": 0.18,
+          "unavailable_recall": 0.10658022297624818,
+          "unavailable_precision": 0.9441760601180891,
+          "warning_rate": 0.010390696896176691
+        },
+        {
+          "threshold": 0.19,
+          "unavailable_recall": 0.10851914687348521,
+          "unavailable_precision": 0.9411455596426694,
+          "warning_rate": 0.010613792911124124
+        },
+        {
+          "threshold": 0.2,
+          "unavailable_recall": 0.11197285506543868,
+          "unavailable_precision": 0.9395017793594306,
+          "warning_rate": 0.010970746535040017
+        },
+        {
+          "threshold": 0.21,
+          "unavailable_recall": 0.11627484246243334,
+          "unavailable_precision": 0.9338199513381995,
+          "warning_rate": 0.01146155776792437
+        },
+        {
+          "threshold": 0.22,
+          "unavailable_recall": 0.12124333494910325,
+          "unavailable_precision": 0.929400836042731,
+          "warning_rate": 0.012008143004545582
+        },
+        {
+          "threshold": 0.23,
+          "unavailable_recall": 0.12639360155113913,
+          "unavailable_precision": 0.9213780918727915,
+          "warning_rate": 0.012627234446024708
+        },
+        {
+          "threshold": 0.24,
+          "unavailable_recall": 0.13190741638390693,
+          "unavailable_precision": 0.9097367321353949,
+          "warning_rate": 0.01334671909423018
+        },
+        {
+          "threshold": 0.25,
+          "unavailable_recall": 0.13942074648570044,
+          "unavailable_precision": 0.898828125,
+          "warning_rate": 0.014278144956635713
+        },
+        {
+          "threshold": 0.26,
+          "unavailable_recall": 0.1506907416383907,
+          "unavailable_precision": 0.8847385272145144,
+          "warning_rate": 0.015678072450430854
+        },
+        {
+          "threshold": 0.27,
+          "unavailable_recall": 0.1678380998545807,
+          "unavailable_precision": 0.866166353971232,
+          "warning_rate": 0.017836526395047268
+        },
+        {
+          "threshold": 0.28,
+          "unavailable_recall": 0.18765147842947164,
+          "unavailable_precision": 0.8522289488167308,
+          "warning_rate": 0.020268272957974287
+        },
+        {
+          "threshold": 0.29,
+          "unavailable_recall": 0.20382937469704315,
+          "unavailable_precision": 0.8422633950926389,
+          "warning_rate": 0.022276137092501185
+        },
+        {
+          "threshold": 0.3,
+          "unavailable_recall": 0.21885603490063016,
+          "unavailable_precision": 0.8337950138504155,
+          "warning_rate": 0.024161298418806994
+        },
+        {
+          "threshold": 0.31,
+          "unavailable_recall": 0.23503393116820165,
+          "unavailable_precision": 0.8204314720812182,
+          "warning_rate": 0.026369948966786582
+        },
+        {
+          "threshold": 0.32,
+          "unavailable_recall": 0.24860639844886087,
+          "unavailable_precision": 0.8083136327817179,
+          "warning_rate": 0.028310884296829247
+        },
+        {
+          "threshold": 0.33,
+          "unavailable_recall": 0.2680562287930199,
+          "unavailable_precision": 0.793542600896861,
+          "warning_rate": 0.031094007083298476
+        },
+        {
+          "threshold": 0.34,
+          "unavailable_recall": 0.29350460494425595,
+          "unavailable_precision": 0.7829319540973008,
+          "warning_rate": 0.0345073761119942
+        },
+        {
+          "threshold": 0.35,
+          "unavailable_recall": 0.31846825012118274,
+          "unavailable_precision": 0.7687582272926722,
+          "warning_rate": 0.038132686354889984
+        },
+        {
+          "threshold": 0.36,
+          "unavailable_recall": 0.34555259331071253,
+          "unavailable_precision": 0.7542653088215845,
+          "warning_rate": 0.04217072422543852
+        },
+        {
+          "threshold": 0.37,
+          "unavailable_recall": 0.3811197285506544,
+          "unavailable_precision": 0.7424457034938622,
+          "warning_rate": 0.04725173596586631
+        },
+        {
+          "threshold": 0.38,
+          "unavailable_recall": 0.41389966068831796,
+          "unavailable_precision": 0.7308227238686209,
+          "warning_rate": 0.05213196129284141
+        },
+        {
+          "threshold": 0.39,
+          "unavailable_recall": 0.4372879301987397,
+          "unavailable_precision": 0.7206190713929106,
+          "warning_rate": 0.055857664742463536
+        },
+        {
+          "threshold": 0.4,
+          "unavailable_recall": 0.4603126514784295,
+          "unavailable_precision": 0.7146082212397705,
+          "warning_rate": 0.059293343372654
+        },
+        {
+          "threshold": 0.41,
+          "unavailable_recall": 0.4821255453223461,
+          "unavailable_precision": 0.7085485307212823,
+          "warning_rate": 0.06263420619649182
+        },
+        {
+          "threshold": 0.42,
+          "unavailable_recall": 0.49951526902569077,
+          "unavailable_precision": 0.7034729925761584,
+          "warning_rate": 0.06536155497922419
+        },
+        {
+          "threshold": 0.43,
+          "unavailable_recall": 0.5136936500242365,
+          "unavailable_precision": 0.6983525535420099,
+          "warning_rate": 0.06770964053654592
+        },
+        {
+          "threshold": 0.44,
+          "unavailable_recall": 0.5272661173048958,
+          "unavailable_precision": 0.6937734194371362,
+          "warning_rate": 0.0699573328871413
+        },
+        {
+          "threshold": 0.45,
+          "unavailable_recall": 0.5394449830344159,
+          "unavailable_precision": 0.6894602338728413,
+          "warning_rate": 0.07202097102540506
+        },
+        {
+          "threshold": 0.46,
+          "unavailable_recall": 0.5506543868153175,
+          "unavailable_precision": 0.6859903381642513,
+          "warning_rate": 0.07388940015058981
+        },
+        {
+          "threshold": 0.47,
+          "unavailable_recall": 0.5599248666989821,
+          "unavailable_precision": 0.6827988769026156,
+          "warning_rate": 0.07548453665746395
+        },
+        {
+          "threshold": 0.48,
+          "unavailable_recall": 0.5690741638390693,
+          "unavailable_precision": 0.6798899667004488,
+          "warning_rate": 0.07704620876209599
+        },
+        {
+          "threshold": 0.49,
+          "unavailable_recall": 0.5780416868637906,
+          "unavailable_precision": 0.6762600127596229,
+          "warning_rate": 0.07868038707158594
+        },
+        {
+          "threshold": 0.5,
+          "unavailable_recall": 0.5868880271449346,
+          "unavailable_precision": 0.672919271918855,
+          "warning_rate": 0.08028110097883377
+        },
+        {
+          "threshold": 0.51,
+          "unavailable_recall": 0.5959767329132332,
+          "unavailable_precision": 0.6692522283459209,
+          "warning_rate": 0.08197105329206057
+        },
+        {
+          "threshold": 0.52,
+          "unavailable_recall": 0.6033688802714493,
+          "unavailable_precision": 0.6646642637832065,
+          "warning_rate": 0.08356061239856102
+        },
+        {
+          "threshold": 0.53,
+          "unavailable_recall": 0.609428017450315,
+          "unavailable_precision": 0.6601036949530747,
+          "warning_rate": 0.08498284949385092
+        },
+        {
+          "threshold": 0.54,
+          "unavailable_recall": 0.6148812409112943,
+          "unavailable_precision": 0.656956043244643,
+          "warning_rate": 0.08615410357232493
+        },
+        {
+          "threshold": 0.55,
+          "unavailable_recall": 0.6191226369365003,
+          "unavailable_precision": 0.6547901313681512,
+          "warning_rate": 0.0870353328313673
+        },
+        {
+          "threshold": 0.56,
+          "unavailable_recall": 0.6236669898206495,
+          "unavailable_precision": 0.6515794138127493,
+          "warning_rate": 0.08810619370311498
+        },
+        {
+          "threshold": 0.57,
+          "unavailable_recall": 0.6285142995637422,
+          "unavailable_precision": 0.6488396822418214,
+          "warning_rate": 0.08916589977411528
+        },
+        {
+          "threshold": 0.58,
+          "unavailable_recall": 0.6345734367426078,
+          "unavailable_precision": 0.6462820117247763,
+          "warning_rate": 0.09038177305557879
+        },
+        {
+          "threshold": 0.59,
+          "unavailable_recall": 0.640208434318953,
+          "unavailable_precision": 0.6426225520009731,
+          "warning_rate": 0.09170361694414234
+        },
+        {
+          "threshold": 0.6,
+          "unavailable_recall": 0.6463281628696074,
+          "unavailable_precision": 0.6390869330777066,
+          "warning_rate": 0.0930923896371901
+        },
+        {
+          "threshold": 0.61,
+          "unavailable_recall": 0.6519025690741639,
+          "unavailable_precision": 0.6362883671417588,
+          "warning_rate": 0.09430826291865362
+        },
+        {
+          "threshold": 0.62,
+          "unavailable_recall": 0.6572952011633544,
+          "unavailable_precision": 0.634311776400421,
+          "warning_rate": 0.09538470119077498
+        },
+        {
+          "threshold": 0.63,
+          "unavailable_recall": 0.6622636936500242,
+          "unavailable_precision": 0.6312081312081312,
+          "warning_rate": 0.09657826487074375
+        },
+        {
+          "threshold": 0.64,
+          "unavailable_recall": 0.6677169171110033,
+          "unavailable_precision": 0.6268843506456567,
+          "warning_rate": 0.09804512116902311
+        },
+        {
+          "threshold": 0.65,
+          "unavailable_recall": 0.6738972370334464,
+          "unavailable_precision": 0.6224535482426684,
+          "warning_rate": 0.09965698987701832
+        },
+        {
+          "threshold": 0.66,
+          "unavailable_recall": 0.6817135239941833,
+          "unavailable_precision": 0.6183227082875358,
+          "warning_rate": 0.10148637719958727
+        },
+        {
+          "threshold": 0.67,
+          "unavailable_recall": 0.688136209403781,
+          "unavailable_precision": 0.6135270919993517,
+          "warning_rate": 0.1032432583172983
+        },
+        {
+          "threshold": 0.68,
+          "unavailable_recall": 0.6940741638390693,
+          "unavailable_precision": 0.6071769320470688,
+          "warning_rate": 0.10522323544995678
+        },
+        {
+          "threshold": 0.69,
+          "unavailable_recall": 0.6998303441589918,
+          "unavailable_precision": 0.6020956054840223,
+          "warning_rate": 0.10699127136841519
+        },
+        {
+          "threshold": 0.7,
+          "unavailable_recall": 0.704920019389239,
+          "unavailable_precision": 0.597841726618705,
+          "warning_rate": 0.10853621127192616
+        },
+        {
+          "threshold": 0.71,
+          "unavailable_recall": 0.7106156083373728,
+          "unavailable_precision": 0.5928621979577393,
+          "warning_rate": 0.11033213419225299
+        },
+        {
+          "threshold": 0.72,
+          "unavailable_recall": 0.7165535627726611,
+          "unavailable_precision": 0.5875105569079437,
+          "warning_rate": 0.11226749212192197
+        },
+        {
+          "threshold": 0.73,
+          "unavailable_recall": 0.720128453708192,
+          "unavailable_precision": 0.5830839425011038,
+          "warning_rate": 0.11368415181683818
+        },
+        {
+          "threshold": 0.74,
+          "unavailable_recall": 0.724188075618032,
+          "unavailable_precision": 0.5789295228868976,
+          "warning_rate": 0.11514543071474385
+        },
+        {
+          "threshold": 0.75,
+          "unavailable_recall": 0.7287930198739699,
+          "unavailable_precision": 0.5751996556836115,
+          "warning_rate": 0.11662901921414429
+        },
+        {
+          "threshold": 0.76,
+          "unavailable_recall": 0.7323073194377121,
+          "unavailable_precision": 0.570363378952336,
+          "warning_rate": 0.11818511391840263
+        },
+        {
+          "threshold": 0.77,
+          "unavailable_recall": 0.7363063499757635,
+          "unavailable_precision": 0.5653933838924301,
+          "warning_rate": 0.11987506623162944
+        },
+        {
+          "threshold": 0.78,
+          "unavailable_recall": 0.7398812409112943,
+          "unavailable_precision": 0.5606777170668993,
+          "warning_rate": 0.12147020273850358
+        },
+        {
+          "threshold": 0.79,
+          "unavailable_recall": 0.7438802714493457,
+          "unavailable_precision": 0.5546920887362762,
+          "warning_rate": 0.12344460247078837
+        },
+        {
+          "threshold": 0.8,
+          "unavailable_recall": 0.7477581192438196,
+          "unavailable_precision": 0.5492700729927007,
+          "warning_rate": 0.12531303159597312
+        },
+        {
+          "threshold": 0.81,
+          "unavailable_recall": 0.7516965584100824,
+          "unavailable_precision": 0.5438127383509402,
+          "warning_rate": 0.12723723472489473
+        },
+        {
+          "threshold": 0.82,
+          "unavailable_recall": 0.7552108579738245,
+          "unavailable_precision": 0.5384482460687748,
+          "warning_rate": 0.1291056638500795
+        },
+        {
+          "threshold": 0.83,
+          "unavailable_recall": 0.7581192438196801,
+          "unavailable_precision": 0.5336062777209144,
+          "warning_rate": 0.13077888396218523
+        },
+        {
+          "threshold": 0.84,
+          "unavailable_recall": 0.7611488124091129,
+          "unavailable_precision": 0.5296622675717839,
+          "warning_rate": 0.1322792046627067
+        },
+        {
+          "threshold": 0.85,
+          "unavailable_recall": 0.764844886088221,
+          "unavailable_precision": 0.5241891948008803,
+          "warning_rate": 0.13430937839872836
+        },
+        {
+          "threshold": 0.86,
+          "unavailable_recall": 0.7692074648570043,
+          "unavailable_precision": 0.5164347896835083,
+          "warning_rate": 0.13710365598594496
+        },
+        {
+          "threshold": 0.87,
+          "unavailable_recall": 0.7765390208434318,
+          "unavailable_precision": 0.5056419158841632,
+          "warning_rate": 0.1413647898714409
+        },
+        {
+          "threshold": 0.88,
+          "unavailable_recall": 0.7847794474066893,
+          "unavailable_precision": 0.49282751797876795,
+          "warning_rate": 0.14657965922083716
+        },
+        {
+          "threshold": 0.89,
+          "unavailable_recall": 0.7945952496364518,
+          "unavailable_precision": 0.4780374002114242,
+          "warning_rate": 0.15300482445132324
+        },
+        {
+          "threshold": 0.9,
+          "unavailable_recall": 0.8029568589432865,
+          "unavailable_precision": 0.46332424305992587,
+          "warning_rate": 0.15952480548816197
+        },
+        {
+          "threshold": 0.91,
+          "unavailable_recall": 0.8122879301987397,
+          "unavailable_precision": 0.4490219721329046,
+          "warning_rate": 0.16651886555676398
+        },
+        {
+          "threshold": 0.92,
+          "unavailable_recall": 0.8202859912748425,
+          "unavailable_precision": 0.43215117949372744,
+          "warning_rate": 0.17472322150645583
+        },
+        {
+          "threshold": 0.93,
+          "unavailable_recall": 0.8324648570043626,
+          "unavailable_precision": 0.40964250573958677,
+          "warning_rate": 0.18706043113304888
+        },
+        {
+          "threshold": 0.94,
+          "unavailable_recall": 0.8492486669898206,
+          "unavailable_precision": 0.3764503652771809,
+          "warning_rate": 0.20765777071307065
+        },
+        {
+          "threshold": 0.95,
+          "unavailable_recall": 0.8744546776539021,
+          "unavailable_precision": 0.32634601903986615,
+          "warning_rate": 0.24664937672550824
+        },
+        {
+          "threshold": 0.96,
+          "unavailable_recall": 0.899054774600097,
+          "unavailable_precision": 0.27156923752699585,
+          "warning_rate": 0.30473800161744613
+        },
+        {
+          "threshold": 0.97,
+          "unavailable_recall": 0.93141056713524,
+          "unavailable_precision": 0.22101131511221658,
+          "warning_rate": 0.3879249281909702
+        },
+        {
+          "threshold": 0.98,
+          "unavailable_recall": 0.9581313620940378,
+          "unavailable_precision": 0.18283461289427436,
+          "warning_rate": 0.48237820351933963
+        },
+        {
+          "threshold": 0.99,
+          "unavailable_recall": 0.9835191468734852,
+          "unavailable_precision": 0.14014124635228706,
+          "warning_rate": 0.6460079756825343
+        }
+      ]
+    },
+    "45": {
+      "n": 179118,
+      "unavailable_rate": 0.08032135240456018,
+      "at_common_058": {
+        "threshold": 0.58,
+        "unavailable_recall": 0.3716549662890109,
+        "unavailable_precision": 0.6107367218732153,
+        "warning_rate": 0.04887839301466072
+      },
+      "target_r70": {
+        "threshold": 0.87,
+        "unavailable_recall": 0.7004935010773615,
+        "unavailable_precision": 0.36014723224815065,
+        "warning_rate": 0.15622662155673914
+      },
+      "warn_capped": {
+        "threshold": 0.8,
+        "unavailable_recall": 0.6193090984916939,
+        "unavailable_precision": 0.42157558552164653,
+        "warning_rate": 0.1179948413894751
+      },
+      "at_current_config": {
+        "threshold": 0.77,
+        "unavailable_recall": 0.5975533467713908,
+        "unavailable_precision": 0.4443353318172421,
+        "warning_rate": 0.10801817796089729
+      },
+      "curve": [
+        {
+          "threshold": 0.05,
+          "unavailable_recall": 0.04441509696253562,
+          "unavailable_precision": 0.9494799405646359,
+          "warning_rate": 0.003757299657209214
+        },
+        {
+          "threshold": 0.06,
+          "unavailable_recall": 0.05345103218183082,
+          "unavailable_precision": 0.9540942928039702,
+          "warning_rate": 0.004499826929733472
+        },
+        {
+          "threshold": 0.07,
+          "unavailable_recall": 0.06811705011468687,
+          "unavailable_precision": 0.962671905697446,
+          "warning_rate": 0.005683404236313492
+        },
+        {
+          "threshold": 0.08,
+          "unavailable_recall": 0.07472023354417182,
+          "unavailable_precision": 0.9641255605381166,
+          "warning_rate": 0.006224946683192086
+        },
+        {
+          "threshold": 0.09,
+          "unavailable_recall": 0.08459025509140196,
+          "unavailable_precision": 0.9666401906274821,
+          "warning_rate": 0.007028885985774741
+        },
+        {
+          "threshold": 0.1,
+          "unavailable_recall": 0.08987280183498993,
+          "unavailable_precision": 0.9685393258426966,
+          "warning_rate": 0.007453187284360031
+        },
+        {
+          "threshold": 0.11,
+          "unavailable_recall": 0.09133245290887607,
+          "unavailable_precision": 0.9584245076586433,
+          "warning_rate": 0.0076541721100056945
+        },
+        {
+          "threshold": 0.12,
+          "unavailable_recall": 0.09272259678876764,
+          "unavailable_precision": 0.9576453697056713,
+          "warning_rate": 0.0077769961701224894
+        },
+        {
+          "threshold": 0.13,
+          "unavailable_recall": 0.09459929102662125,
+          "unavailable_precision": 0.9557584269662921,
+          "warning_rate": 0.0079500664366507
+        },
+        {
+          "threshold": 0.14,
+          "unavailable_recall": 0.09564189893653993,
+          "unavailable_precision": 0.9555555555555556,
+          "warning_rate": 0.00803939302582655
+        },
+        {
+          "threshold": 0.15,
+          "unavailable_recall": 0.09654549245846945,
+          "unavailable_precision": 0.9559532002752925,
+          "warning_rate": 0.00811197087953193
+        },
+        {
+          "threshold": 0.16,
+          "unavailable_recall": 0.09786612914436645,
+          "unavailable_precision": 0.9565217391304348,
+          "warning_rate": 0.00821804620417825
+        },
+        {
+          "threshold": 0.17,
+          "unavailable_recall": 0.1002293737401821,
+          "unavailable_precision": 0.9568679495686795,
+          "warning_rate": 0.008413448118000424
+        },
+        {
+          "threshold": 0.18,
+          "unavailable_recall": 0.10224508236602488,
+          "unavailable_precision": 0.9564369310793238,
+          "warning_rate": 0.008586518384528634
+        },
+        {
+          "threshold": 0.19,
+          "unavailable_recall": 0.10405226940988392,
+          "unavailable_precision": 0.954719387755102,
+          "warning_rate": 0.008754005739233354
+        },
+        {
+          "threshold": 0.2,
+          "unavailable_recall": 0.10467783415583513,
+          "unavailable_precision": 0.9471698113207547,
+          "warning_rate": 0.00887682979935015
+        },
+        {
+          "threshold": 0.21,
+          "unavailable_recall": 0.10565093487175922,
+          "unavailable_precision": 0.9440993788819876,
+          "warning_rate": 0.008988488035819963
+        },
+        {
+          "threshold": 0.22,
+          "unavailable_recall": 0.10759713630360743,
+          "unavailable_precision": 0.9381818181818182,
+          "warning_rate": 0.009211804508759589
+        },
+        {
+          "threshold": 0.23,
+          "unavailable_recall": 0.10940432334746646,
+          "unavailable_precision": 0.9352346999405823,
+          "warning_rate": 0.00939604059893478
+        },
+        {
+          "threshold": 0.24,
+          "unavailable_recall": 0.11100298880934177,
+          "unavailable_precision": 0.9339181286549708,
+          "warning_rate": 0.009546779218169028
+        },
+        {
+          "threshold": 0.25,
+          "unavailable_recall": 0.11294919024118996,
+          "unavailable_precision": 0.9306987399770905,
+          "warning_rate": 0.009747764043814692
+        },
+        {
+          "threshold": 0.26,
+          "unavailable_recall": 0.11482588447904359,
+          "unavailable_precision": 0.9270482603815937,
+          "warning_rate": 0.009948748869460356
+        },
+        {
+          "threshold": 0.27,
+          "unavailable_recall": 0.11628553555292973,
+          "unavailable_precision": 0.9243093922651934,
+          "warning_rate": 0.010105070400518093
+        },
+        {
+          "threshold": 0.28,
+          "unavailable_recall": 0.11760617223882672,
+          "unavailable_precision": 0.9200652528548124,
+          "warning_rate": 0.010266974843399322
+        },
+        {
+          "threshold": 0.29,
+          "unavailable_recall": 0.11913533050670744,
+          "unavailable_precision": 0.9136460554371002,
+          "warning_rate": 0.010473542580868477
+        },
+        {
+          "threshold": 0.3,
+          "unavailable_recall": 0.12059498158059359,
+          "unavailable_precision": 0.9088528025144055,
+          "warning_rate": 0.01065777867104367
+        },
+        {
+          "threshold": 0.31,
+          "unavailable_recall": 0.12295822617640925,
+          "unavailable_precision": 0.9067145053818555,
+          "warning_rate": 0.010892260967630277
+        },
+        {
+          "threshold": 0.32,
+          "unavailable_recall": 0.1244178772502954,
+          "unavailable_precision": 0.9044972208185953,
+          "warning_rate": 0.011048582498688016
+        },
+        {
+          "threshold": 0.33,
+          "unavailable_recall": 0.12601654271217072,
+          "unavailable_precision": 0.8984142715559961,
+          "warning_rate": 0.011266316059804151
+        },
+        {
+          "threshold": 0.34,
+          "unavailable_recall": 0.12782372975602974,
+          "unavailable_precision": 0.894455252918288,
+          "warning_rate": 0.011478466709096797
+        },
+        {
+          "threshold": 0.35,
+          "unavailable_recall": 0.12970042399388337,
+          "unavailable_precision": 0.8885714285714286,
+          "warning_rate": 0.011724114829330386
+        },
+        {
+          "threshold": 0.36,
+          "unavailable_recall": 0.13241120455967192,
+          "unavailable_precision": 0.8831710709318498,
+          "warning_rate": 0.012042340803269352
+        },
+        {
+          "threshold": 0.37,
+          "unavailable_recall": 0.13713769375130325,
+          "unavailable_precision": 0.872236958443855,
+          "warning_rate": 0.012628546544735872
+        },
+        {
+          "threshold": 0.38,
+          "unavailable_recall": 0.14464447070271774,
+          "unavailable_precision": 0.8606286186931348,
+          "warning_rate": 0.013499480789200415
+        },
+        {
+          "threshold": 0.39,
+          "unavailable_recall": 0.152846319594078,
+          "unavailable_precision": 0.8506769825918762,
+          "warning_rate": 0.014431827063723356
+        },
+        {
+          "threshold": 0.4,
+          "unavailable_recall": 0.1592409814415792,
+          "unavailable_precision": 0.837966349670812,
+          "warning_rate": 0.015263680925423464
+        },
+        {
+          "threshold": 0.41,
+          "unavailable_recall": 0.16368944185723222,
+          "unavailable_precision": 0.8268960674157303,
+          "warning_rate": 0.0159001328733014
+        },
+        {
+          "threshold": 0.42,
+          "unavailable_recall": 0.17133523319663585,
+          "unavailable_precision": 0.8127266732607978,
+          "warning_rate": 0.016932971560647173
+        },
+        {
+          "threshold": 0.43,
+          "unavailable_recall": 0.1791895461180232,
+          "unavailable_precision": 0.8058768365114098,
+          "warning_rate": 0.01785973492334662
+        },
+        {
+          "threshold": 0.44,
+          "unavailable_recall": 0.1850281504135678,
+          "unavailable_precision": 0.7960526315789473,
+          "warning_rate": 0.018669257137752766
+        },
+        {
+          "threshold": 0.45,
+          "unavailable_recall": 0.19197886981302564,
+          "unavailable_precision": 0.7819932049830125,
+          "warning_rate": 0.01971884456056901
+        },
+        {
+          "threshold": 0.46,
+          "unavailable_recall": 0.19969416834642387,
+          "unavailable_precision": 0.7665421558164355,
+          "warning_rate": 0.020924753514442992
+        },
+        {
+          "threshold": 0.47,
+          "unavailable_recall": 0.21171891290748593,
+          "unavailable_precision": 0.7447432762836186,
+          "warning_rate": 0.0228341093580768
+        },
+        {
+          "threshold": 0.48,
+          "unavailable_recall": 0.2302078265100438,
+          "unavailable_precision": 0.7263157894736842,
+          "warning_rate": 0.025458077915117408
+        },
+        {
+          "threshold": 0.49,
+          "unavailable_recall": 0.2504344199624661,
+          "unavailable_precision": 0.7052260716382853,
+          "warning_rate": 0.02852309650621378
+        },
+        {
+          "threshold": 0.5,
+          "unavailable_recall": 0.2701744630569264,
+          "unavailable_precision": 0.6850546351780049,
+          "warning_rate": 0.031677441686486
+        },
+        {
+          "threshold": 0.51,
+          "unavailable_recall": 0.2872732327795927,
+          "unavailable_precision": 0.6732366834989412,
+          "warning_rate": 0.03427349568440916
+        },
+        {
+          "threshold": 0.52,
+          "unavailable_recall": 0.303051365816362,
+          "unavailable_precision": 0.66190982237741,
+          "warning_rate": 0.036774640181332974
+        },
+        {
+          "threshold": 0.53,
+          "unavailable_recall": 0.31556266073538614,
+          "unavailable_precision": 0.6528616623526028,
+          "warning_rate": 0.03882356882055405
+        },
+        {
+          "threshold": 0.54,
+          "unavailable_recall": 0.3268228261625078,
+          "unavailable_precision": 0.6468565139634063,
+          "warning_rate": 0.0405821860449536
+        },
+        {
+          "threshold": 0.55,
+          "unavailable_recall": 0.33704038367971084,
+          "unavailable_precision": 0.6352679156295035,
+          "warning_rate": 0.04261436594870421
+        },
+        {
+          "threshold": 0.56,
+          "unavailable_recall": 0.34704941961493013,
+          "unavailable_precision": 0.6287621206397179,
+          "warning_rate": 0.04433390279033933
+        },
+        {
+          "threshold": 0.57,
+          "unavailable_recall": 0.3587266282060193,
+          "unavailable_precision": 0.618676576360585,
+          "warning_rate": 0.04657265043155909
+        },
+        {
+          "threshold": 0.58,
+          "unavailable_recall": 0.3716549662890109,
+          "unavailable_precision": 0.6107367218732153,
+          "warning_rate": 0.04887839301466072
+        },
+        {
+          "threshold": 0.59,
+          "unavailable_recall": 0.38465281156599707,
+          "unavailable_precision": 0.6008033872543698,
+          "warning_rate": 0.051424200806172465
+        },
+        {
+          "threshold": 0.6,
+          "unavailable_recall": 0.3968165705150483,
+          "unavailable_precision": 0.5862600123228588,
+          "warning_rate": 0.05436639533715205
+        },
+        {
+          "threshold": 0.61,
+          "unavailable_recall": 0.41183012441787725,
+          "unavailable_precision": 0.5749078206869784,
+          "warning_rate": 0.05753748925289474
+        },
+        {
+          "threshold": 0.62,
+          "unavailable_recall": 0.4301105164384514,
+          "unavailable_precision": 0.5659928656361475,
+          "warning_rate": 0.06103797496622338
+        },
+        {
+          "threshold": 0.63,
+          "unavailable_recall": 0.4483909084590255,
+          "unavailable_precision": 0.5508966695132366,
+          "warning_rate": 0.06537589745307562
+        },
+        {
+          "threshold": 0.64,
+          "unavailable_recall": 0.46931257385139363,
+          "unavailable_precision": 0.5362560559129537,
+          "warning_rate": 0.07029444276957089
+        },
+        {
+          "threshold": 0.65,
+          "unavailable_recall": 0.48828803781191354,
+          "unavailable_precision": 0.5241754961945978,
+          "warning_rate": 0.07482218425842183
+        },
+        {
+          "threshold": 0.66,
+          "unavailable_recall": 0.5014944046708835,
+          "unavailable_precision": 0.5147321110080616,
+          "warning_rate": 0.07825567502986858
+        },
+        {
+          "threshold": 0.67,
+          "unavailable_recall": 0.5151178146938208,
+          "unavailable_precision": 0.5082990397805213,
+          "warning_rate": 0.08139885438649382
+        },
+        {
+          "threshold": 0.68,
+          "unavailable_recall": 0.5238757211371377,
+          "unavailable_precision": 0.4998342065123682,
+          "warning_rate": 0.08418472738641566
+        },
+        {
+          "threshold": 0.69,
+          "unavailable_recall": 0.5337457426843678,
+          "unavailable_precision": 0.49252774036302993,
+          "warning_rate": 0.08704317824004287
+        },
+        {
+          "threshold": 0.7,
+          "unavailable_recall": 0.5433377354556197,
+          "unavailable_precision": 0.4850158218030651,
+          "warning_rate": 0.08997978985919897
+        },
+        {
+          "threshold": 0.71,
+          "unavailable_recall": 0.5527212066448878,
+          "unavailable_precision": 0.47845968712394704,
+          "warning_rate": 0.09278799450641477
+        },
+        {
+          "threshold": 0.72,
+          "unavailable_recall": 0.5606450267602697,
+          "unavailable_precision": 0.47186147186147187,
+          "warning_rate": 0.09543429471074934
+        },
+        {
+          "threshold": 0.73,
+          "unavailable_recall": 0.568499339681657,
+          "unavailable_precision": 0.4652710620626884,
+          "warning_rate": 0.0981420069451423
+        },
+        {
+          "threshold": 0.74,
+          "unavailable_recall": 0.5768402029610065,
+          "unavailable_precision": 0.45977839335180054,
+          "warning_rate": 0.10077155841400641
+        },
+        {
+          "threshold": 0.75,
+          "unavailable_recall": 0.5830958504205185,
+          "unavailable_precision": 0.4552805817866059,
+          "warning_rate": 0.1028707332596389
+        },
+        {
+          "threshold": 0.76,
+          "unavailable_recall": 0.5899770626259818,
+          "unavailable_precision": 0.450148493848112,
+          "warning_rate": 0.10527138534373988
+        },
+        {
+          "threshold": 0.77,
+          "unavailable_recall": 0.5975533467713908,
+          "unavailable_precision": 0.4443353318172421,
+          "warning_rate": 0.10801817796089729
+        },
+        {
+          "threshold": 0.78,
+          "unavailable_recall": 0.6054771668867728,
+          "unavailable_precision": 0.4378707147883784,
+          "warning_rate": 0.11106644781652318
+        },
+        {
+          "threshold": 0.79,
+          "unavailable_recall": 0.6116633071522902,
+          "unavailable_precision": 0.42945683470792057,
+          "warning_rate": 0.11439944617514711
+        },
+        {
+          "threshold": 0.8,
+          "unavailable_recall": 0.6193090984916939,
+          "unavailable_precision": 0.42157558552164653,
+          "warning_rate": 0.1179948413894751
+        },
+        {
+          "threshold": 0.81,
+          "unavailable_recall": 0.6279279905470216,
+          "unavailable_precision": 0.4148413463746154,
+          "warning_rate": 0.1215790707801561
+        },
+        {
+          "threshold": 0.82,
+          "unavailable_recall": 0.6378675192882464,
+          "unavailable_precision": 0.40757683425119917,
+          "warning_rate": 0.1257048426177157
+        },
+        {
+          "threshold": 0.83,
+          "unavailable_recall": 0.6494752206853409,
+          "unavailable_precision": 0.39883899607307494,
+          "warning_rate": 0.13079645820073918
+        },
+        {
+          "threshold": 0.84,
+          "unavailable_recall": 0.6621255299923542,
+          "unavailable_precision": 0.388689407540395,
+          "warning_rate": 0.13682600297010908
+        },
+        {
+          "threshold": 0.85,
+          "unavailable_recall": 0.6751233752693404,
+          "unavailable_precision": 0.3786449399656947,
+          "warning_rate": 0.1432128540961824
+        },
+        {
+          "threshold": 0.86,
+          "unavailable_recall": 0.6883992493223049,
+          "unavailable_precision": 0.3692215926036385,
+          "warning_rate": 0.14975602675331345
+        },
+        {
+          "threshold": 0.87,
+          "unavailable_recall": 0.7004935010773615,
+          "unavailable_precision": 0.36014723224815065,
+          "warning_rate": 0.15622662155673914
+        },
+        {
+          "threshold": 0.88,
+          "unavailable_recall": 0.7105720442065754,
+          "unavailable_precision": 0.35087177375068646,
+          "warning_rate": 0.16266371888922387
+        },
+        {
+          "threshold": 0.89,
+          "unavailable_recall": 0.7217627024397025,
+          "unavailable_precision": 0.34161265914399447,
+          "warning_rate": 0.1697037706986456
+        },
+        {
+          "threshold": 0.9,
+          "unavailable_recall": 0.7358031556266074,
+          "unavailable_precision": 0.3314546934685954,
+          "warning_rate": 0.17830703781864468
+        },
+        {
+          "threshold": 0.91,
+          "unavailable_recall": 0.7528324181552791,
+          "unavailable_precision": 0.3193948866149627,
+          "warning_rate": 0.18932212284639177
+        },
+        {
+          "threshold": 0.92,
+          "unavailable_recall": 0.7688885799680267,
+          "unavailable_precision": 0.2997669503007967,
+          "warning_rate": 0.20602061211045233
+        },
+        {
+          "threshold": 0.93,
+          "unavailable_recall": 0.7948147633280045,
+          "unavailable_precision": 0.2734010759115362,
+          "warning_rate": 0.23350528701749684
+        },
+        {
+          "threshold": 0.94,
+          "unavailable_recall": 0.8174741085702371,
+          "unavailable_precision": 0.24390800306932953,
+          "warning_rate": 0.26920242521689614
+        },
+        {
+          "threshold": 0.95,
+          "unavailable_recall": 0.849308403419754,
+          "unavailable_precision": 0.21682577989140078,
+          "warning_rate": 0.31461941290099266
+        },
+        {
+          "threshold": 0.96,
+          "unavailable_recall": 0.8857996802669076,
+          "unavailable_precision": 0.18954413623856622,
+          "warning_rate": 0.37536707645239453
+        },
+        {
+          "threshold": 0.97,
+          "unavailable_recall": 0.9272259678876764,
+          "unavailable_precision": 0.16162644179509547,
+          "warning_rate": 0.4607912102636251
+        },
+        {
+          "threshold": 0.98,
+          "unavailable_recall": 0.9454368527142559,
+          "unavailable_precision": 0.1427716723871902,
+          "warning_rate": 0.5318895923357786
+        },
+        {
+          "threshold": 0.99,
+          "unavailable_recall": 0.9817891151734205,
+          "unavailable_precision": 0.11059002223544517,
+          "warning_rate": 0.713071829743521
+        }
+      ]
+    },
+    "60": {
+      "n": 178929,
+      "unavailable_rate": 0.07585131532619083,
+      "at_common_058": {
+        "threshold": 0.58,
+        "unavailable_recall": 0.31955496610669026,
+        "unavailable_precision": 0.6227742676622631,
+        "warning_rate": 0.03892046565956329
+      },
+      "target_r70": {
+        "threshold": 0.9,
+        "unavailable_recall": 0.7161803713527851,
+        "unavailable_precision": 0.3031437125748503,
+        "warning_rate": 0.17919957077947118
+      },
+      "warn_capped": {
+        "threshold": 0.81,
+        "unavailable_recall": 0.592911877394636,
+        "unavailable_precision": 0.3829351860664319,
+        "warning_rate": 0.11744323167289819
+      },
+      "at_current_config": {
+        "threshold": 0.78,
+        "unavailable_recall": 0.5622605363984674,
+        "unavailable_precision": 0.40650969529085873,
+        "warning_rate": 0.10491312196457812
+      },
+      "curve": [
+        {
+          "threshold": 0.05,
+          "unavailable_recall": 0.03809313292071913,
+          "unavailable_precision": 0.9298561151079137,
+          "warning_rate": 0.003107377786719872
+        },
+        {
+          "threshold": 0.06,
+          "unavailable_recall": 0.052608311229000886,
+          "unavailable_precision": 0.9333333333333333,
+          "warning_rate": 0.004275438861224285
+        },
+        {
+          "threshold": 0.07,
+          "unavailable_recall": 0.062186855290303565,
+          "unavailable_precision": 0.9419642857142857,
+          "warning_rate": 0.0050075728361528874
+        },
+        {
+          "threshold": 0.08,
+          "unavailable_recall": 0.07515473032714412,
+          "unavailable_precision": 0.9497206703910615,
+          "warning_rate": 0.00600238083262076
+        },
+        {
+          "threshold": 0.09,
+          "unavailable_recall": 0.08281756557618626,
+          "unavailable_precision": 0.9541595925297114,
+          "warning_rate": 0.006583616965388506
+        },
+        {
+          "threshold": 0.1,
+          "unavailable_recall": 0.09261715296198055,
+          "unavailable_precision": 0.9501133786848073,
+          "warning_rate": 0.007393994265881998
+        },
+        {
+          "threshold": 0.11,
+          "unavailable_recall": 0.09504862953138815,
+          "unavailable_precision": 0.9513274336283186,
+          "warning_rate": 0.007578424961856379
+        },
+        {
+          "threshold": 0.12,
+          "unavailable_recall": 0.09578544061302682,
+          "unavailable_precision": 0.9502923976608187,
+          "warning_rate": 0.007645490669483427
+        },
+        {
+          "threshold": 0.13,
+          "unavailable_recall": 0.09748010610079576,
+          "unavailable_precision": 0.9490674318507891,
+          "warning_rate": 0.0077907997026753625
+        },
+        {
+          "threshold": 0.14,
+          "unavailable_recall": 0.0993958149130563,
+          "unavailable_precision": 0.95,
+          "warning_rate": 0.0079361087358673
+        },
+        {
+          "threshold": 0.15,
+          "unavailable_recall": 0.10057471264367816,
+          "unavailable_precision": 0.9498956158663883,
+          "warning_rate": 0.00803111848833895
+        },
+        {
+          "threshold": 0.16,
+          "unavailable_recall": 0.10153256704980843,
+          "unavailable_precision": 0.9496898690558235,
+          "warning_rate": 0.008109361813903839
+        },
+        {
+          "threshold": 0.17,
+          "unavailable_recall": 0.10256410256410256,
+          "unavailable_precision": 0.9488752556237219,
+          "warning_rate": 0.00819878275740657
+        },
+        {
+          "threshold": 0.18,
+          "unavailable_recall": 0.10521662245800177,
+          "unavailable_precision": 0.9482071713147411,
+          "warning_rate": 0.008416746307194474
+        },
+        {
+          "threshold": 0.19,
+          "unavailable_recall": 0.1069112879457707,
+          "unavailable_precision": 0.9452768729641694,
+          "warning_rate": 0.008578821767293172
+        },
+        {
+          "threshold": 0.2,
+          "unavailable_recall": 0.10772178013557324,
+          "unavailable_precision": 0.9432258064516129,
+          "warning_rate": 0.008662653901826982
+        },
+        {
+          "threshold": 0.21,
+          "unavailable_recall": 0.10831122900088418,
+          "unavailable_precision": 0.9417040358744395,
+          "warning_rate": 0.008724130800485109
+        },
+        {
+          "threshold": 0.22,
+          "unavailable_recall": 0.10963748894783377,
+          "unavailable_precision": 0.9399873657612129,
+          "warning_rate": 0.008847084597801362
+        },
+        {
+          "threshold": 0.23,
+          "unavailable_recall": 0.11066902446212791,
+          "unavailable_precision": 0.9375780274656679,
+          "warning_rate": 0.008953271968210854
+        },
+        {
+          "threshold": 0.24,
+          "unavailable_recall": 0.11155319776009431,
+          "unavailable_precision": 0.9357231149567367,
+          "warning_rate": 0.009042692911713585
+        },
+        {
+          "threshold": 0.25,
+          "unavailable_recall": 0.11236368994989684,
+          "unavailable_precision": 0.9304453935326419,
+          "warning_rate": 0.009160057900060917
+        },
+        {
+          "threshold": 0.26,
+          "unavailable_recall": 0.11383731211317419,
+          "unavailable_precision": 0.9279279279279279,
+          "warning_rate": 0.009305366933252854
+        },
+        {
+          "threshold": 0.27,
+          "unavailable_recall": 0.11545829649277925,
+          "unavailable_precision": 0.922307239552678,
+          "warning_rate": 0.009495386438196156
+        },
+        {
+          "threshold": 0.28,
+          "unavailable_recall": 0.11700559976422045,
+          "unavailable_precision": 0.9205797101449276,
+          "warning_rate": 0.009640695471388093
+        },
+        {
+          "threshold": 0.29,
+          "unavailable_recall": 0.11951075744179192,
+          "unavailable_precision": 0.9189801699716714,
+          "warning_rate": 0.009864247830144918
+        },
+        {
+          "threshold": 0.3,
+          "unavailable_recall": 0.12142646625405246,
+          "unavailable_precision": 0.915047196002221,
+          "warning_rate": 0.01006544495302606
+        },
+        {
+          "threshold": 0.31,
+          "unavailable_recall": 0.12319481284998526,
+          "unavailable_precision": 0.9101796407185628,
+          "warning_rate": 0.010266642075907204
+        },
+        {
+          "threshold": 0.32,
+          "unavailable_recall": 0.12415266725611553,
+          "unavailable_precision": 0.9054271896829661,
+          "warning_rate": 0.0104007734911613
+        },
+        {
+          "threshold": 0.33,
+          "unavailable_recall": 0.1253315649867374,
+          "unavailable_precision": 0.8966789667896679,
+          "warning_rate": 0.01060197061404244
+        },
+        {
+          "threshold": 0.34,
+          "unavailable_recall": 0.12695254936634248,
+          "unavailable_precision": 0.890899689762151,
+          "warning_rate": 0.010808756545892504
+        },
+        {
+          "threshold": 0.35,
+          "unavailable_recall": 0.1290893015030946,
+          "unavailable_precision": 0.8839556004036327,
+          "warning_rate": 0.011077019376400696
+        },
+        {
+          "threshold": 0.36,
+          "unavailable_recall": 0.13321544356027115,
+          "unavailable_precision": 0.8746976294146106,
+          "warning_rate": 0.01155206813875895
+        },
+        {
+          "threshold": 0.37,
+          "unavailable_recall": 0.13770999115826701,
+          "unavailable_precision": 0.8589154411764706,
+          "warning_rate": 0.012161248316371298
+        },
+        {
+          "threshold": 0.38,
+          "unavailable_recall": 0.14367816091954022,
+          "unavailable_precision": 0.8459869848156182,
+          "warning_rate": 0.01288220467336206
+        },
+        {
+          "threshold": 0.39,
+          "unavailable_recall": 0.1475095785440613,
+          "unavailable_precision": 0.8373065662902551,
+          "warning_rate": 0.013362842244689234
+        },
+        {
+          "threshold": 0.4,
+          "unavailable_recall": 0.1508252284114353,
+          "unavailable_precision": 0.8317757009345794,
+          "warning_rate": 0.013754058872513679
+        },
+        {
+          "threshold": 0.41,
+          "unavailable_recall": 0.15568818155025052,
+          "unavailable_precision": 0.823460639127046,
+          "warning_rate": 0.014340883814250345
+        },
+        {
+          "threshold": 0.42,
+          "unavailable_recall": 0.16136162687886826,
+          "unavailable_precision": 0.8147321428571429,
+          "warning_rate": 0.015022718508458663
+        },
+        {
+          "threshold": 0.43,
+          "unavailable_recall": 0.1639404656646036,
+          "unavailable_precision": 0.8070366340224883,
+          "warning_rate": 0.015408346327314186
+        },
+        {
+          "threshold": 0.44,
+          "unavailable_recall": 0.16777188328912468,
+          "unavailable_precision": 0.8009145269081955,
+          "warning_rate": 0.01588898389864136
+        },
+        {
+          "threshold": 0.45,
+          "unavailable_recall": 0.17248747421161215,
+          "unavailable_precision": 0.7850435949027499,
+          "warning_rate": 0.016665828345321328
+        },
+        {
+          "threshold": 0.46,
+          "unavailable_recall": 0.17978190391983495,
+          "unavailable_precision": 0.7636932707355243,
+          "warning_rate": 0.017856244655701424
+        },
+        {
+          "threshold": 0.47,
+          "unavailable_recall": 0.18840259357500735,
+          "unavailable_precision": 0.7498533724340176,
+          "warning_rate": 0.01905783858401936
+        },
+        {
+          "threshold": 0.48,
+          "unavailable_recall": 0.1956970232832302,
+          "unavailable_precision": 0.7400390080802451,
+          "warning_rate": 0.020058235389456152
+        },
+        {
+          "threshold": 0.49,
+          "unavailable_recall": 0.20505452402004126,
+          "unavailable_precision": 0.7287247970672951,
+          "warning_rate": 0.0213436614523079
+        },
+        {
+          "threshold": 0.5,
+          "unavailable_recall": 0.2191276156793398,
+          "unavailable_precision": 0.7173178967679691,
+          "warning_rate": 0.023171201985144947
+        },
+        {
+          "threshold": 0.51,
+          "unavailable_recall": 0.23364279398762158,
+          "unavailable_precision": 0.7043536206130608,
+          "warning_rate": 0.02516081797808069
+        },
+        {
+          "threshold": 0.52,
+          "unavailable_recall": 0.25081049218980256,
+          "unavailable_precision": 0.690046624771944,
+          "warning_rate": 0.027569594643685483
+        },
+        {
+          "threshold": 0.53,
+          "unavailable_recall": 0.2633362805776599,
+          "unavailable_precision": 0.6786935055070262,
+          "warning_rate": 0.029430668030336057
+        },
+        {
+          "threshold": 0.54,
+          "unavailable_recall": 0.2752726201002063,
+          "unavailable_precision": 0.6680972818311874,
+          "warning_rate": 0.03125261975420418
+        },
+        {
+          "threshold": 0.55,
+          "unavailable_recall": 0.2847774830533451,
+          "unavailable_precision": 0.6588816911012615,
+          "warning_rate": 0.03278395341168844
+        },
+        {
+          "threshold": 0.56,
+          "unavailable_recall": 0.2959770114942529,
+          "unavailable_precision": 0.6483214977404778,
+          "warning_rate": 0.03462826037143225
+        },
+        {
+          "threshold": 0.57,
+          "unavailable_recall": 0.30643972885352194,
+          "unavailable_precision": 0.636906584992343,
+          "warning_rate": 0.03649492256705174
+        },
+        {
+          "threshold": 0.58,
+          "unavailable_recall": 0.31955496610669026,
+          "unavailable_precision": 0.6227742676622631,
+          "warning_rate": 0.03892046565956329
+        },
+        {
+          "threshold": 0.59,
+          "unavailable_recall": 0.3306808134394341,
+          "unavailable_precision": 0.6113608500204332,
+          "warning_rate": 0.04102744664084637
+        },
+        {
+          "threshold": 0.6,
+          "unavailable_recall": 0.34416445623342173,
+          "unavailable_precision": 0.5957148322917996,
+          "warning_rate": 0.043821851125306684
+        },
+        {
+          "threshold": 0.61,
+          "unavailable_recall": 0.36280577659888,
+          "unavailable_precision": 0.5825840037860861,
+          "warning_rate": 0.04723661340531719
+        },
+        {
+          "threshold": 0.62,
+          "unavailable_recall": 0.3753315649867374,
+          "unavailable_precision": 0.5720381807973048,
+          "warning_rate": 0.04976834386823824
+        },
+        {
+          "threshold": 0.63,
+          "unavailable_recall": 0.3884468022399057,
+          "unavailable_precision": 0.5621667732992109,
+          "warning_rate": 0.0524118505105377
+        },
+        {
+          "threshold": 0.64,
+          "unavailable_recall": 0.3978779840848806,
+          "unavailable_precision": 0.5520907882629588,
+          "warning_rate": 0.054664140525012714
+        },
+        {
+          "threshold": 0.65,
+          "unavailable_recall": 0.4085617447686413,
+          "unavailable_precision": 0.5440007848523497,
+          "warning_rate": 0.05696672982020801
+        },
+        {
+          "threshold": 0.66,
+          "unavailable_recall": 0.4174771588564692,
+          "unavailable_precision": 0.5333207831325302,
+          "warning_rate": 0.05937550648581281
+        },
+        {
+          "threshold": 0.67,
+          "unavailable_recall": 0.42911877394636017,
+          "unavailable_precision": 0.5212099516735278,
+          "warning_rate": 0.06244935141871916
+        },
+        {
+          "threshold": 0.68,
+          "unavailable_recall": 0.44378131447096963,
+          "unavailable_precision": 0.508570463564975,
+          "warning_rate": 0.06618826461892706
+        },
+        {
+          "threshold": 0.69,
+          "unavailable_recall": 0.45866489832007074,
+          "unavailable_precision": 0.49463647199046484,
+          "warning_rate": 0.07033516087386617
+        },
+        {
+          "threshold": 0.7,
+          "unavailable_recall": 0.47133804892425585,
+          "unavailable_precision": 0.48231923395913445,
+          "warning_rate": 0.07412437335479435
+        },
+        {
+          "threshold": 0.71,
+          "unavailable_recall": 0.48364279398762156,
+          "unavailable_precision": 0.47121320890165114,
+          "warning_rate": 0.07785210893706442
+        },
+        {
+          "threshold": 0.72,
+          "unavailable_recall": 0.49852637783672266,
+          "unavailable_precision": 0.4589607922941256,
+          "warning_rate": 0.08239022181982798
+        },
+        {
+          "threshold": 0.73,
+          "unavailable_recall": 0.5145151783082818,
+          "unavailable_precision": 0.4428589548452562,
+          "warning_rate": 0.08812433982194054
+        },
+        {
+          "threshold": 0.74,
+          "unavailable_recall": 0.5264515178308282,
+          "unavailable_precision": 0.43292535142995636,
+          "warning_rate": 0.09223770322306614
+        },
+        {
+          "threshold": 0.75,
+          "unavailable_recall": 0.5354406130268199,
+          "unavailable_precision": 0.42749573504323785,
+          "warning_rate": 0.09500416366268184
+        },
+        {
+          "threshold": 0.76,
+          "unavailable_recall": 0.5439139404656647,
+          "unavailable_precision": 0.42134703196347034,
+          "warning_rate": 0.09791593313548949
+        },
+        {
+          "threshold": 0.77,
+          "unavailable_recall": 0.5531977600943118,
+          "unavailable_precision": 0.4135499862296888,
+          "warning_rate": 0.1014648268307541
+        },
+        {
+          "threshold": 0.78,
+          "unavailable_recall": 0.5622605363984674,
+          "unavailable_precision": 0.40650969529085873,
+          "warning_rate": 0.10491312196457812
+        },
+        {
+          "threshold": 0.79,
+          "unavailable_recall": 0.571323312702623,
+          "unavailable_precision": 0.39860175808358606,
+          "warning_rate": 0.10871910087241309
+        },
+        {
+          "threshold": 0.8,
+          "unavailable_recall": 0.5814176245210728,
+          "unavailable_precision": 0.39163233907389944,
+          "warning_rate": 0.11260891191478184
+        },
+        {
+          "threshold": 0.81,
+          "unavailable_recall": 0.592911877394636,
+          "unavailable_precision": 0.3829351860664319,
+          "warning_rate": 0.11744323167289819
+        },
+        {
+          "threshold": 0.82,
+          "unavailable_recall": 0.6052166224580018,
+          "unavailable_precision": 0.3739926239584756,
+          "warning_rate": 0.12274701138440387
+        },
+        {
+          "threshold": 0.83,
+          "unavailable_recall": 0.6197318007662835,
+          "unavailable_precision": 0.36521927920104214,
+          "warning_rate": 0.1287102705542422
+        },
+        {
+          "threshold": 0.84,
+          "unavailable_recall": 0.6340259357500737,
+          "unavailable_precision": 0.35521155830753354,
+          "warning_rate": 0.13538889727210235
+        },
+        {
+          "threshold": 0.85,
+          "unavailable_recall": 0.6497200117889773,
+          "unavailable_precision": 0.34615686582397737,
+          "warning_rate": 0.1423693196742842
+        },
+        {
+          "threshold": 0.86,
+          "unavailable_recall": 0.6632036545829649,
+          "unavailable_precision": 0.3364985606938577,
+          "warning_rate": 0.14949505110965802
+        },
+        {
+          "threshold": 0.87,
+          "unavailable_recall": 0.6748452696728559,
+          "unavailable_precision": 0.327610258611439,
+          "warning_rate": 0.15624633234411414
+        },
+        {
+          "threshold": 0.88,
+          "unavailable_recall": 0.6870026525198939,
+          "unavailable_precision": 0.3195448781658042,
+          "warning_rate": 0.16307585690413515
+        },
+        {
+          "threshold": 0.89,
+          "unavailable_recall": 0.6983495431771294,
+          "unavailable_precision": 0.3108968050908614,
+          "warning_rate": 0.17038043022651442
+        },
+        {
+          "threshold": 0.9,
+          "unavailable_recall": 0.7161803713527851,
+          "unavailable_precision": 0.3031437125748503,
+          "warning_rate": 0.17919957077947118
+        },
+        {
+          "threshold": 0.91,
+          "unavailable_recall": 0.7315060418508694,
+          "unavailable_precision": 0.2907940599279459,
+          "warning_rate": 0.19080752700791934
+        },
+        {
+          "threshold": 0.92,
+          "unavailable_recall": 0.7496315944591807,
+          "unavailable_precision": 0.2722213303365976,
+          "warning_rate": 0.20887614640443974
+        },
+        {
+          "threshold": 0.93,
+          "unavailable_recall": 0.7767462422634837,
+          "unavailable_precision": 0.24777305097891744,
+          "warning_rate": 0.23778705520066618
+        },
+        {
+          "threshold": 0.94,
+          "unavailable_recall": 0.8029767167698202,
+          "unavailable_precision": 0.22324647656506064,
+          "warning_rate": 0.27282329862682964
+        },
+        {
+          "threshold": 0.95,
+          "unavailable_recall": 0.8361332154435602,
+          "unavailable_precision": 0.198471413330535,
+          "warning_rate": 0.31955133041597505
+        },
+        {
+          "threshold": 0.96,
+          "unavailable_recall": 0.8818155025051577,
+          "unavailable_precision": 0.17343670748496487,
+          "warning_rate": 0.3856557629003683
+        },
+        {
+          "threshold": 0.97,
+          "unavailable_recall": 0.9244768641320366,
+          "unavailable_precision": 0.1496059236648503,
+          "warning_rate": 0.46871664179646677
+        },
+        {
+          "threshold": 0.98,
+          "unavailable_recall": 0.9450338933097554,
+          "unavailable_precision": 0.13249041908126477,
+          "warning_rate": 0.5410358298542998
+        },
+        {
+          "threshold": 0.99,
+          "unavailable_recall": 0.9820218096080165,
+          "unavailable_precision": 0.10331302420042479,
+          "warning_rate": 0.7209898898445752
+        }
+      ]
+    }
+  },
+  "thresholds_B_r70": {
+    "5": 0.08,
+    "10": 0.17,
+    "15": 0.27,
+    "20": 0.42,
+    "30": 0.7,
+    "45": 0.87,
+    "60": 0.9
+  },
+  "thresholds_C_warn_cap": {
+    "5": 0.88,
+    "10": 0.8,
+    "15": 0.74,
+    "20": 0.72,
+    "30": 0.77,
+    "45": 0.8,
+    "60": 0.81
+  },
+  "policy_comparison": {
+    "A_common_058": {
+      "unavailable_recall": 0.7051639684516396,
+      "unavailable_precision": 0.7708161283589404,
+      "warning_rate": 0.08787981015772604,
+      "n_warn": 110191
+    },
+    "B_per_eta_r70": {
+      "unavailable_recall": 0.7062349522623496,
+      "unavailable_precision": 0.6008079894904863,
+      "warning_rate": 0.11291803142717463,
+      "n_warn": 141586
+    },
+    "C_per_eta_warn_cap12": {
+      "unavailable_recall": 0.797368202573682,
+      "unavailable_precision": 0.6428710081193063,
+      "warning_rate": 0.11914748026729767,
+      "n_warn": 149397
+    },
+    "D_current_config_by_eta": {
+      "unavailable_recall": 0.7693150684931507,
+      "unavailable_precision": 0.6808273024503141,
+      "warning_rate": 0.10854681018882942,
+      "n_warn": 136105
+    }
+  }
+}

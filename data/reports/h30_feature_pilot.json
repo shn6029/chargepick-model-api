@@ -1,0 +1,262 @@
+{
+  "runs": [
+    {
+      "label": "baseline (mvp_plus)",
+      "n_features": 7,
+      "features": [
+        "available_count",
+        "total_chargers",
+        "known_charger_count",
+        "observation_coverage",
+        "observation_age_minutes",
+        "horizon_minutes",
+        "minutes_since_last_change"
+      ],
+      "per_horizon": {
+        "5": {
+          "n": 13938,
+          "negative_rate": 0.08200602668962553,
+          "pr_auc_unavailable": 0.7972453323574428,
+          "pr_auc_lift": 9.721789538405977,
+          "unavailable_recall": 0.8013998250218722,
+          "brier": 0.024682249781320248
+        },
+        "10": {
+          "n": 14095,
+          "negative_rate": 0.08315005321035829,
+          "pr_auc_unavailable": 0.7887641587962965,
+          "pr_auc_lift": 9.486033121359895,
+          "unavailable_recall": 0.8139931740614335,
+          "brier": 0.02640003982362877
+        },
+        "15": {
+          "n": 12713,
+          "negative_rate": 0.07063635648548727,
+          "pr_auc_unavailable": 0.6015783029964158,
+          "pr_auc_lift": 8.516553414246589,
+          "unavailable_recall": 0.5913140311804009,
+          "brier": 0.03775337374257157
+        },
+        "30": {
+          "n": 11543,
+          "negative_rate": 0.0578705709087759,
+          "pr_auc_unavailable": 0.47458435049386666,
+          "pr_auc_lift": 8.200789158309433,
+          "unavailable_recall": 0.24251497005988024,
+          "brier": 0.03922098736173002
+        }
+      },
+      "overall": {
+        "pr_auc_unavailable": 0.7210245982380639,
+        "roc_auc": 0.9452031476331624,
+        "brier": 0.03153275557520418,
+        "ece": 0.00353435965391428,
+        "unavailable_recall": 0.6603968049471786
+      }
+    },
+    {
+      "label": "full",
+      "n_features": 15,
+      "features": [
+        "available_count",
+        "usable_count",
+        "known_charger_count",
+        "direct_observed_count",
+        "total_chargers",
+        "observation_coverage",
+        "direct_observation_coverage",
+        "observation_age_minutes",
+        "available_count_delta_1tick",
+        "minutes_since_last_change",
+        "unobserved_rate",
+        "horizon_minutes",
+        "hour",
+        "weekday",
+        "is_weekend"
+      ],
+      "per_horizon": {
+        "5": {
+          "n": 13938,
+          "negative_rate": 0.08200602668962553,
+          "pr_auc_unavailable": 0.831808791402368,
+          "pr_auc_lift": 10.143264159725458,
+          "unavailable_recall": 0.7970253718285214,
+          "brier": 0.023862405178489053
+        },
+        "10": {
+          "n": 14095,
+          "negative_rate": 0.08315005321035829,
+          "pr_auc_unavailable": 0.8240137502577176,
+          "pr_auc_lift": 9.90996058863697,
+          "unavailable_recall": 0.7866894197952219,
+          "brier": 0.025707516098048833
+        },
+        "15": {
+          "n": 12713,
+          "negative_rate": 0.07063635648548727,
+          "pr_auc_unavailable": 0.6461111709383417,
+          "pr_auc_lift": 9.147005919976772,
+          "unavailable_recall": 0.5645879732739421,
+          "brier": 0.037015092780464595
+        },
+        "30": {
+          "n": 11543,
+          "negative_rate": 0.0578705709087759,
+          "pr_auc_unavailable": 0.5161178126336862,
+          "pr_auc_lift": 8.918484897051853,
+          "unavailable_recall": 0.28592814371257486,
+          "brier": 0.03777545758459145
+        }
+      },
+      "overall": {
+        "pr_auc_unavailable": 0.7492261554960575,
+        "roc_auc": 0.9501056435142822,
+        "brier": 0.030628939627775714,
+        "ece": 0.0039006458728584365,
+        "unavailable_recall": 0.6521515073434682
+      }
+    },
+    {
+      "label": "mvp_plus + 시계열",
+      "n_features": 15,
+      "features": [
+        "available_count",
+        "total_chargers",
+        "known_charger_count",
+        "observation_coverage",
+        "observation_age_minutes",
+        "horizon_minutes",
+        "minutes_since_last_change",
+        "avail_ratio_30m",
+        "avail_ratio_60m",
+        "avail_ratio_180m",
+        "avail_count_mean_60m",
+        "avail_count_trend_60m",
+        "changes_60m",
+        "min_since_avail",
+        "min_since_full"
+      ],
+      "per_horizon": {
+        "5": {
+          "n": 13938,
+          "negative_rate": 0.08200602668962553,
+          "pr_auc_unavailable": 0.8190413498306603,
+          "pr_auc_lift": 9.987575095310357,
+          "unavailable_recall": 0.8171478565179353,
+          "brier": 0.024128838593287384
+        },
+        "10": {
+          "n": 14095,
+          "negative_rate": 0.08315005321035829,
+          "pr_auc_unavailable": 0.8202486129655393,
+          "pr_auc_lift": 9.864679351321907,
+          "unavailable_recall": 0.8122866894197952,
+          "brier": 0.025431182332110638
+        },
+        "15": {
+          "n": 12713,
+          "negative_rate": 0.07063635648548727,
+          "pr_auc_unavailable": 0.6562939245693815,
+          "pr_auc_lift": 9.291163321882573,
+          "unavailable_recall": 0.5968819599109132,
+          "brier": 0.035322814948686984
+        },
+        "30": {
+          "n": 11543,
+          "negative_rate": 0.0578705709087759,
+          "pr_auc_unavailable": 0.5666658952241748,
+          "pr_auc_lift": 9.791952737384202,
+          "unavailable_recall": 0.39820359281437123,
+          "brier": 0.03480508675006732
+        }
+      },
+      "overall": {
+        "pr_auc_unavailable": 0.7511565564259133,
+        "roc_auc": 0.9486509200695574,
+        "brier": 0.029558307293752483,
+        "ece": 0.003917167411845179,
+        "unavailable_recall": 0.6926049987116722
+      }
+    },
+    {
+      "label": "full + 시계열",
+      "n_features": 23,
+      "features": [
+        "available_count",
+        "usable_count",
+        "known_charger_count",
+        "direct_observed_count",
+        "total_chargers",
+        "observation_coverage",
+        "direct_observation_coverage",
+        "observation_age_minutes",
+        "available_count_delta_1tick",
+        "minutes_since_last_change",
+        "unobserved_rate",
+        "horizon_minutes",
+        "hour",
+        "weekday",
+        "is_weekend",
+        "avail_ratio_30m",
+        "avail_ratio_60m",
+        "avail_ratio_180m",
+        "avail_count_mean_60m",
+        "avail_count_trend_60m",
+        "changes_60m",
+        "min_since_avail",
+        "min_since_full"
+      ],
+      "per_horizon": {
+        "5": {
+          "n": 13938,
+          "negative_rate": 0.08200602668962553,
+          "pr_auc_unavailable": 0.8403114653017326,
+          "pr_auc_lift": 10.246947684493039,
+          "unavailable_recall": 0.7952755905511811,
+          "brier": 0.023557854442743987
+        },
+        "10": {
+          "n": 14095,
+          "negative_rate": 0.08315005321035829,
+          "pr_auc_unavailable": 0.8390841192935279,
+          "pr_auc_lift": 10.091203636042897,
+          "unavailable_recall": 0.7986348122866894,
+          "brier": 0.024497162032228327
+        },
+        "15": {
+          "n": 12713,
+          "negative_rate": 0.07063635648548727,
+          "pr_auc_unavailable": 0.6808107029566546,
+          "pr_auc_lift": 9.638247735732687,
+          "unavailable_recall": 0.5902004454342984,
+          "brier": 0.03472823750693165
+        },
+        "30": {
+          "n": 11543,
+          "negative_rate": 0.0578705709087759,
+          "pr_auc_unavailable": 0.5765269741434464,
+          "pr_auc_lift": 9.962351590625449,
+          "unavailable_recall": 0.3967065868263473,
+          "brier": 0.03480258067104253
+        }
+      },
+      "overall": {
+        "pr_auc_unavailable": 0.7686451431589755,
+        "roc_auc": 0.9527994349625708,
+        "brier": 0.029009220795553365,
+        "ece": 0.004838864762691864,
+        "unavailable_recall": 0.6802370523061066
+      }
+    }
+  ],
+  "new_features": [
+    "avail_ratio_30m",
+    "avail_ratio_60m",
+    "avail_ratio_180m",
+    "avail_count_mean_60m",
+    "avail_count_trend_60m",
+    "changes_60m",
+    "min_since_avail",
+    "min_since_full"
+  ]
+}

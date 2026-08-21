@@ -1,0 +1,1205 @@
+{
+  "generated_at": "2026-08-18T06:08:58.414812+00:00",
+  "source": "scripts/analysis/walkforward_staged.py",
+  "model_version": "20260818T022438Z",
+  "method": "expanding_window",
+  "test_days": 3,
+  "min_train_days": 5,
+  "n_folds": 8,
+  "oos_dates": [
+    "2026-07-27",
+    "2026-08-18"
+  ],
+  "summary": {
+    "roc_auc": {
+      "mean": 0.9734999298508085,
+      "std": 0.003772375798929194
+    },
+    "accuracy": {
+      "mean": 0.9495972185904593,
+      "std": 0.00485876660440157
+    },
+    "balanced_accuracy": {
+      "mean": 0.9217732533627303,
+      "std": 0.005102251707718262
+    },
+    "unavailable_recall": {
+      "mean": 0.8676884900945256,
+      "std": 0.007678826868958275
+    },
+    "unavailable_precision": {
+      "mean": 0.920403993487731,
+      "std": 0.009240990010717317
+    },
+    "unavailable_f1": {
+      "mean": 0.8932660965644578,
+      "std": 0.008274734315600588
+    },
+    "pr_auc_unavailable": {
+      "mean": 0.9424741262080845,
+      "std": 0.009125565577427979
+    },
+    "brier_score": {
+      "mean": 0.041222148761654094,
+      "std": 0.004201660841680962
+    }
+  },
+  "per_eta_summary": [
+    {
+      "eta_minutes": 5,
+      "roc_auc_mean": 0.9920583204138382,
+      "roc_auc_std": 0.0015757504055093536,
+      "unavailable_recall_mean": 0.9683753702052064,
+      "unavailable_recall_std": 0.005808283372164097,
+      "brier_score_mean": 0.01495689729050158,
+      "brier_score_std": 0.002140031080032116,
+      "n_folds": 8
+    },
+    {
+      "eta_minutes": 10,
+      "roc_auc_mean": 0.9853151933719773,
+      "roc_auc_std": 0.00271158902678628,
+      "unavailable_recall_mean": 0.9398071798074793,
+      "unavailable_recall_std": 0.0086108494989251,
+      "brier_score_mean": 0.025779863488666673,
+      "brier_score_std": 0.0031549079567029523,
+      "n_folds": 8
+    },
+    {
+      "eta_minutes": 15,
+      "roc_auc_mean": 0.9792016663616037,
+      "roc_auc_std": 0.003927272011018197,
+      "unavailable_recall_mean": 0.9152961001550936,
+      "unavailable_recall_std": 0.009919026147989373,
+      "brier_score_mean": 0.03401827706842267,
+      "brier_score_std": 0.004376125850384064,
+      "n_folds": 8
+    },
+    {
+      "eta_minutes": 20,
+      "roc_auc_mean": 0.9730253831669626,
+      "roc_auc_std": 0.004823200096711796,
+      "unavailable_recall_mean": 0.8903790406532838,
+      "unavailable_recall_std": 0.010650102184620055,
+      "brier_score_mean": 0.041231780015377244,
+      "brier_score_std": 0.005021695087990861,
+      "n_folds": 8
+    },
+    {
+      "eta_minutes": 30,
+      "roc_auc_mean": 0.9620429295567612,
+      "roc_auc_std": 0.005759208484729659,
+      "unavailable_recall_mean": 0.8383016462630701,
+      "unavailable_recall_std": 0.011042773923962159,
+      "brier_score_mean": 0.051347808309682025,
+      "brier_score_std": 0.005675425711808137,
+      "n_folds": 8
+    },
+    {
+      "eta_minutes": 45,
+      "roc_auc_mean": 0.9498563797714279,
+      "roc_auc_std": 0.005936423320041015,
+      "unavailable_recall_mean": 0.7593839189930078,
+      "unavailable_recall_std": 0.008916215764519708,
+      "brier_score_mean": 0.05882895627255026,
+      "brier_score_std": 0.00558518517623874,
+      "n_folds": 8
+    },
+    {
+      "eta_minutes": 60,
+      "roc_auc_mean": 0.9452173468627091,
+      "roc_auc_std": 0.005632949384164845,
+      "unavailable_recall_mean": 0.7458023869154327,
+      "unavailable_recall_std": 0.00892741113103911,
+      "brier_score_mean": 0.06218309334061893,
+      "brier_score_std": 0.005386116686470007,
+      "n_folds": 8
+    }
+  ],
+  "folds": [
+    {
+      "fold": 1,
+      "train_dates": [
+        "2026-07-22",
+        "2026-07-23",
+        "2026-07-24",
+        "2026-07-25",
+        "2026-07-26"
+      ],
+      "test_dates": [
+        "2026-07-27",
+        "2026-07-28",
+        "2026-07-29"
+      ],
+      "n_train": 2459127,
+      "n_test": 1640464,
+      "positive_rate_test": 0.7535922763315744,
+      "overall": {
+        "roc_auc": 0.9783024744535606,
+        "accuracy": 0.954865208867735,
+        "balanced_accuracy": 0.9294139526828535,
+        "unavailable_recall": 0.879232502851149,
+        "unavailable_precision": 0.9337284666777009,
+        "unavailable_f1": 0.9056614351204173,
+        "pr_auc_unavailable": 0.9553276793451797,
+        "brier_score": 0.036614210919100575
+      },
+      "per_eta": [
+        {
+          "eta_minutes": 5,
+          "n": 231866,
+          "roc_auc": 0.9944998065339529,
+          "unavailable_recall": 0.9785264778737364,
+          "unavailable_precision": 0.9736053288925895,
+          "unavailable_f1": 0.9760597004958347,
+          "accuracy": 0.9876307867475179,
+          "balanced_accuracy": 0.9846588396294162,
+          "brier_score": 0.011374390401377311,
+          "pr_auc_unavailable": 0.9883339378873514
+        },
+        {
+          "eta_minutes": 10,
+          "n": 234088,
+          "roc_auc": 0.9894528893985555,
+          "unavailable_recall": 0.9549797190841742,
+          "unavailable_precision": 0.9477991815550454,
+          "unavailable_f1": 0.9513759016831419,
+          "accuracy": 0.9751204675164895,
+          "balanced_accuracy": 0.9684946409393559,
+          "brier_score": 0.021257850732867546,
+          "pr_auc_unavailable": 0.9775715319290305
+        },
+        {
+          "eta_minutes": 15,
+          "n": 234529,
+          "roc_auc": 0.984677027925747,
+          "unavailable_recall": 0.9324976380078284,
+          "unavailable_precision": 0.9365585020757434,
+          "unavailable_f1": 0.9345236585592669,
+          "accuracy": 0.966976365396177,
+          "balanced_accuracy": 0.9555673626284199,
+          "brier_score": 0.02793855588397618,
+          "pr_auc_unavailable": 0.9685171225113868
+        },
+        {
+          "eta_minutes": 20,
+          "n": 234751,
+          "roc_auc": 0.9785299180285618,
+          "unavailable_recall": 0.906510936939706,
+          "unavailable_precision": 0.9189226614969189,
+          "unavailable_f1": 0.912674603515709,
+          "accuracy": 0.9567243590016656,
+          "balanced_accuracy": 0.9399628492222312,
+          "brier_score": 0.035822811009755144,
+          "pr_auc_unavailable": 0.9568560937229869
+        },
+        {
+          "eta_minutes": 30,
+          "n": 235382,
+          "roc_auc": 0.9672889516725639,
+          "unavailable_recall": 0.8515829522845475,
+          "unavailable_precision": 0.8976911047741698,
+          "unavailable_f1": 0.8740293588170492,
+          "accuracy": 0.940246068093567,
+          "balanced_accuracy": 0.910178057755445,
+          "brier_score": 0.046835015976861454,
+          "pr_auc_unavailable": 0.9342614637507141
+        },
+        {
+          "eta_minutes": 45,
+          "n": 235049,
+          "roc_auc": 0.9549323640453187,
+          "unavailable_recall": 0.7629492887392768,
+          "unavailable_precision": 0.9302469272017124,
+          "unavailable_f1": 0.8383331178968092,
+          "accuracy": 0.9308271892243745,
+          "balanced_accuracy": 0.87268407733496,
+          "brier_score": 0.054510935962756524,
+          "pr_auc_unavailable": 0.9099476269245377
+        },
+        {
+          "eta_minutes": 60,
+          "n": 234799,
+          "roc_auc": 0.9497267837609273,
+          "unavailable_recall": 0.7469959210671371,
+          "unavailable_precision": 0.9238320305399018,
+          "unavailable_f1": 0.8260560375480017,
+          "accuracy": 0.9270780539951192,
+          "balanced_accuracy": 0.8642061042136093,
+          "brier_score": 0.058143559964014,
+          "pr_auc_unavailable": 0.8971316705602655
+        }
+      ],
+      "rapid_only": {
+        "roc_auc": 0.9472114060274512,
+        "accuracy": 0.9502506957447172,
+        "balanced_accuracy": 0.8148049606099674,
+        "unavailable_recall": 0.6454562683597082,
+        "unavailable_precision": 0.8191920528208397,
+        "unavailable_f1": 0.7220199386259202,
+        "pr_auc_unavailable": 0.7892514650577388,
+        "brier_score": 0.03903459381827813,
+        "n": 1054266
+      }
+    },
+    {
+      "fold": 2,
+      "train_dates": [
+        "2026-07-22",
+        "2026-07-23",
+        "2026-07-24",
+        "2026-07-25",
+        "2026-07-26",
+        "2026-07-27",
+        "2026-07-28",
+        "2026-07-29"
+      ],
+      "test_dates": [
+        "2026-07-30",
+        "2026-07-31",
+        "2026-08-01"
+      ],
+      "n_train": 4099591,
+      "n_test": 1587060,
+      "positive_rate_test": 0.7352084987335072,
+      "overall": {
+        "roc_auc": 0.9773584094020662,
+        "accuracy": 0.9513893614608143,
+        "balanced_accuracy": 0.9281475490780973,
+        "unavailable_recall": 0.8787407195888064,
+        "unavailable_precision": 0.93377533681272,
+        "unavailable_f1": 0.9054225020595504,
+        "pr_auc_unavailable": 0.9557749842638968,
+        "brier_score": 0.039113302310912104
+      },
+      "per_eta": [
+        {
+          "eta_minutes": 5,
+          "n": 225928,
+          "roc_auc": 0.9944439679996563,
+          "unavailable_recall": 0.9770928241413848,
+          "unavailable_precision": 0.974291237113402,
+          "unavailable_f1": 0.9756900195189624,
+          "accuracy": 0.9866594667327644,
+          "balanced_accuracy": 0.9836813297057014,
+          "brier_score": 0.012199067522806199,
+          "pr_auc_unavailable": 0.9886515370120631
+        },
+        {
+          "eta_minutes": 10,
+          "n": 226501,
+          "roc_auc": 0.9889421891840521,
+          "unavailable_recall": 0.952463448990496,
+          "unavailable_precision": 0.9545189031315917,
+          "unavailable_f1": 0.9534900683183001,
+          "accuracy": 0.9746623635215739,
+          "balanced_accuracy": 0.967724276304788,
+          "brier_score": 0.02227200546966785,
+          "pr_auc_unavailable": 0.9775604046620099
+        },
+        {
+          "eta_minutes": 15,
+          "n": 226713,
+          "roc_auc": 0.9837225414586381,
+          "unavailable_recall": 0.9291684997800264,
+          "unavailable_precision": 0.9375554897898787,
+          "unavailable_f1": 0.9333431538631509,
+          "accuracy": 0.9640735202657104,
+          "balanced_accuracy": 0.9530989648444712,
+          "brier_score": 0.03035676388607875,
+          "pr_auc_unavailable": 0.9677207046592695
+        },
+        {
+          "eta_minutes": 20,
+          "n": 226917,
+          "roc_auc": 0.9770716159466192,
+          "unavailable_recall": 0.9037828405873445,
+          "unavailable_precision": 0.9177727257530675,
+          "unavailable_f1": 0.9107240607116198,
+          "accuracy": 0.9525641534129219,
+          "balanced_accuracy": 0.9370902239213044,
+          "brier_score": 0.038564692312860756,
+          "pr_auc_unavailable": 0.9559063629547367
+        },
+        {
+          "eta_minutes": 30,
+          "n": 227390,
+          "roc_auc": 0.965928997718053,
+          "unavailable_recall": 0.8481101847036522,
+          "unavailable_precision": 0.8998433662026983,
+          "unavailable_f1": 0.8732112167612336,
+          "accuracy": 0.9354369145520911,
+          "balanced_accuracy": 0.907286209105213,
+          "brier_score": 0.04992647792782989,
+          "pr_auc_unavailable": 0.9353813452275523
+        },
+        {
+          "eta_minutes": 45,
+          "n": 226954,
+          "roc_auc": 0.9535891886002758,
+          "unavailable_recall": 0.7688701278480355,
+          "unavailable_precision": 0.9247206674850711,
+          "unavailable_f1": 0.8396244237890124,
+          "accuracy": 0.9251918891052813,
+          "balanced_accuracy": 0.8737404774302933,
+          "brier_score": 0.05820768610570978,
+          "pr_auc_unavailable": 0.9129456750022564
+        },
+        {
+          "eta_minutes": 60,
+          "n": 226657,
+          "roc_auc": 0.9489901523049294,
+          "unavailable_recall": 0.754610476123694,
+          "unavailable_precision": 0.9183146666666666,
+          "unavailable_f1": 0.8284529296856206,
+          "accuracy": 0.9213481163167253,
+          "balanced_accuracy": 0.8660177777846276,
+          "brier_score": 0.06211107013007268,
+          "pr_auc_unavailable": 0.901395527782018
+        }
+      ],
+      "rapid_only": {
+        "roc_auc": 0.9489150660256227,
+        "accuracy": 0.9472578397916119,
+        "balanced_accuracy": 0.8185469682738293,
+        "unavailable_recall": 0.6540787041766897,
+        "unavailable_precision": 0.8244632278910768,
+        "unavailable_f1": 0.7294535623837959,
+        "pr_auc_unavailable": 0.8072399094636471,
+        "brier_score": 0.04038210210312494,
+        "n": 990460
+      }
+    },
+    {
+      "fold": 3,
+      "train_dates": [
+        "2026-07-22",
+        "2026-07-23",
+        "2026-07-24",
+        "2026-07-25",
+        "2026-07-26",
+        "2026-07-27",
+        "2026-07-28",
+        "2026-07-29",
+        "2026-07-30",
+        "2026-07-31",
+        "2026-08-01"
+      ],
+      "test_dates": [
+        "2026-08-02",
+        "2026-08-03",
+        "2026-08-04"
+      ],
+      "n_train": 5686651,
+      "n_test": 1606170,
+      "positive_rate_test": 0.7468642796217088,
+      "overall": {
+        "roc_auc": 0.9663020593612027,
+        "accuracy": 0.94296369624635,
+        "balanced_accuracy": 0.9148845204106919,
+        "unavailable_recall": 0.8580128339141962,
+        "unavailable_precision": 0.9114756839660232,
+        "unavailable_f1": 0.8839366028556588,
+        "pr_auc_unavailable": 0.9262308764330963,
+        "brier_score": 0.04731510747190451
+      },
+      "per_eta": [
+        {
+          "eta_minutes": 5,
+          "n": 228611,
+          "roc_auc": 0.9900204640102588,
+          "unavailable_recall": 0.9672517552657974,
+          "unavailable_precision": 0.9643339277678705,
+          "unavailable_f1": 0.9657906377012376,
+          "accuracy": 0.9820699791348623,
+          "balanced_accuracy": 0.9772866770831063,
+          "brier_score": 0.016423083286794437,
+          "pr_auc_unavailable": 0.9761122201462196
+        },
+        {
+          "eta_minutes": 10,
+          "n": 229305,
+          "roc_auc": 0.9811900113764294,
+          "unavailable_recall": 0.9363771828486279,
+          "unavailable_precision": 0.9388765780284717,
+          "unavailable_f1": 0.937625214803638,
+          "accuracy": 0.9675497699570441,
+          "balanced_accuracy": 0.957453118662517,
+          "brier_score": 0.028696528359142853,
+          "pr_auc_unavailable": 0.9557541912365187
+        },
+        {
+          "eta_minutes": 15,
+          "n": 229542,
+          "roc_auc": 0.9722044894572295,
+          "unavailable_recall": 0.908139005513683,
+          "unavailable_precision": 0.9150978659779802,
+          "unavailable_f1": 0.9116051555901593,
+          "accuracy": 0.9544963448954875,
+          "balanced_accuracy": 0.939392732409968,
+          "brier_score": 0.0391682803471422,
+          "pr_auc_unavailable": 0.9366633233079462
+        },
+        {
+          "eta_minutes": 20,
+          "n": 229732,
+          "roc_auc": 0.962801385586837,
+          "unavailable_recall": 0.8795264861182082,
+          "unavailable_precision": 0.8920464360985385,
+          "unavailable_f1": 0.8857422210024357,
+          "accuracy": 0.94201069071788,
+          "balanced_accuracy": 0.9214936637067401,
+          "brier_score": 0.04862009369842399,
+          "pr_auc_unavailable": 0.9171231034232581
+        },
+        {
+          "eta_minutes": 30,
+          "n": 230097,
+          "roc_auc": 0.9498622634336437,
+          "unavailable_recall": 0.8237384506041222,
+          "unavailable_precision": 0.8715884079236977,
+          "unavailable_f1": 0.8469881558191557,
+          "accuracy": 0.9253836425507503,
+          "balanced_accuracy": 0.8915658786284343,
+          "brier_score": 0.059851231311647206,
+          "pr_auc_unavailable": 0.8925941653806223
+        },
+        {
+          "eta_minutes": 45,
+          "n": 229622,
+          "roc_auc": 0.937257792178799,
+          "unavailable_recall": 0.7429983231652931,
+          "unavailable_precision": 0.8964144283746557,
+          "unavailable_f1": 0.8125280427615537,
+          "accuracy": 0.916297218907596,
+          "balanced_accuracy": 0.8576339591213067,
+          "brier_score": 0.06756478311303242,
+          "pr_auc_unavailable": 0.8691147504613701
+        },
+        {
+          "eta_minutes": 60,
+          "n": 229261,
+          "roc_auc": 0.932970993467937,
+          "unavailable_recall": 0.7308847476026777,
+          "unavailable_precision": 0.8890747424949379,
+          "unavailable_f1": 0.8022560721307569,
+          "accuracy": 0.913138300888507,
+          "balanced_accuracy": 0.8509588660336957,
+          "brier_score": 0.07072744630535235,
+          "pr_auc_unavailable": 0.8580797948384823
+        }
+      ],
+      "rapid_only": {
+        "roc_auc": 0.9441065103498263,
+        "accuracy": 0.947148292673433,
+        "balanced_accuracy": 0.8149500764789038,
+        "unavailable_recall": 0.6484853641933288,
+        "unavailable_precision": 0.8001329880310772,
+        "unavailable_f1": 0.7163716120946263,
+        "pr_auc_unavailable": 0.7777277848468457,
+        "brier_score": 0.04123536566669925,
+        "n": 1027630
+      }
+    },
+    {
+      "fold": 4,
+      "train_dates": [
+        "2026-07-22",
+        "2026-07-23",
+        "2026-07-24",
+        "2026-07-25",
+        "2026-07-26",
+        "2026-07-27",
+        "2026-07-28",
+        "2026-07-29",
+        "2026-07-30",
+        "2026-07-31",
+        "2026-08-01",
+        "2026-08-02",
+        "2026-08-03",
+        "2026-08-04"
+      ],
+      "test_dates": [
+        "2026-08-05",
+        "2026-08-06",
+        "2026-08-07"
+      ],
+      "n_train": 7292821,
+      "n_test": 1683412,
+      "positive_rate_test": 0.7419496831435204,
+      "overall": {
+        "roc_auc": 0.9709384491235092,
+        "accuracy": 0.9469113918636674,
+        "balanced_accuracy": 0.9211359549803921,
+        "unavailable_recall": 0.867869844960348,
+        "unavailable_precision": 0.9218248369720695,
+        "unavailable_f1": 0.8940340343188867,
+        "pr_auc_unavailable": 0.9406426724793419,
+        "brier_score": 0.04396049848153977
+      },
+      "per_eta": [
+        {
+          "eta_minutes": 5,
+          "n": 238789,
+          "roc_auc": 0.9904333014832578,
+          "unavailable_recall": 0.9663048786251004,
+          "unavailable_precision": 0.963451601250216,
+          "unavailable_f1": 0.9648761305544632,
+          "accuracy": 0.9812972959390927,
+          "balanced_accuracy": 0.976515548811261,
+          "brier_score": 0.017123138522804428,
+          "pr_auc_unavailable": 0.9782918498535519
+        },
+        {
+          "eta_minutes": 10,
+          "n": 239633,
+          "roc_auc": 0.9835143871166842,
+          "unavailable_recall": 0.9403687844649149,
+          "unavailable_precision": 0.9416036452235548,
+          "unavailable_f1": 0.940985809715799,
+          "accuracy": 0.9688481970346321,
+          "balanced_accuracy": 0.9597190517615597,
+          "brier_score": 0.027509712211733,
+          "pr_auc_unavailable": 0.9646634538961615
+        },
+        {
+          "eta_minutes": 15,
+          "n": 240720,
+          "roc_auc": 0.976692416914633,
+          "unavailable_recall": 0.9161030341340076,
+          "unavailable_precision": 0.9192990802410402,
+          "unavailable_f1": 0.9176982744973881,
+          "accuracy": 0.9568045862412762,
+          "balanced_accuracy": 0.9437114584556423,
+          "brier_score": 0.03642269602666785,
+          "pr_auc_unavailable": 0.9522411455447725
+        },
+        {
+          "eta_minutes": 20,
+          "n": 240934,
+          "roc_auc": 0.9702197405552598,
+          "unavailable_recall": 0.8918214194861358,
+          "unavailable_precision": 0.9060834167932026,
+          "unavailable_f1": 0.8988958510280284,
+          "accuracy": 0.9476288112097089,
+          "balanced_accuracy": 0.9295827348163669,
+          "brier_score": 0.04355230381949039,
+          "pr_auc_unavailable": 0.9404567810923252
+        },
+        {
+          "eta_minutes": 30,
+          "n": 241325,
+          "roc_auc": 0.9583402249765821,
+          "unavailable_recall": 0.8388339809425536,
+          "unavailable_precision": 0.8882116944088775,
+          "unavailable_f1": 0.8628169621386756,
+          "accuracy": 0.9314451465865534,
+          "balanced_accuracy": 0.9011572945392738,
+          "brier_score": 0.05477412797421782,
+          "pr_auc_unavailable": 0.9196304989049285
+        },
+        {
+          "eta_minutes": 45,
+          "n": 241085,
+          "roc_auc": 0.9464100840192329,
+          "unavailable_recall": 0.7609512722434725,
+          "unavailable_precision": 0.9157793611400208,
+          "unavailable_f1": 0.8312169600523189,
+          "accuracy": 0.9229234502353941,
+          "balanced_accuracy": 0.8688484359891067,
+          "brier_score": 0.06227133923462154,
+          "pr_auc_unavailable": 0.8976682457562454
+        },
+        {
+          "eta_minutes": 60,
+          "n": 240926,
+          "roc_auc": 0.9418997857548382,
+          "unavailable_recall": 0.7470407715914072,
+          "unavailable_precision": 0.9116236959608223,
+          "unavailable_f1": 0.8211667670636208,
+          "accuracy": 0.9199048670546143,
+          "balanced_accuracy": 0.8616962474849449,
+          "brier_score": 0.06570741335475716,
+          "pr_auc_unavailable": 0.8855191328964981
+        }
+      ],
+      "rapid_only": {
+        "roc_auc": 0.9482074482868281,
+        "accuracy": 0.9483357880331752,
+        "balanced_accuracy": 0.8273762177013526,
+        "unavailable_recall": 0.6732155061292638,
+        "unavailable_precision": 0.8148245099681689,
+        "unavailable_f1": 0.7372819130541883,
+        "pr_auc_unavailable": 0.7961581375299492,
+        "brier_score": 0.040803862461839306,
+        "n": 1073451
+      }
+    },
+    {
+      "fold": 5,
+      "train_dates": [
+        "2026-07-22",
+        "2026-07-23",
+        "2026-07-24",
+        "2026-07-25",
+        "2026-07-26",
+        "2026-07-27",
+        "2026-07-28",
+        "2026-07-29",
+        "2026-07-30",
+        "2026-07-31",
+        "2026-08-01",
+        "2026-08-02",
+        "2026-08-03",
+        "2026-08-04",
+        "2026-08-05",
+        "2026-08-06",
+        "2026-08-07"
+      ],
+      "test_dates": [
+        "2026-08-08",
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "n_train": 8976233,
+      "n_test": 1649430,
+      "positive_rate_test": 0.7539459085866026,
+      "overall": {
+        "roc_auc": 0.9717015499517532,
+        "accuracy": 0.9470186670546795,
+        "balanced_accuracy": 0.9204034624049405,
+        "unavailable_recall": 0.8680001675500001,
+        "unavailable_precision": 0.9124125213031024,
+        "unavailable_f1": 0.8896524118528732,
+        "pr_auc_unavailable": 0.9389742715699879,
+        "brier_score": 0.04361426099720854
+      },
+      "per_eta": [
+        {
+          "eta_minutes": 5,
+          "n": 234857,
+          "roc_auc": 0.9908766215930951,
+          "unavailable_recall": 0.963512315847561,
+          "unavailable_precision": 0.9599486863369042,
+          "unavailable_f1": 0.9617271998931767,
+          "accuracy": 0.9804732241321314,
+          "balanced_accuracy": 0.9748897837349495,
+          "brier_score": 0.017899824075103765,
+          "pr_auc_unavailable": 0.977679537077819
+        },
+        {
+          "eta_minutes": 10,
+          "n": 235475,
+          "roc_auc": 0.9829073528134181,
+          "unavailable_recall": 0.9307231443100005,
+          "unavailable_precision": 0.931817799956315,
+          "unavailable_f1": 0.9312701504567437,
+          "accuracy": 0.9652362246522985,
+          "balanced_accuracy": 0.9538258221322584,
+          "brier_score": 0.030585616042770755,
+          "pr_auc_unavailable": 0.9612967196661013
+        },
+        {
+          "eta_minutes": 15,
+          "n": 235614,
+          "roc_auc": 0.9766754586939662,
+          "unavailable_recall": 0.9061677131861454,
+          "unavailable_precision": 0.9110115562795907,
+          "unavailable_f1": 0.9085831788987332,
+          "accuracy": 0.95414958364104,
+          "balanced_accuracy": 0.9382173827029554,
+          "brier_score": 0.03873434438136294,
+          "pr_auc_unavailable": 0.9495035036610172
+        },
+        {
+          "eta_minutes": 20,
+          "n": 235778,
+          "roc_auc": 0.9720266248612054,
+          "unavailable_recall": 0.887587861871777,
+          "unavailable_precision": 0.8972850211623826,
+          "unavailable_f1": 0.8924100993334988,
+          "accuracy": 0.9466659315118459,
+          "balanced_accuracy": 0.9269315247806866,
+          "brier_score": 0.043626812317027565,
+          "pr_auc_unavailable": 0.9412410004331279
+        },
+        {
+          "eta_minutes": 30,
+          "n": 236072,
+          "roc_auc": 0.9616522022176663,
+          "unavailable_recall": 0.8443654029669472,
+          "unavailable_precision": 0.878112594731144,
+          "unavailable_f1": 0.8609084074123214,
+          "accuracy": 0.9333889660781457,
+          "balanced_accuracy": 0.9032544522974864,
+          "brier_score": 0.0522032177326387,
+          "pr_auc_unavailable": 0.9215709680628275
+        },
+        {
+          "eta_minutes": 45,
+          "n": 235879,
+          "roc_auc": 0.9492631305523596,
+          "unavailable_recall": 0.7692114695340502,
+          "unavailable_precision": 0.9041159371445423,
+          "unavailable_f1": 0.8312256715146116,
+          "accuracy": 0.9261061815591892,
+          "balanced_accuracy": 0.8719668373942053,
+          "brier_score": 0.05944985303869253,
+          "pr_auc_unavailable": 0.8969366399656309
+        },
+        {
+          "eta_minutes": 60,
+          "n": 235755,
+          "roc_auc": 0.9447325368043323,
+          "unavailable_recall": 0.7592003634711495,
+          "unavailable_precision": 0.8962861249973181,
+          "unavailable_f1": 0.8220674183836117,
+          "accuracy": 0.92329324934784,
+          "balanced_accuracy": 0.8662266410948399,
+          "brier_score": 0.06266394062946609,
+          "pr_auc_unavailable": 0.884370583942656
+        }
+      ],
+      "rapid_only": {
+        "roc_auc": 0.9494342141902691,
+        "accuracy": 0.9530177222392764,
+        "balanced_accuracy": 0.8264704445170239,
+        "unavailable_recall": 0.670485201936047,
+        "unavailable_precision": 0.7992740428953156,
+        "unavailable_f1": 0.7292370093095004,
+        "pr_auc_unavailable": 0.7879433424023926,
+        "brier_score": 0.03691236953546186,
+        "n": 1068488
+      }
+    },
+    {
+      "fold": 6,
+      "train_dates": [
+        "2026-07-22",
+        "2026-07-23",
+        "2026-07-24",
+        "2026-07-25",
+        "2026-07-26",
+        "2026-07-27",
+        "2026-07-28",
+        "2026-07-29",
+        "2026-07-30",
+        "2026-07-31",
+        "2026-08-01",
+        "2026-08-02",
+        "2026-08-03",
+        "2026-08-04",
+        "2026-08-05",
+        "2026-08-06",
+        "2026-08-07",
+        "2026-08-08",
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "test_dates": [
+        "2026-08-11",
+        "2026-08-12",
+        "2026-08-13"
+      ],
+      "n_train": 10625663,
+      "n_test": 1561259,
+      "positive_rate_test": 0.7563319090554482,
+      "overall": {
+        "roc_auc": 0.9717119557959475,
+        "accuracy": 0.9437434788206185,
+        "balanced_accuracy": 0.9142649797947584,
+        "unavailable_recall": 0.8567643371036383,
+        "unavailable_precision": 0.9072027789065849,
+        "unavailable_f1": 0.8812624458062449,
+        "pr_auc_unavailable": 0.9369700958967371,
+        "brier_score": 0.04576699960917454
+      },
+      "per_eta": [
+        {
+          "eta_minutes": 5,
+          "n": 222076,
+          "roc_auc": 0.9920590186901709,
+          "unavailable_recall": 0.9682958577771438,
+          "unavailable_precision": 0.9648377811733769,
+          "unavailable_f1": 0.9665637264935967,
+          "accuracy": 0.9830823681982744,
+          "balanced_accuracy": 0.9781869059661947,
+          "brier_score": 0.015376982912944544,
+          "pr_auc_unavailable": 0.9803813250668583
+        },
+        {
+          "eta_minutes": 10,
+          "n": 222722,
+          "roc_auc": 0.9843717213532375,
+          "unavailable_recall": 0.9354556179172774,
+          "unavailable_precision": 0.9376679686100261,
+          "unavailable_f1": 0.9365604867573372,
+          "accuracy": 0.9681665933315973,
+          "balanced_accuracy": 0.9572976511421663,
+          "brier_score": 0.02806579071144072,
+          "pr_auc_unavailable": 0.9636403550537066
+        },
+        {
+          "eta_minutes": 15,
+          "n": 223075,
+          "roc_auc": 0.9773893477309616,
+          "unavailable_recall": 0.9040002875318981,
+          "unavailable_precision": 0.9125938826602809,
+          "unavailable_f1": 0.9082767586306515,
+          "accuracy": 0.9544547797825843,
+          "balanced_accuracy": 0.9376119553398102,
+          "brier_score": 0.03868076029208671,
+          "pr_auc_unavailable": 0.9484066087967812
+        },
+        {
+          "eta_minutes": 20,
+          "n": 223272,
+          "roc_auc": 0.9709311596643129,
+          "unavailable_recall": 0.8720944978893781,
+          "unavailable_precision": 0.8899097833321009,
+          "unavailable_f1": 0.8809120771532359,
+          "accuracy": 0.9417078720126124,
+          "balanced_accuracy": 0.9183319432775762,
+          "brier_score": 0.047684573092494666,
+          "pr_auc_unavailable": 0.9344589678313099
+        },
+        {
+          "eta_minutes": 30,
+          "n": 223665,
+          "roc_auc": 0.9590624192838978,
+          "unavailable_recall": 0.8179174153868954,
+          "unavailable_precision": 0.8656066814358814,
+          "unavailable_f1": 0.841086600373376,
+          "accuracy": 0.925406299599848,
+          "balanced_accuracy": 0.8887593960317708,
+          "brier_score": 0.05817746263802151,
+          "pr_auc_unavailable": 0.9104908497033257
+        },
+        {
+          "eta_minutes": 45,
+          "n": 223331,
+          "roc_auc": 0.9466453985602863,
+          "unavailable_recall": 0.7469500498733983,
+          "unavailable_precision": 0.883514089939647,
+          "unavailable_f1": 0.8095129201920878,
+          "accuracy": 0.917942426264155,
+          "balanced_accuracy": 0.8584807784749792,
+          "brier_score": 0.06484501970288777,
+          "pr_auc_unavailable": 0.885087856272675
+        },
+        {
+          "eta_minutes": 60,
+          "n": 223118,
+          "roc_auc": 0.9427783673138218,
+          "unavailable_recall": 0.7341095517630136,
+          "unavailable_precision": 0.8806165038356611,
+          "unavailable_f1": 0.8007166103060435,
+          "accuracy": 0.9157441353902419,
+          "balanced_accuracy": 0.8521426178126312,
+          "brier_score": 0.06731373651945717,
+          "pr_auc_unavailable": 0.8747927879837849
+        }
+      ],
+      "rapid_only": {
+        "roc_auc": 0.9485662935109561,
+        "accuracy": 0.9524001189825227,
+        "balanced_accuracy": 0.8157573424703519,
+        "unavailable_recall": 0.6481903100197886,
+        "unavailable_precision": 0.7980352347894427,
+        "unavailable_f1": 0.7153499785721414,
+        "pr_auc_unavailable": 0.7784888032345881,
+        "brier_score": 0.03728975876544608,
+        "n": 1018637
+      }
+    },
+    {
+      "fold": 7,
+      "train_dates": [
+        "2026-07-22",
+        "2026-07-23",
+        "2026-07-24",
+        "2026-07-25",
+        "2026-07-26",
+        "2026-07-27",
+        "2026-07-28",
+        "2026-07-29",
+        "2026-07-30",
+        "2026-07-31",
+        "2026-08-01",
+        "2026-08-02",
+        "2026-08-03",
+        "2026-08-04",
+        "2026-08-05",
+        "2026-08-06",
+        "2026-08-07",
+        "2026-08-08",
+        "2026-08-09",
+        "2026-08-10",
+        "2026-08-11",
+        "2026-08-12",
+        "2026-08-13"
+      ],
+      "test_dates": [
+        "2026-08-14",
+        "2026-08-15",
+        "2026-08-16"
+      ],
+      "n_train": 12186922,
+      "n_test": 1599233,
+      "positive_rate_test": 0.7708020032102889,
+      "overall": {
+        "roc_auc": 0.9760868020949844,
+        "accuracy": 0.9528680311124145,
+        "balanced_accuracy": 0.9225892166539789,
+        "unavailable_recall": 0.866683399674252,
+        "unavailable_precision": 0.9229801501522441,
+        "unavailable_f1": 0.89394632241725,
+        "pr_auc_unavailable": 0.9455737471717728,
+        "brier_score": 0.0380354384711885
+      },
+      "per_eta": [
+        {
+          "eta_minutes": 5,
+          "n": 227884,
+          "roc_auc": 0.9919626533864466,
+          "unavailable_recall": 0.9644339394390575,
+          "unavailable_precision": 0.9650985212500466,
+          "unavailable_f1": 0.9647661158948103,
+          "accuracy": 0.9833906724473855,
+          "balanced_accuracy": 0.9768366432250095,
+          "brier_score": 0.015019032310622106,
+          "pr_auc_unavailable": 0.9805902055310298
+        },
+        {
+          "eta_minutes": 10,
+          "n": 228294,
+          "roc_auc": 0.9865480663946951,
+          "unavailable_recall": 0.9374241150649109,
+          "unavailable_precision": 0.9419636991572349,
+          "unavailable_f1": 0.9396884245215893,
+          "accuracy": 0.9717820004029891,
+          "balanced_accuracy": 0.9598655889671741,
+          "brier_score": 0.024224053317895386,
+          "pr_auc_unavailable": 0.9685653731128774
+        },
+        {
+          "eta_minutes": 15,
+          "n": 228435,
+          "roc_auc": 0.9816919213826953,
+          "unavailable_recall": 0.9168013835106583,
+          "unavailable_precision": 0.9243073191070007,
+          "unavailable_f1": 0.9205390509984523,
+          "accuracy": 0.9631404994856305,
+          "balanced_accuracy": 0.947004696617316,
+          "brier_score": 0.03100967932595298,
+          "pr_auc_unavailable": 0.958201944404706
+        },
+        {
+          "eta_minutes": 20,
+          "n": 228647,
+          "roc_auc": 0.97647636724639,
+          "unavailable_recall": 0.8924466959020112,
+          "unavailable_precision": 0.9078393293210529,
+          "unavailable_f1": 0.9000772083003689,
+          "accuracy": 0.9541520334839294,
+          "balanced_accuracy": 0.932586958450428,
+          "brier_score": 0.037236625360041055,
+          "pr_auc_unavailable": 0.9474615194080862
+        },
+        {
+          "eta_minutes": 30,
+          "n": 229007,
+          "roc_auc": 0.9666693657938805,
+          "unavailable_recall": 0.8374363490179563,
+          "unavailable_precision": 0.8903769437433852,
+          "unavailable_f1": 0.8630955904113643,
+          "accuracy": 0.9393992323378761,
+          "balanced_accuracy": 0.9034836028363432,
+          "brier_score": 0.046776150589570326,
+          "pr_auc_unavailable": 0.9261542389783366
+        },
+        {
+          "eta_minutes": 45,
+          "n": 228588,
+          "roc_auc": 0.9552729843550086,
+          "unavailable_recall": 0.7606749990143122,
+          "unavailable_precision": 0.9146419513120155,
+          "unavailable_f1": 0.8305834490329663,
+          "accuracy": 0.9311381174864822,
+          "balanced_accuracy": 0.8702144827863276,
+          "brier_score": 0.054071595827777416,
+          "pr_auc_unavailable": 0.9006674450821137
+        },
+        {
+          "eta_minutes": 60,
+          "n": 228378,
+          "roc_auc": 0.9504487204734484,
+          "unavailable_recall": 0.7439303710490152,
+          "unavailable_precision": 0.9083436686851001,
+          "unavailable_f1": 0.8179568597394066,
+          "accuracy": 0.9271996426976329,
+          "balanced_accuracy": 0.8613881491152557,
+          "brier_score": 0.0578199412583423,
+          "pr_auc_unavailable": 0.8873785563152706
+        }
+      ],
+      "rapid_only": {
+        "roc_auc": 0.950330106650512,
+        "accuracy": 0.9561282520311698,
+        "balanced_accuracy": 0.8089460371260744,
+        "unavailable_recall": 0.6334644000753438,
+        "unavailable_precision": 0.7810744509442452,
+        "unavailable_f1": 0.6995677186596028,
+        "pr_auc_unavailable": 0.7619011908901123,
+        "brier_score": 0.033610578935671875,
+        "n": 1053457
+      }
+    },
+    {
+      "fold": 8,
+      "train_dates": [
+        "2026-07-22",
+        "2026-07-23",
+        "2026-07-24",
+        "2026-07-25",
+        "2026-07-26",
+        "2026-07-27",
+        "2026-07-28",
+        "2026-07-29",
+        "2026-07-30",
+        "2026-07-31",
+        "2026-08-01",
+        "2026-08-02",
+        "2026-08-03",
+        "2026-08-04",
+        "2026-08-05",
+        "2026-08-06",
+        "2026-08-07",
+        "2026-08-08",
+        "2026-08-09",
+        "2026-08-10",
+        "2026-08-11",
+        "2026-08-12",
+        "2026-08-13",
+        "2026-08-14",
+        "2026-08-15",
+        "2026-08-16"
+      ],
+      "test_dates": [
+        "2026-08-17",
+        "2026-08-18"
+      ],
+      "n_train": 13786155,
+      "n_test": 712320,
+      "positive_rate_test": 0.7946288185085355,
+      "overall": {
+        "roc_auc": 0.9755977386234432,
+        "accuracy": 0.9570179132973944,
+        "balanced_accuracy": 0.9233463908961298,
+        "unavailable_recall": 0.866204115113815,
+        "unavailable_precision": 0.9198321731114031,
+        "unavailable_f1": 0.8922130180847806,
+        "pr_auc_unavailable": 0.9402986825046628,
+        "brier_score": 0.03535737183220424
+      },
+      "per_eta": [
+        {
+          "eta_minutes": 5,
+          "n": 101412,
+          "roc_auc": 0.9921707296138673,
+          "unavailable_recall": 0.9615849126718692,
+          "unavailable_precision": 0.9622553804676243,
+          "unavailable_f1": 0.961920029739086,
+          "accuracy": 0.9838382045517295,
+          "balanced_accuracy": 0.9757100869002528,
+          "brier_score": 0.014239659291559851,
+          "pr_auc_unavailable": 0.9798305767726675
+        },
+        {
+          "eta_minutes": 10,
+          "n": 101675,
+          "roc_auc": 0.9855949293387474,
+          "unavailable_recall": 0.9306654257794323,
+          "unavailable_precision": 0.9394964299135663,
+          "unavailable_f1": 0.9350600776099864,
+          "accuracy": 0.9726776493730022,
+          "balanced_accuracy": 0.9573012855654037,
+          "brier_score": 0.02362735106381528,
+          "pr_auc_unavailable": 0.9634549415541073
+        },
+        {
+          "eta_minutes": 15,
+          "n": 101737,
+          "roc_auc": 0.9805601273289585,
+          "unavailable_recall": 0.9094912395765015,
+          "unavailable_precision": 0.9209240548361084,
+          "unavailable_f1": 0.9151719423951729,
+          "accuracy": 0.9646244729056292,
+          "balanced_accuracy": 0.9443775437598396,
+          "brier_score": 0.029835136404113765,
+          "pr_auc_unavailable": 0.9513575336810669
+        },
+        {
+          "eta_minutes": 20,
+          "n": 101831,
+          "roc_auc": 0.9761462534465145,
+          "unavailable_recall": 0.8892615864317097,
+          "unavailable_precision": 0.9066955684007707,
+          "unavailable_f1": 0.8978939585469984,
+          "accuracy": 0.9579597568520392,
+          "balanced_accuracy": 0.9326241979565074,
+          "brier_score": 0.03474632851292437,
+          "pr_auc_unavailable": 0.9416116746402582
+        },
+        {
+          "eta_minutes": 30,
+          "n": 101940,
+          "roc_auc": 0.9675390113578015,
+          "unavailable_recall": 0.8444284341978866,
+          "unavailable_precision": 0.8892766818411735,
+          "unavailable_f1": 0.8662724809066272,
+          "accuracy": 0.9467529919560526,
+          "balanced_accuracy": 0.9087218600969709,
+          "brier_score": 0.04223878232666926,
+          "pr_auc_unavailable": 0.9224134687433185
+        },
+        {
+          "eta_minutes": 45,
+          "n": 101892,
+          "roc_auc": 0.9554800958601424,
+          "unavailable_recall": 0.7624658215262242,
+          "unavailable_precision": 0.9098297443198671,
+          "unavailable_f1": 0.8296548739586714,
+          "accuracy": 0.938189455501904,
+          "balanced_accuracy": 0.8719393441123423,
+          "brier_score": 0.04971043719492412,
+          "pr_auc_unavailable": 0.8947094166040763
+        },
+        {
+          "eta_minutes": 60,
+          "n": 101833,
+          "roc_auc": 0.9501914350214381,
+          "unavailable_recall": 0.7496468926553672,
+          "unavailable_precision": 0.9011035653650254,
+          "unavailable_f1": 0.8184271395528142,
+          "accuracy": 0.9352469238851846,
+          "balanced_accuracy": 0.8648794157944495,
+          "brier_score": 0.05297763856348964,
+          "pr_auc_unavailable": 0.8801372139449314
+        }
+      ],
+      "rapid_only": {
+        "roc_auc": 0.9539662349570124,
+        "accuracy": 0.9622109218248001,
+        "balanced_accuracy": 0.8172972349881367,
+        "unavailable_recall": 0.6482029350596092,
+        "unavailable_precision": 0.7857751580143456,
+        "unavailable_f1": 0.7103898813823213,
+        "pr_auc_unavailable": 0.764413801558197,
+        "brier_score": 0.02927853285760115,
+        "n": 477466
+      }
+    }
+  ],
+  "elapsed_min": 126.0
+}

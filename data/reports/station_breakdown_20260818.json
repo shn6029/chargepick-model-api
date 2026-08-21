@@ -1,0 +1,258 @@
+{
+  "generated_at": "2026-08-18T07:50:02.002388+00:00",
+  "source": "scripts/analysis/station_breakdown_staged.py",
+  "test_dates": [
+    "2026-08-13",
+    "2026-08-14",
+    "2026-08-15",
+    "2026-08-16",
+    "2026-08-17",
+    "2026-08-18"
+  ],
+  "n_test": 2977654,
+  "n_stations_test": 3459,
+  "eta_focus": 30,
+  "min_unavail": 50,
+  "overall": {
+    "n": 2977654,
+    "positive_rate": 0.7744690954691177,
+    "threshold": 0.5,
+    "accuracy": 0.9517368371207668,
+    "f1_available": 0.9691019370979072,
+    "balanced_accuracy": 0.9206486008395909,
+    "roc_auc": 0.9738473883706094,
+    "pr_auc_unavailable": 0.9383522825104639,
+    "brier_score": 0.03942809662265459,
+    "log_loss": 0.14886135291344857,
+    "confusion_matrix": {
+      "tn": 580232,
+      "fp": 91321,
+      "fn": 52390,
+      "tp": 2253711
+    },
+    "unavailable_precision": 0.9171859340965063,
+    "unavailable_recall": 0.8640152005872954,
+    "unavailable_f1": 0.8898069660896736
+  },
+  "station_recall_quantiles": {
+    "p10": 0.36727272727272736,
+    "p25": 0.8466407010710808,
+    "p50": 0.9160084413626771,
+    "p75": 0.9486074270557029,
+    "p90": 0.9682539682539683
+  },
+  "n_stations_scored": 502,
+  "unavail_rate_vs_recall": {
+    "spearman_rho": 0.42346689518633535,
+    "p_value": 2.913738241596609e-23,
+    "n": 502
+  },
+  "unavail_rate_bins": [
+    {
+      "bin": "<5%",
+      "n_stations": 22,
+      "recall_mean": 0.23411432768010085,
+      "recall_median": 0.188528186005703,
+      "fn_share": 0.11195519217150583,
+      "unavail_rate_mean": 0.027328926334556514
+    },
+    {
+      "bin": "5~10%",
+      "n_stations": 22,
+      "recall_mean": 0.2524855178683043,
+      "recall_median": 0.26135741652983036,
+      "fn_share": 0.11253460374686151,
+      "unavail_rate_mean": 0.07010413555480192
+    },
+    {
+      "bin": "10~20%",
+      "n_stations": 6,
+      "recall_mean": 0.3243373246343751,
+      "recall_median": 0.2840785169029444,
+      "fn_share": 0.03360587137063027,
+      "unavail_rate_mean": 0.13645803807887125
+    },
+    {
+      "bin": "20~30%",
+      "n_stations": 15,
+      "recall_mean": 0.5720056695939612,
+      "recall_median": 0.4915254237288136,
+      "fn_share": 0.11646172664649455,
+      "unavail_rate_mean": 0.25556133062631364
+    },
+    {
+      "bin": ">=30%",
+      "n_stations": 437,
+      "recall_mean": 0.9033959850721905,
+      "recall_median": 0.9253731343283582,
+      "fn_share": 0.3183544711259898,
+      "unavail_rate_mean": 0.5290586244175497
+    }
+  ],
+  "fn_concentration": [
+    {
+      "top_pct_stations": 5,
+      "n_stations": 172,
+      "fn_share": 0.6139187536213223
+    },
+    {
+      "top_pct_stations": 10,
+      "n_stations": 345,
+      "fn_share": 0.7306379965235306
+    },
+    {
+      "top_pct_stations": 20,
+      "n_stations": 691,
+      "fn_share": 0.8486448207043069
+    },
+    {
+      "top_pct_stations": 30,
+      "n_stations": 1037,
+      "fn_share": 0.9154059099980686
+    },
+    {
+      "top_pct_stations": 50,
+      "n_stations": 1729,
+      "fn_share": 0.9804287645657632
+    }
+  ],
+  "totals": {
+    "n_unavail": 95489,
+    "n_fn": 15533,
+    "pooled_recall": 0.8373320487176533
+  },
+  "worst_stations": [
+    {
+      "stat_id": "ME25C278",
+      "n": 3240,
+      "n_unavail": 93,
+      "recall": 0.08602150537634409
+    },
+    {
+      "stat_id": "ME25C426",
+      "n": 6480,
+      "n_unavail": 199,
+      "recall": 0.10050251256281408
+    },
+    {
+      "stat_id": "ME20C286",
+      "n": 2055,
+      "n_unavail": 127,
+      "recall": 0.10236220472440945
+    },
+    {
+      "stat_id": "ME18C263",
+      "n": 2284,
+      "n_unavail": 55,
+      "recall": 0.10909090909090909
+    },
+    {
+      "stat_id": "ME25C427",
+      "n": 6480,
+      "n_unavail": 88,
+      "recall": 0.11363636363636363
+    },
+    {
+      "stat_id": "ME18C264",
+      "n": 2214,
+      "n_unavail": 81,
+      "recall": 0.12345679012345678
+    },
+    {
+      "stat_id": "ME25C277",
+      "n": 3240,
+      "n_unavail": 76,
+      "recall": 0.13157894736842105
+    },
+    {
+      "stat_id": "ME25C428",
+      "n": 6480,
+      "n_unavail": 90,
+      "recall": 0.13333333333333333
+    },
+    {
+      "stat_id": "ME21C228",
+      "n": 3239,
+      "n_unavail": 165,
+      "recall": 0.14545454545454545
+    },
+    {
+      "stat_id": "ME18C257",
+      "n": 2271,
+      "n_unavail": 74,
+      "recall": 0.14864864864864866
+    },
+    {
+      "stat_id": "ME18C260",
+      "n": 2236,
+      "n_unavail": 137,
+      "recall": 0.15328467153284672
+    },
+    {
+      "stat_id": "ME18C265",
+      "n": 2235,
+      "n_unavail": 65,
+      "recall": 0.16923076923076924
+    },
+    {
+      "stat_id": "ME18C254",
+      "n": 2240,
+      "n_unavail": 179,
+      "recall": 0.17318435754189945
+    },
+    {
+      "stat_id": "ME18C230",
+      "n": 2275,
+      "n_unavail": 127,
+      "recall": 0.1732283464566929
+    },
+    {
+      "stat_id": "ME20C304",
+      "n": 3024,
+      "n_unavail": 68,
+      "recall": 0.17647058823529413
+    }
+  ],
+  "worst_quintile_busi_mix": {
+    "ME": {
+      "overall": 0.593862604158847,
+      "worst20": 0.9507656482988242,
+      "diff": 0.3569030441399772
+    },
+    "LU": {
+      "overall": 0.05524876135425268,
+      "worst20": 0.0,
+      "diff": -0.05524876135425268
+    },
+    "PI": {
+      "overall": 0.0451964942571879,
+      "worst20": 0.0007149228223791269,
+      "diff": -0.04448157143480877
+    },
+    "CV": {
+      "overall": 0.06780647098566174,
+      "worst20": 0.024606962667411095,
+      "diff": -0.043199508318250646
+    },
+    "PW": {
+      "overall": 0.04376313715186547,
+      "worst20": 0.0019949751138769924,
+      "diff": -0.04176816203798848
+    },
+    "PL": {
+      "overall": 0.03285226334359282,
+      "worst20": 0.0013413313905589336,
+      "diff": -0.03151093195303389
+    },
+    "HM": {
+      "overall": 0.027365156519780796,
+      "worst20": 0.0,
+      "diff": -0.027365156519780796
+    },
+    "EV": {
+      "overall": 0.02448905862923204,
+      "worst20": 0.0012391995587904868,
+      "diff": -0.023249859070441553
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <title>Recommend demo map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    html,body,#map { height:100%; margin:0; }
+    .rank-tip {
+      background: transparent; border: none; box-shadow: none;
+      font-weight: 700; color: #111; font-size: 12px;
+    }
+    .panel {
+      position:absolute; z-index:1000; top:12px; left:12px;
+      background:rgba(255,255,255,0.92); padding:10px 12px;
+      font: 13px/1.4 system-ui, sans-serif; max-width:320px;
+      border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.15);
+    }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <div><b>대구시청 근처 · ETA 15분</b></div>
+    <div>반경 2.0km · confidence=high</div>
+    <div>model 20260729T020353Z</div>
+  </div>
+  <div id="map"></div>
+  <script>
+    const map = L.map('map').setView([35.8714, 128.6014], 14);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19, attribution: '&copy; OpenStreetMap'
+    }).addTo(map);
+    L.marker([35.8714, 128.6014]).bindPopup('목적지').addTo(map);
+    L.circleMarker([35.87471399,128.5905536],{radius:10,color:'#1a7f37',fillColor:'#1a7f37',fillOpacity:0.85}).bindPopup('#1 대구 중구청 관리공영주차장 급속충전소<br>score=80.7 (매우 추천)<br>prob=0.926 · 1044m').addTo(map);L.marker([35.87471399,128.5905536],{opacity:0}).bindTooltip('1',{permanent:true,direction:'center',className:'rank-tip'}).addTo(map); L.circleMarker([35.88442271,128.58852277],{radius:10,color:'#1a7f37',fillColor:'#1a7f37',fillOpacity:0.85}).bindPopup('#2 대구은행 제2본점영업부<br>score=79.6 (추천)<br>prob=0.836 · 1856m').addTo(map);L.marker([35.88442271,128.58852277],{opacity:0}).bindTooltip('2',{permanent:true,direction:'center',className:'rank-tip'}).addTo(map); L.circleMarker([35.860751,128.587184],{radius:10,color:'#0969da',fillColor:'#0969da',fillOpacity:0.85}).bindPopup('#3 천주교 대구대교구청<br>score=74.0 (추천)<br>prob=0.934 · 1744m').addTo(map);L.marker([35.860751,128.587184],{opacity:0}).bindTooltip('3',{permanent:true,direction:'center',className:'rank-tip'}).addTo(map); L.circleMarker([35.88347,128.592245],{radius:10,color:'#0969da',fillColor:'#0969da',fillOpacity:0.85}).bindPopup('#4 대구오페라하우스<br>score=71.6 (추천)<br>prob=0.814 · 1575m').addTo(map);L.marker([35.88347,128.592245],{opacity:0}).bindTooltip('4',{permanent:true,direction:'center',className:'rank-tip'}).addTo(map); L.circleMarker([35.8571,128.6031],{radius:10,color:'#0969da',fillColor:'#0969da',fillOpacity:0.85}).bindPopup('#5 중구 청라국민체육센터 지하<br>score=65.2 (추천)<br>prob=0.537 · 1597m').addTo(map);L.marker([35.8571,128.6031],{opacity:0}).bindTooltip('5',{permanent:true,direction:'center',className:'rank-tip'}).addTo(map); L.circleMarker([35.883114,128.6080686],{radius:10,color:'#9a6700',fillColor:'#9a6700',fillOpacity:0.85}).bindPopup('#6 해바라기주유소(대구)<br>score=61.0 (조건부 추천)<br>prob=0.378 · 1434m').addTo(map);L.marker([35.883114,128.6080686],{opacity:0}).bindTooltip('6',{permanent:true,direction:'center',className:'rank-tip'}).addTo(map); L.circleMarker([35.87611,128.60166099],{radius:10,color:'#9a6700',fillColor:'#9a6700',fillOpacity:0.85}).bindPopup('#7 칠성공영주차장<br>score=59.8 (조건부 추천)<br>prob=0.306 · 524m').addTo(map);L.marker([35.87611,128.60166099],{opacity:0}).bindTooltip('7',{permanent:true,direction:'center',className:'rank-tip'}).addTo(map); L.circleMarker([35.8572,128.6027],{radius:10,color:'#9a6700',fillColor:'#9a6700',fillOpacity:0.85}).bindPopup('#8 중구 청라국민체육센터 지상<br>score=57.0 (조건부 추천)<br>prob=0.422 · 1583m').addTo(map);L.marker([35.8572,128.6027],{opacity:0}).bindTooltip('8',{permanent:true,direction:'center',className:'rank-tip'}).addTo(map);
+  </script>
+</body>
+</html>

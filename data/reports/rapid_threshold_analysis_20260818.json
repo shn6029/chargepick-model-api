@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-08-18T02:46:16.710802+00:00",
+  "source": "scripts/analysis/rapid_thresholds_staged.py",
+  "model_version": "20260818T022438Z",
+  "train_dates": [
+    "2026-07-22",
+    "2026-07-23",
+    "2026-07-24",
+    "2026-07-25",
+    "2026-07-26",
+    "2026-07-27",
+    "2026-07-28",
+    "2026-07-29",
+    "2026-07-30",
+    "2026-07-31",
+    "2026-08-01",
+    "2026-08-02",
+    "2026-08-03",
+    "2026-08-04",
+    "2026-08-05",
+    "2026-08-06",
+    "2026-08-07",
+    "2026-08-08",
+    "2026-08-09",
+    "2026-08-10",
+    "2026-08-11",
+    "2026-08-12"
+  ],
+  "test_dates": [
+    "2026-08-13",
+    "2026-08-14",
+    "2026-08-15",
+    "2026-08-16",
+    "2026-08-17",
+    "2026-08-18"
+  ],
+  "n_rapid_test": 1887302,
+  "rapid_unavailable_rate": 0.08128746750652516,
+  "recall_targets": [
+    {
+      "target_recall": 0.6,
+      "threshold": 0.44,
+      "unavailable_recall": 0.6038301589163961,
+      "unavailable_precision": 0.8101589078474415,
+      "warning_rate": 0.06058542829923351,
+      "n": 1887302
+    },
+    {
+      "target_recall": 0.7,
+      "threshold": 0.61,
+      "unavailable_recall": 0.704857444561774,
+      "unavailable_precision": 0.7435893909491621,
+      "warning_rate": 0.07705338096393688,
+      "n": 1887302
+    },
+    {
+      "target_recall": 0.8,
+      "threshold": 0.82,
+      "unavailable_recall": 0.8017325667800853,
+      "unavailable_precision": 0.6131180555209388,
+      "warning_rate": 0.10629406422501539,
+      "n": 1887302
+    }
+  ],
+  "at_current_common": {
+    "threshold": 0.58,
+    "unavailable_recall": 0.6870559401358416,
+    "unavailable_precision": 0.7584603982125767,
+    "warning_rate": 0.07363474420098108,
+    "n": 1887302
+  },
+  "current_common_threshold": 0.58
+}

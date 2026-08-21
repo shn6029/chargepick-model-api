@@ -1,0 +1,35 @@
+{
+  "built_at": "2026-08-06T03:44:52.728077+00:00",
+  "source_panel": "F:\\카카오톡 받은 파일\\EV_SafeCharge_DA1to조장_풀데이터_20260804_1614\\EV_SafeCharge_DA1to조장_풀데이터_20260804_1614\\02_모델테스트_가공본\\station_tick_panel.parquet",
+  "source_panel_sha256_16": "4945c090f7e3148c",
+  "source_training_v1": "F:\\카카오톡 받은 파일\\EV_SafeCharge_DA1to조장_풀데이터_20260804_1614\\EV_SafeCharge_DA1to조장_풀데이터_20260804_1614\\02_모델테스트_가공본\\station_horizon_training_v1.parquet",
+  "source_training_v1_sha256_16": "1df1ed77f08e4857",
+  "n_rows": 1616859,
+  "n_columns": 42,
+  "n_stations": 1590,
+  "timeseries_features": [
+    "avail_ratio_30m",
+    "avail_ratio_60m",
+    "avail_ratio_180m",
+    "avail_count_mean_60m",
+    "avail_count_trend_60m",
+    "changes_60m",
+    "min_since_avail",
+    "min_since_full"
+  ],
+  "rejected_features": [
+    "station_hour_prior",
+    "station_base_rate"
+  ],
+  "join_hit_rate": 1.0,
+  "null_rate": {
+    "avail_ratio_30m": 0.0,
+    "avail_ratio_60m": 0.0,
+    "avail_ratio_180m": 0.0,
+    "avail_count_mean_60m": 0.0,
+    "avail_count_trend_60m": 0.0,
+    "changes_60m": 0.0,
+    "min_since_avail": 0.00445864481689498,
+    "min_since_full": 0.19916269755123978
+  }
+}

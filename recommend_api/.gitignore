@@ -1,0 +1,6 @@
+# Recommend API artifacts / local env
+.env
+artifacts/
+__pycache__/
+*.pyc
+.venv/

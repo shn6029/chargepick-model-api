@@ -1,0 +1,208 @@
+{
+  "generated_at": "2026-08-07T04:40:05.132238+00:00",
+  "test_dates": [
+    "2026-08-04",
+    "2026-08-05",
+    "2026-08-06",
+    "2026-08-07"
+  ],
+  "n_rapid_test": 1239846,
+  "rapid_unavailable_rate": 0.10537760334751256,
+  "current_common_threshold": 0.58,
+  "policy_target_recall": 0.7,
+  "warn_cap": 0.12,
+  "per_eta": {
+    "5": {
+      "n": 176986,
+      "unavailable_rate": 0.12128077927067682,
+      "at_current": {
+        "threshold": 0.58,
+        "unavailable_recall": 0.9366410435592826,
+        "unavailable_precision": 0.9190437008593892,
+        "warning_rate": 0.12360299684720825
+      },
+      "target_r70": {
+        "threshold": 0.09,
+        "unavailable_recall": 0.7527603074772886,
+        "unavailable_precision": 0.951926475786497,
+        "warning_rate": 0.09590589086142406
+      },
+      "warn_capped": {
+        "threshold": 0.27,
+        "unavailable_recall": 0.9227113906359189,
+        "unavailable_precision": 0.9328811643351703,
+        "warning_rate": 0.11995864079644718
+      }
+    },
+    "10": {
+      "n": 177178,
+      "unavailable_rate": 0.11831039971102508,
+      "at_current": {
+        "threshold": 0.58,
+        "unavailable_recall": 0.8828356072893808,
+        "unavailable_precision": 0.8570370027323669,
+        "warning_rate": 0.12187178995134836
+      },
+      "target_r70": {
+        "threshold": 0.16,
+        "unavailable_recall": 0.7001240339662246,
+        "unavailable_precision": 0.9047530978361383,
+        "warning_rate": 0.09155199855512536
+      },
+      "warn_capped": {
+        "threshold": 0.5,
+        "unavailable_recall": 0.876013739147028,
+        "unavailable_precision": 0.8650367439231204,
+        "warning_rate": 0.11981171477271445
+      }
+    },
+    "15": {
+      "n": 177251,
+      "unavailable_rate": 0.11466225860502899,
+      "at_current": {
+        "threshold": 0.58,
+        "unavailable_recall": 0.8324148789608344,
+        "unavailable_precision": 0.7994518476514507,
+        "warning_rate": 0.11939001754574022
+      },
+      "target_r70": {
+        "threshold": 0.26,
+        "unavailable_recall": 0.7120153513087975,
+        "unavailable_precision": 0.8438885001166316,
+        "warning_rate": 0.09674416505407586
+      },
+      "warn_capped": {
+        "threshold": 0.59,
+        "unavailable_recall": 0.8344321983861445,
+        "unavailable_precision": 0.797920391455726,
+        "warning_rate": 0.11990905552013811
+      }
+    },
+    "20": {
+      "n": 177292,
+      "unavailable_rate": 0.11015161428603659,
+      "at_current": {
+        "threshold": 0.58,
+        "unavailable_recall": 0.7760253981258641,
+        "unavailable_precision": 0.7436211972522081,
+        "warning_rate": 0.11495160526137671
+      },
+      "target_r70": {
+        "threshold": 0.42,
+        "unavailable_recall": 0.7045419632341646,
+        "unavailable_precision": 0.7720233419369319,
+        "warning_rate": 0.10052343027322158
+      },
+      "warn_capped": {
+        "threshold": 0.63,
+        "unavailable_recall": 0.7907726970146961,
+        "unavailable_precision": 0.7308566019876952,
+        "warning_rate": 0.1191819145815942
+      }
+    },
+    "30": {
+      "n": 177344,
+      "unavailable_rate": 0.1010014435221942,
+      "at_current": {
+        "threshold": 0.58,
+        "unavailable_recall": 0.6289638231353283,
+        "unavailable_precision": 0.6531771799628943,
+        "warning_rate": 0.0972573078311079
+      },
+      "target_r70": {
+        "threshold": 0.7,
+        "unavailable_recall": 0.7027690933452434,
+        "unavailable_precision": 0.6103568657874321,
+        "warning_rate": 0.11629375676651028
+      },
+      "warn_capped": {
+        "threshold": 0.71,
+        "unavailable_recall": 0.7088543992853953,
+        "unavailable_precision": 0.6054262826625978,
+        "warning_rate": 0.11825604474918802
+      }
+    },
+    "45": {
+      "n": 177009,
+      "unavailable_rate": 0.08844748007163472,
+      "at_current": {
+        "threshold": 0.58,
+        "unavailable_recall": 0.3532192130812468,
+        "unavailable_precision": 0.6229582066013293,
+        "warning_rate": 0.050149992373269156
+      },
+      "target_r70": {
+        "threshold": 0.87,
+        "unavailable_recall": 0.7041389882473174,
+        "unavailable_precision": 0.3665624792179291,
+        "warning_rate": 0.16990096548763056
+      },
+      "warn_capped": {
+        "threshold": 0.77,
+        "unavailable_recall": 0.6068599897802759,
+        "unavailable_precision": 0.45043379320153604,
+        "warning_rate": 0.1191634323678457
+      }
+    },
+    "60": {
+      "n": 176786,
+      "unavailable_rate": 0.0837396626429695,
+      "at_current": {
+        "threshold": 0.58,
+        "unavailable_recall": 0.3024182653336936,
+        "unavailable_precision": 0.6462182448036952,
+        "warning_rate": 0.03918862353353773
+      },
+      "target_r70": {
+        "threshold": 0.9,
+        "unavailable_recall": 0.7110240475547149,
+        "unavailable_precision": 0.3086350974930362,
+        "warning_rate": 0.19291685993234758
+      },
+      "warn_capped": {
+        "threshold": 0.78,
+        "unavailable_recall": 0.5738313969197514,
+        "unavailable_precision": 0.41050546051995745,
+        "warning_rate": 0.11705678051429412
+      }
+    }
+  },
+  "thresholds_B_r70": {
+    "5": 0.09,
+    "10": 0.16,
+    "15": 0.26,
+    "20": 0.42,
+    "30": 0.7,
+    "45": 0.87,
+    "60": 0.9
+  },
+  "thresholds_C_warn_cap": {
+    "5": 0.27,
+    "10": 0.5,
+    "15": 0.59,
+    "20": 0.63,
+    "30": 0.71,
+    "45": 0.77,
+    "60": 0.78
+  },
+  "policy_comparison": {
+    "A_common_current": {
+      "unavailable_recall": 0.7038315525212013,
+      "unavailable_precision": 0.7788741699417265,
+      "warning_rate": 0.0952247295228601,
+      "n_warn": 118064
+    },
+    "B_per_eta_r70": {
+      "unavailable_recall": 0.7133606833420078,
+      "unavailable_precision": 0.6092908320694524,
+      "warning_rate": 0.12337661290192492,
+      "n_warn": 152968
+    },
+    "C_per_eta_warn_cap12": {
+      "unavailable_recall": 0.7750665891069406,
+      "unavailable_precision": 0.6860611644828661,
+      "warning_rate": 0.1190486560427666,
+      "n_warn": 147602
+    }
+  }
+}

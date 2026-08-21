@@ -1,0 +1,12 @@
+requests>=2.32.0
+PyMySQL>=1.1.0
+schedule>=1.2.0
+python-dotenv>=1.0.0
+
+# build_features.py (피처 생성) 전용
+pandas>=2.0.0
+numpy>=1.24.0
+holidays>=0.40
+
+# 추천 API 서빙 의존성은 여기 두지 말 것 — recommend_api/requirements.txt 가 정본이다.
+# Dockerfile 이 두 파일을 함께 설치한다(이미지는 모든 서비스가 공유).

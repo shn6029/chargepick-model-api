@@ -1,0 +1,40 @@
+# 환경
+.env
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# 로컬 원본·대용량
+data/raw/
+*.csv
+*.xlsx
+*.xls
+
+# 캐시·산출 (패키지 내부 artifacts는 recommend_api/.gitignore)
+charge_history/cache/
+*.joblib
+
+# 재학습 전 아티팩트 백업 — 저장소에 쌓지 않는다.
+# 재학습마다 metrics/ops json 이 200KB 남짓 늘어나는데 이력 가치가 크지 않다.
+# 되돌릴 일이 있으면 서버·로컬의 *.bak.YYYYMMDD 파일을 쓴다.
+# 주의: archive/artifacts_backup_20260803_pre_locf/ 는 이 규칙을 정하기 전에
+# 이미 커밋돼 있어 그대로 남는다(gitignore 는 추적 중인 파일에 영향이 없다).
+# 즉 백업 하나만 이력에 있는 상태이며, 의도된 불일치다.
+archive/artifacts_backup_*/
+
+# 임시
+_cleanup_*.txt
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# 벤치마크 스크립트 joblib 임시폴더 (ascii 경로 우회)
+.joblib_tmp/
+
+# 생성 학습셋 (46MB · scripts/etl/build_station_timeseries.py 로 재현)
+# meta json 은 provenance 라 추적한다
+data/processed/*.parquet

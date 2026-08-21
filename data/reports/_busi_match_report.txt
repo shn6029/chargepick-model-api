@@ -1,0 +1,139 @@
+price_operators=101
+db_busi_rows=98
+db_unique_busi_id=68
+db_unique_bnm=68
+db_unique_busi_nm=95
+
+matched_ops=57/101 (56.4%)
+  exact_bnm=57
+  exact_busi_nm=0
+  exact_busi_id=0
+  fuzzy_contains=0
+  unmatched=44
+
+DB charger coverage by matched operators: 24,934/25,368 (98.3%)
+DB station coverage: 4,116/4,237
+
+=== exact_bnm samples ===
+  ('E1', 'E1', 'bnm')
+  ('GS차지비', 'GS차지비', 'bnm')
+  ('LG유플러스 볼트업', 'LG유플러스 볼트업', 'bnm')
+  ('NICE인프라', 'NICE인프라', 'bnm')
+  ('SK시그넷', 'SK시그넷', 'bnm')
+  ('SK일렉링크', 'SK일렉링크', 'bnm')
+  ('기후에너지환경부', '기후에너지환경부', 'bnm')
+  ('넥씽', '넥씽', 'bnm')
+  ('농협경제지주 신재생에너지센터', '농협경제지주 신재생에너지센터', 'bnm')
+  ('뉴로모빌리티', '뉴로모빌리티', 'bnm')
+  ('뉴텍솔루션', '뉴텍솔루션', 'bnm')
+  ('대성물류건설', '대성물류건설', 'bnm')
+  ('대한송유관공사', '대한송유관공사', 'bnm')
+  ('동양이엔피', '동양이엔피', 'bnm')
+  ('레드이엔지', '레드이엔지', 'bnm')
+  ('롯데이노베이트', '롯데이노베이트', 'bnm')
+  ('매니지온', '매니지온', 'bnm')
+  ('브라이트에너지파트너스', '브라이트에너지파트너스', 'bnm')
+  ('블루네트웍스', '블루네트웍스', 'bnm')
+  ('서울씨엔지', '서울씨엔지', 'bnm')
+  ('선광시스템', '선광시스템', 'bnm')
+  ('소프트베리', '소프트베리', 'bnm')
+  ('스타코프', '스타코프', 'bnm')
+  ('신세계아이앤씨', '신세계아이앤씨', 'bnm')
+  ('아론', '아론', 'bnm')
+  ('아마노코리아', '아마노코리아', 'bnm')
+  ('아이파킹', '아이파킹', 'bnm')
+  ('아하', '아하', 'bnm')
+  ('에버온', '에버온', 'bnm')
+  ('엘에스이링크', '엘에스이링크', 'bnm')
+
+=== exact_busi_nm samples ===
+
+=== fuzzy samples ===
+
+=== unmatched operators ===
+  KH에너지
+  SG생활안전
+  SK렌터카
+  SK에너지
+  가온건설
+  광성계측기
+  그리드위즈
+  그린전력
+  대도엘앤씨
+  두루스코이브이
+  딜라이브
+  리셀파워
+  메가볼트
+  모던텍
+  모트렉스이브이
+  보타리에너지
+  서울시
+  서현에너지
+  스칼라데이터
+  아우토크립트
+  아이마켓코리아
+  에바
+  에스에스기전
+  에스이랩
+  엔비플러스
+  온스테이션
+  왕산전기
+  이브이루씨
+  이브이모드코리아
+  이브이파트너스
+  이앤에이치에너지
+  이웨이브
+  이지트로닉스
+  인큐버스
+  임팩트연구소
+  제주에너지공사
+  차밥스
+  크로커스
+  티맵
+  피라인모터스
+  한국동서발전
+  한국자동차환경협회
+  한마음장애인복지회
+  해피차지
+
+=== top DB operators (by chargers) and price hit? ===
+  PI|bnm=GS차지비|busi_nm=GS차지비|chargers=3169|hit=True
+  PW|bnm=파워큐브|busi_nm=파워큐브|chargers=2229|hit=True
+  LU|bnm=LG유플러스 볼트업|busi_nm=LG유플러스볼트업|chargers=1997|hit=True
+  PW|bnm=파워큐브|busi_nm=파워큐브코리아|chargers=1937|hit=True
+  PL|bnm=플러그링크|busi_nm=플러그링크|chargers=1891|hit=True
+  CV|bnm=채비|busi_nm=채비|chargers=1831|hit=True
+  EV|bnm=에버온|busi_nm=에버온|chargers=1244|hit=True
+  HM|bnm=휴맥스이브이|busi_nm=휴맥스이브이|chargers=1227|hit=True
+  IN|bnm=신세계아이앤씨|busi_nm=신세계아이앤씨|chargers=1106|hit=True
+  HY|bnm=현대엔지니어링|busi_nm=현대엔지니어링|chargers=888|hit=True
+  PC|bnm=아이파킹|busi_nm=아이파킹|chargers=785|hit=True
+  KP|bnm=한국전력공사|busi_nm=한국전력|chargers=597|hit=True
+  PW|bnm=파워큐브|busi_nm=파워큐브(SP)|chargers=583|hit=True
+  HM|bnm=휴맥스이브이|busi_nm=HUMAX EV|chargers=549|hit=True
+  SF|bnm=스타코프|busi_nm=스타코프|chargers=464|hit=True
+  ST|bnm=SK일렉링크|busi_nm=SK일렉링크|chargers=445|hit=True
+  SF|bnm=스타코프|busi_nm=(주)스타코프|chargers=429|hit=True
+  PC|bnm=아이파킹|busi_nm=파킹클라우드|chargers=398|hit=True
+  TS|bnm=태성콘텍|busi_nm=주식회사 태성콘텍|chargers=368|hit=True
+  ME|bnm=기후에너지환경부|busi_nm=기후에너지환경부|chargers=239|hit=True
+  LU|bnm=LG유플러스 볼트업|busi_nm=엘지유플러스|chargers=211|hit=True
+  SF|bnm=스타코프|busi_nm=스타코프(주)스타코프|chargers=190|hit=True
+  EZ|bnm=차지인|busi_nm=(주)차지인|chargers=153|hit=False
+  NT|bnm=NICE인프라|busi_nm=한국전자금융|chargers=152|hit=True
+  CU|bnm=씨어스|busi_nm=씨어스|chargers=145|hit=False
+  DC|bnm=대성물류건설|busi_nm=대성물류건설(주)|chargers=140|hit=True
+  JA|bnm=이브이시스|busi_nm=이브이시스|chargers=133|hit=True
+  HE|bnm=한국전기차충전서비스|busi_nm=한국전기차충전서비스|chargers=129|hit=True
+  PI|bnm=GS차지비|busi_nm=차지비|chargers=122|hit=True
+  KE|bnm=한국전기차인프라기술|busi_nm=한국전기차인프라기술|chargers=105|hit=True
+  EC|bnm=이지차저|busi_nm=이지차저|chargers=96|hit=True
+  KP|bnm=한국전력공사|busi_nm=한국전기차충전서비스|chargers=94|hit=True
+  EV|bnm=에버온|busi_nm=주식회사 에버온|chargers=93|hit=True
+  LU|bnm=LG유플러스 볼트업|busi_nm=LG유플러스 볼트업|chargers=90|hit=True
+  ER|bnm=이엘일렉트릭|busi_nm=위브이|chargers=84|hit=True
+  LU|bnm=LG유플러스 볼트업|busi_nm=LG유플러스|chargers=80|hit=True
+  HW|bnm=한화솔루션|busi_nm=한화솔루션|chargers=71|hit=True
+  LI|bnm=엘에스이링크|busi_nm=엘에스이링크(주)|chargers=57|hit=True
+  KL|bnm=클린일렉스|busi_nm=(주)클린일렉스|chargers=55|hit=True
+  KL|bnm=클린일렉스|busi_nm=클린일렉스|chargers=51|hit=True

@@ -1,0 +1,476 @@
+{
+  "data_path": "F:\\카카오톡 받은 파일\\EV_SafeCharge_DA1to조장_풀데이터_20260804_1614\\EV_SafeCharge_DA1to조장_풀데이터_20260804_1614\\02_모델테스트_가공본\\station_horizon_training_v1.parquet",
+  "featureset": "mvp_plus",
+  "features": [
+    "available_count",
+    "total_chargers",
+    "known_charger_count",
+    "observation_coverage",
+    "observation_age_minutes",
+    "horizon_minutes",
+    "minutes_since_last_change"
+  ],
+  "n_train": 178869,
+  "n_valid": 68840,
+  "n_test": 52289,
+  "train_positive_rate": 0.9249618435838519,
+  "sample": 300000,
+  "calibrated": false,
+  "results": {
+    "base_always_available": {
+      "desc": "항상 사용가능 (다수 클래스)",
+      "kind": "rule",
+      "fit_sec": 0.0,
+      "valid": {
+        "n": 68840,
+        "roc_auc": 0.5,
+        "pr_auc_unavailable": 0.08644683323649041,
+        "brier": 0.07910393616666382,
+        "log_loss": 0.2951361229599125,
+        "ece": 0.0114086768203423,
+        "unavailable_recall": 0.0,
+        "unavailable_precision": 0.0,
+        "unavailable_f1": 0.0,
+        "balanced_accuracy": 0.5,
+        "accuracy": 0.9135531667635096,
+        "per_horizon": {
+          "5": {
+            "n": 18667,
+            "roc_auc": 0.5,
+            "pr_auc_unavailable": 0.09910537311833717,
+            "brier": 0.08986272905720245,
+            "unavailable_recall": 0.0
+          },
+          "10": {
+            "n": 18698,
+            "roc_auc": 0.5,
+            "pr_auc_unavailable": 0.09776446678789176,
+            "brier": 0.08872306100468377,
+            "unavailable_recall": 0.0
+          },
+          "15": {
+            "n": 16583,
+            "roc_auc": 0.5,
+            "pr_auc_unavailable": 0.08152927697039136,
+            "brier": 0.07492438861312628,
+            "unavailable_recall": 0.0
+          },
+          "30": {
+            "n": 14892,
+            "roc_auc": 0.5,
+            "pr_auc_unavailable": 0.06184528605962933,
+            "brier": 0.05819449848007585,
+            "unavailable_recall": 0.0
+          }
+        }
+      },
+      "test": {
+        "n": 52289,
+        "roc_auc": 0.5,
+        "pr_auc_unavailable": 0.07422211172521945,
+        "brier": 0.06871385578520607,
+        "log_loss": 0.2644306084105954,
+        "ece": 0.0008160446909286634,
+        "unavailable_recall": 0.0,
+        "unavailable_precision": 0.0,
+        "unavailable_f1": 0.0,
+        "balanced_accuracy": 0.5,
+        "accuracy": 0.9257778882747806,
+        "per_horizon": {
+          "5": {
+            "n": 13938,
+            "roc_auc": 0.5,
+            "pr_auc_unavailable": 0.08200602668962548,
+            "brier": 0.07532958949235391,
+            "unavailable_recall": 0.0
+          },
+          "10": {
+            "n": 14095,
+            "roc_auc": 0.5,
+            "pr_auc_unavailable": 0.08315005321035829,
+            "brier": 0.07630192473107276,
+            "unavailable_recall": 0.0
+          },
+          "15": {
+            "n": 12713,
+            "roc_auc": 0.5,
+            "pr_auc_unavailable": 0.0706363564854873,
+            "brier": 0.06566623747057201,
+            "unavailable_recall": 0.0
+          },
+          "30": {
+            "n": 11543,
+            "roc_auc": 0.5,
+            "pr_auc_unavailable": 0.057870570908775884,
+            "brier": 0.05481629392362115,
+            "unavailable_recall": 0.0
+          }
+        }
+      }
+    },
+    "base_current_state": {
+      "desc": "현재 available_count>0 이면 가용 (지속성 규칙)",
+      "kind": "rule",
+      "fit_sec": 0.0,
+      "valid": {
+        "n": 68840,
+        "roc_auc": 0.7979140878758575,
+        "pr_auc_unavailable": 0.2977946180786481,
+        "brier": 0.062483875653689736,
+        "log_loss": 0.22378244609018083,
+        "ece": 0.01811737361998844,
+        "unavailable_recall": 0.0,
+        "unavailable_precision": 0.0,
+        "unavailable_f1": 0.0,
+        "balanced_accuracy": 0.5,
+        "accuracy": 0.9135531667635096,
+        "per_horizon": {
+          "5": {
+            "n": 18667,
+            "roc_auc": 0.8907924092255424,
+            "pr_auc_unavailable": 0.5207164220095454,
+            "brier": 0.05515455081159266,
+            "unavailable_recall": 0.0
+          },
+          "10": {
+            "n": 18698,
+            "roc_auc": 0.8816961407805085,
+            "pr_auc_unavailable": 0.49634004277696014,
+            "brier": 0.05582308268263985,
+            "unavailable_recall": 0.0
+          },
+          "15": {
+            "n": 16583,
+            "roc_auc": 0.7448666036140088,
+            "pr_auc_unavailable": 0.2191774324235316,
+            "brier": 0.0666118916963155,
+            "unavailable_recall": 0.0
+          },
+          "30": {
+            "n": 14892,
+            "roc_auc": 0.551477268991585,
+            "pr_auc_unavailable": 0.07088955650429749,
+            "brier": 0.07543748321246307,
+            "unavailable_recall": 0.0
+          }
+        }
+      },
+      "test": {
+        "n": 52289,
+        "roc_auc": 0.7711208357748964,
+        "pr_auc_unavailable": 0.24001450410266348,
+        "brier": 0.05857713859511562,
+        "log_loss": 0.21468344976279308,
+        "ece": 0.026709250511579907,
+        "unavailable_recall": 0.0,
+        "unavailable_precision": 0.0,
+        "unavailable_f1": 0.0,
+        "balanced_accuracy": 0.5,
+        "accuracy": 0.9257778882747806,
+        "per_horizon": {
+          "5": {
+            "n": 13938,
+            "roc_auc": 0.8710387608348488,
+            "pr_auc_unavailable": 0.4434150704135613,
+            "brier": 0.04966745587602239,
+            "unavailable_recall": 0.0
+          },
+          "10": {
+            "n": 14095,
+            "roc_auc": 0.8635600296214991,
+            "pr_auc_unavailable": 0.4318702832245103,
+            "brier": 0.05104345512593119,
+            "unavailable_recall": 0.0
+          },
+          "15": {
+            "n": 12713,
+            "roc_auc": 0.7215080392125445,
+            "pr_auc_unavailable": 0.17583159238294385,
+            "brier": 0.06271395422008967,
+            "unavailable_recall": 0.0
+          },
+          "30": {
+            "n": 11543,
+            "roc_auc": 0.5243471677334985,
+            "pr_auc_unavailable": 0.061195896470994174,
+            "brier": 0.07397860174997835,
+            "unavailable_recall": 0.0
+          }
+        }
+      }
+    },
+    "base_avail_ratio": {
+      "desc": "available_count / known_charger_count",
+      "kind": "rule",
+      "fit_sec": 0.0,
+      "valid": {
+        "n": 68840,
+        "roc_auc": 0.7992612547810276,
+        "pr_auc_unavailable": 0.30521242565952456,
+        "brier": 0.13627390987388885,
+        "log_loss": 0.5412220083619654,
+        "ece": 0.1279173444219929,
+        "unavailable_recall": 0.7047555032767602,
+        "unavailable_precision": 0.35763622409823487,
+        "unavailable_f1": 0.474488064260663,
+        "balanced_accuracy": 0.7924865146971025,
+        "accuracy": 0.8650493898895991,
+        "per_horizon": {
+          "5": {
+            "n": 18667,
+            "roc_auc": 0.8965630017244455,
+            "pr_auc_unavailable": 0.5301541990830272,
+            "brier": 0.08853809488919205,
+            "unavailable_recall": 0.847027027027027
+          },
+          "10": {
+            "n": 18698,
+            "roc_auc": 0.8872655030941983,
+            "pr_auc_unavailable": 0.5059413913500067,
+            "brier": 0.09274790799640313,
+            "unavailable_recall": 0.8326039387308534
+          },
+          "15": {
+            "n": 16583,
+            "roc_auc": 0.7437997977109126,
+            "pr_auc_unavailable": 0.22546401269280397,
+            "brier": 0.15829858375249342,
+            "unavailable_recall": 0.617603550295858
+          },
+          "30": {
+            "n": 14892,
+            "roc_auc": 0.5390193631277943,
+            "pr_auc_unavailable": 0.07202619389230984,
+            "brier": 0.2262348603503637,
+            "unavailable_recall": 0.2931596091205212
+          }
+        }
+      },
+      "test": {
+        "n": 52289,
+        "roc_auc": 0.7714128306500303,
+        "pr_auc_unavailable": 0.24678924293929383,
+        "brier": 0.1398662596477936,
+        "log_loss": 0.5539540100649143,
+        "ece": 0.13389990478326452,
+        "unavailable_recall": 0.6529245039938161,
+        "unavailable_precision": 0.3042382038660103,
+        "unavailable_f1": 0.4150696150696151,
+        "balanced_accuracy": 0.7666064430397108,
+        "accuracy": 0.8634129549235977,
+        "per_horizon": {
+          "5": {
+            "n": 13938,
+            "roc_auc": 0.8781703674301361,
+            "pr_auc_unavailable": 0.45347236506083194,
+            "brier": 0.09221501816515575,
+            "unavailable_recall": 0.8101487314085739
+          },
+          "10": {
+            "n": 14095,
+            "roc_auc": 0.8713501326708286,
+            "pr_auc_unavailable": 0.4431252865003617,
+            "brier": 0.0945175034827826,
+            "unavailable_recall": 0.8011945392491467
+          },
+          "15": {
+            "n": 12713,
+            "roc_auc": 0.7176001685223288,
+            "pr_auc_unavailable": 0.18074284253460998,
+            "brier": 0.16303841757632698,
+            "unavailable_recall": 0.5712694877505567
+          },
+          "30": {
+            "n": 11543,
+            "roc_auc": 0.5046855255007225,
+            "pr_auc_unavailable": 0.061353953105933834,
+            "brier": 0.2272582788962896,
+            "unavailable_recall": 0.23353293413173654
+          }
+        }
+      }
+    },
+    "ebm": {
+      "desc": "ExplainableBoostingMachine (설명 가능 GAM)",
+      "kind": "model",
+      "fit_sec": 169.5,
+      "valid": {
+        "n": 68840,
+        "roc_auc": 0.9473450499009307,
+        "pr_auc_unavailable": 0.7435983269891674,
+        "brier": 0.03548733463164842,
+        "log_loss": 0.13632468181933932,
+        "ece": 0.00743875686525497,
+        "unavailable_recall": 0.6430851957654176,
+        "unavailable_precision": 0.7997910135841171,
+        "unavailable_f1": 0.7129284649776453,
+        "balanced_accuracy": 0.8139260035657376,
+        "accuracy": 0.9552295177222545,
+        "per_horizon": {
+          "5": {
+            "n": 18667,
+            "roc_auc": 0.9697511687819114,
+            "pr_auc_unavailable": 0.8228343859979951,
+            "brier": 0.028247494225961404,
+            "unavailable_recall": 0.8237837837837838
+          },
+          "10": {
+            "n": 18698,
+            "roc_auc": 0.9672559759987236,
+            "pr_auc_unavailable": 0.8076464312152837,
+            "brier": 0.029595460939128425,
+            "unavailable_recall": 0.7992341356673961
+          },
+          "15": {
+            "n": 16583,
+            "roc_auc": 0.923958344259741,
+            "pr_auc_unavailable": 0.6252586093941361,
+            "brier": 0.04371030745688584,
+            "unavailable_recall": 0.4948224852071006
+          },
+          "30": {
+            "n": 14892,
+            "roc_auc": 0.8788775352947252,
+            "pr_auc_unavailable": 0.47086318779052877,
+            "brier": 0.04280339673175497,
+            "unavailable_recall": 0.18783930510314875
+          }
+        }
+      },
+      "test": {
+        "n": 52289,
+        "roc_auc": 0.9393897416493007,
+        "pr_auc_unavailable": 0.6964048696168993,
+        "brier": 0.03414851703154033,
+        "log_loss": 0.1293877567173502,
+        "ece": 0.005099371842582893,
+        "unavailable_recall": 0.596753414068539,
+        "unavailable_precision": 0.7633487145682267,
+        "unavailable_f1": 0.6698481561822126,
+        "balanced_accuracy": 0.7909605774689084,
+        "accuracy": 0.9563388093097974,
+        "per_horizon": {
+          "5": {
+            "n": 13938,
+            "roc_auc": 0.9641281504524712,
+            "pr_auc_unavailable": 0.7822214603825915,
+            "brier": 0.026479627428106778,
+            "unavailable_recall": 0.7952755905511811
+          },
+          "10": {
+            "n": 14095,
+            "roc_auc": 0.9623299094479008,
+            "pr_auc_unavailable": 0.7694866228367584,
+            "brier": 0.028865344293193925,
+            "unavailable_recall": 0.7704778156996587
+          },
+          "15": {
+            "n": 12713,
+            "roc_auc": 0.914142538975501,
+            "pr_auc_unavailable": 0.5687818400627822,
+            "brier": 0.041938975068200074,
+            "unavailable_recall": 0.44988864142538976
+          },
+          "30": {
+            "n": 11543,
+            "roc_auc": 0.869853947277858,
+            "pr_auc_unavailable": 0.44235871283689193,
+            "brier": 0.041279696969129684,
+            "unavailable_recall": 0.1497005988023952
+          }
+        }
+      }
+    },
+    "hgb": {
+      "desc": "현행 정본 (HistGradientBoosting)",
+      "kind": "model",
+      "fit_sec": 2.4,
+      "valid": {
+        "n": 68840,
+        "roc_auc": 0.954506586395286,
+        "pr_auc_unavailable": 0.7728229952749341,
+        "brier": 0.032470012284390046,
+        "log_loss": 0.12320866602032844,
+        "ece": 0.0069818787149174884,
+        "unavailable_recall": 0.692656696353554,
+        "unavailable_precision": 0.83205490512717,
+        "unavailable_f1": 0.7559834938101788,
+        "balanced_accuracy": 0.8397135188743552,
+        "accuracy": 0.9613451481696688,
+        "per_horizon": {
+          "5": {
+            "n": 18667,
+            "roc_auc": 0.9748334777067609,
+            "pr_auc_unavailable": 0.8497801152159922,
+            "brier": 0.025720168531764155,
+            "unavailable_recall": 0.8356756756756757
+          },
+          "10": {
+            "n": 18698,
+            "roc_auc": 0.97154282847726,
+            "pr_auc_unavailable": 0.8308208693271989,
+            "brier": 0.027156698667448655,
+            "unavailable_recall": 0.8205689277899344
+          },
+          "15": {
+            "n": 16583,
+            "roc_auc": 0.9325679166088781,
+            "pr_auc_unavailable": 0.6606466361493649,
+            "brier": 0.03849009589001062,
+            "unavailable_recall": 0.6198224852071006
+          },
+          "30": {
+            "n": 14892,
+            "roc_auc": 0.8884011016771128,
+            "pr_auc_unavailable": 0.4990892720483242,
+            "brier": 0.040898472189562704,
+            "unavailable_recall": 0.25841476655808904
+          }
+        }
+      },
+      "test": {
+        "n": 52289,
+        "roc_auc": 0.9452031476331624,
+        "pr_auc_unavailable": 0.7210245982380639,
+        "brier": 0.03153275557520418,
+        "log_loss": 0.12029774161322081,
+        "ece": 0.00353435965391428,
+        "unavailable_recall": 0.6603968049471786,
+        "unavailable_precision": 0.7915379864113651,
+        "unavailable_f1": 0.7200449501334457,
+        "balanced_accuracy": 0.823226414372449,
+        "accuracy": 0.9618849088718469,
+        "per_horizon": {
+          "5": {
+            "n": 13938,
+            "roc_auc": 0.9664404737606314,
+            "pr_auc_unavailable": 0.7972453323574428,
+            "brier": 0.024682249781320248,
+            "unavailable_recall": 0.8013998250218722
+          },
+          "10": {
+            "n": 14095,
+            "roc_auc": 0.9656255851474169,
+            "pr_auc_unavailable": 0.7887641587962965,
+            "brier": 0.02640003982362877,
+            "unavailable_recall": 0.8139931740614335
+          },
+          "15": {
+            "n": 12713,
+            "roc_auc": 0.92035189875088,
+            "pr_auc_unavailable": 0.6015783029964158,
+            "brier": 0.03775337374257157,
+            "unavailable_recall": 0.5913140311804009
+          },
+          "30": {
+            "n": 11543,
+            "roc_auc": 0.8833190171381374,
+            "pr_auc_unavailable": 0.47458435049386666,
+            "brier": 0.03922098736173002,
+            "unavailable_recall": 0.24251497005988024
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+# 서버 상시 운영용. 로컬 PC 작업 스케줄러는 임시방편이며 PC 를 끄면 멈춘다.
+#
+#   docker compose build
+#   docker compose up -d
+#   docker compose logs -f features
+#
+# 환경변수는 저장소 루트 .env 에서 읽는다(.dockerignore 때문에 이미지에는 안 들어감).
+# 필요한 키: DB_HOST DB_PORT DB_USER DB_PASSWORD DB_NAME EV_SERVICE_KEY
+
+x-common: &common
+  build:
+    context: .
+    args:
+      # 배포된 코드 스탬프. 서버는 git 클론이 아니라 rev-parse 가 안 되므로
+      # 빌드하는 쪽에서 넘긴다:  CODE_COMMIT=<sha> docker compose build api
+      # 안 넘기면 unknown 이고, 그때는 /health 의 code_fingerprint 로 대조한다.
+      CODE_COMMIT: ${CODE_COMMIT:-unknown}
+  restart: unless-stopped
+  env_file: .env
+  environment:
+    TZ: Asia/Seoul
+
+services:
+  # 5분 변경분 수집 (getChargerStatus, 실측 ~514대 상한)
+  # 기존에 돌던 서비스. 이미지에 FIELDS 버그 수정본이 들어갔는지 확인 후 교체할 것.
+  collector:
+    <<: *common
+    container_name: charger-status-scheduler
+    command: python scripts/etl/run.py
+
+  # 6시간 전량 스냅샷 (getChargerInfo, 실측 25,433대)
+  # delta LOCF 복원의 앵커. staleness 8시간 넘으면 정확도 97.7% → 73%로 붕괴.
+  # 10분 주기는 2026-07-31 에 DB 를 눕혔다(370만행/일). 상세는 스크립트 docstring.
+  #
+  # sleep 루프로 감쌀 것. 스크립트는 1회 실행 후 종료하므로 그냥 실행하면
+  # restart: unless-stopped 가 즉시 재시작시켜 쉬는 시간 없이 계속 돈다.
+  snapshot:
+    <<: *common
+    container_name: charger-status-snapshot
+    command: >
+      sh -c "while true; do
+               python scripts/etl/run_status_snapshot.py || true;
+               sleep 21600;
+             done"
+
+  # 피처 생성 — 서빙이 여기에 INNER JOIN 하므로 멈추면 추천 후보가 줄어든다.
+  # build_features.py 자체에 잠금이 있어 주간 전체 재빌드와 겹쳐도 안전하다.
+  #
+  # lookback 2h 근거: 앵커(load_anchors)가 창 밖 상태를 시드하므로 창은 최장
+  # 롤링 윈도우(avail_ratio_60m = 60분)만 덮으면 된다. 스냅샷 10분 주기에서
+  # 6h 창은 36스냅샷 × 25,385 ≈ 91만행이라 한 사이클에 끝나지 않는다.
+  features:
+    <<: *common
+    container_name: charger-features-builder
+    command: >
+      sh -c "while true; do
+               python scripts/etl/build_features.py --lookback-hours 2 || true;
+               sleep 240;
+             done"
+
+  # 추천 API (FastAPI). 백엔드는 joblib 을 넘겨받지 않고 이 엔드포인트를 호출한다.
+  #
+  # 왜 모델 파일을 안 넘기는가
+  # -------------------------
+  # 모델 입력 25개 중 절반이 DB 시계열에서 계산되는 값이다(avail_ratio_60m,
+  # time_since_charge_ended, changes_30m ...). 요청 payload 만으로는 만들 수 없어
+  # joblib 만 넘기면 백엔드가 쓸 수 없다. 그렇다고 DB 접속정보와 service.py 일체를
+  # 넘기면 재학습마다 백엔드를 같이 배포해야 하고, feature_schema_hash 가 어긋나면
+  # 예외가 아니라 **조용히 틀린 예측**이 나온다. 그래서 경계를 HTTP 로 긋는다.
+  # 스키마 정본은 GET /openapi.json (응답 모델: recommend_api/response_schema.py).
+  # 손으로 쓴 api_contract/ 는 16일치 표류 끝에 2026-08-19 폐기했다.
+  #
+  # artifacts 는 볼륨 마운트다. 재학습 후 joblib/metrics 만 서버에 복사하고
+  # `docker compose restart api` 하면 된다 — 이미지 재빌드가 필요 없다.
+  #
+  # workers 1 인 이유: 2GB 박스에서 버퍼 풀 만재 시 여유가 300MB 안팎이다.
+  # sklearn+pandas 를 얹은 워커 하나가 250~350MB 를 쓰므로 늘리면 OOM 위험이 있다.
+  api:
+    <<: *common
+    container_name: charger-recommend-api
+    command: uvicorn recommend_api.main:app --host 0.0.0.0 --port 8000 --workers 1
+    # 잔여시간 모델은 형제 저장소(EVCharger-model-test)에 있어 컨테이너엔 없다.
+    # 기본 경로는 SCHEDULER_ROOT.parent 기준이라 컨테이너에서 /EVCharger-model-test/…
+    # 로 풀려 항상 실패한다. 없어도 크래시는 안 난다(remaining_time.py 가 None 반환).
+    # 2026-08-12 부터 REMAINING_BLEND_WEIGHT=0 이라 이 모델은 점수에 안 섞이고
+    # 응답의 pred_remaining_min · free_by_eta_score 표시용으로만 쓰인다.
+    # 그래도 경로는 명시해 둔다 — 없으면 그 두 필드가 폴백값으로 조용히 바뀐다.
+    #
+    # environment 를 여기 쓰면 x-common 의 것을 통째로 덮으므로 TZ 도 다시 적는다.
+    #
+    # api 만 최소 권한 DB 계정으로 갈아끼운다. .env 의 공용 DB_USER 는 수집 서비스용
+    # (INSERT/DELETE 필요)이라 그대로 두고 여기서만 덮어쓴다.
+    # env_file 보다 environment 가 우선하므로 이 컨테이너에만 적용된다.
+    #
+    #   ev_model_reader = SELECT ON team_5.*
+    #                   + INSERT ON team_5.ev_recommend_prediction_log
+    #
+    # 이게 되려면 prediction_log 가 서빙 중 ensure_table() 을 부르지 않아야 한다
+    # (CREATE 권한 검사에 1142 로 막히고 로그가 조용히 사라진다). 기본값으로
+    # 꺼져 있으니 PREDICTION_LOG_ENSURE_TABLE 을 켜지 말 것.
+    # 비밀번호는 .env 에 둔다 — 이 파일은 git 추적 대상이다.
+    environment:
+      TZ: Asia/Seoul
+      REMAINING_MODEL_PATH: /app/recommend_api/artifacts/daegu_remaining_time_hgb.joblib
+      DB_USER: ${API_DB_USER}
+      DB_PASSWORD: ${API_DB_PASSWORD}
+    volumes:
+      - ./recommend_api/artifacts:/app/recommend_api/artifacts:ro
+    ports:
+      - "8000:8000"
+
+  # 보존 정책 — status + features 합쳐 약 74MB/일 (6시간 스냅샷 기준 18만행/일).
+  #
+  # 45일인 이유 (2026-08-04 개정, 구 21일)
+  # ------------------------------------
+  # 디스크는 제약이 아니다. 45GB 여유에 74MB/일이면 1.7년 버틴다.
+  # (docstring 의 "월 수 GB" 는 10분 스냅샷 370만행/일 기준이라 이제 무효다.)
+  # 지우는 진짜 이유는 512MB 버퍼 풀과 학습 시간이다 — 테이블이 풀보다 커질수록
+  # 인덱스 페이지가 디스크로 밀리고, 전체 스캔 학습이 행 수에 비례해 느려진다.
+  #
+  # 21일은 반대로 너무 짧았다. config.py 의 세션 prior 기각 사유가 "status 가
+  # 4주 이상 쌓이면 재실험할 것" 인데, 21일 롤링이면 status 가 영원히 3주를
+  # 못 넘겨 그 실험이 구조적으로 불가능했다. 요일 패턴 분석도 같은 이유로 막힌다.
+  # 45일이면 4주를 여유 있게 넘기면서 총량은 약 3.3GB 로 묶인다.
+  prune:
+    <<: *common
+    container_name: charger-status-prune
+    command: >
+      sh -c "while true; do
+               python scripts/etl/prune_status.py --days 45 || true;
+               sleep 86400;
+             done"
+
+  # 주차장 보존 정책 — 테이블별 차등(원본 7일 / 상태 45일 / 상세 7일).
+  #
+  # parking 계열은 2026-08-04 까지 보존 정책이 **하나도 없어서** 105MB/일로
+  # 무한히 늘고 있었다. EV 파이프라인(74MB/일)보다 빠르고 1년이면 37.5GB 라
+  # 디스크 여유 45GB 를 거의 다 쓴다. 정책 적용 후 약 1.8GB 에서 멈춘다.
+  #
+  # 수집기(~/parking-collector, 호스트 crontab 10분 주기)는 이 저장소 밖에 있고
+  # 정리 로직이 없다. 그래서 지우는 쪽만 여기서 맡는다.
+  parking-prune:
+    <<: *common
+    container_name: parking-prune
+    command: >
+      sh -c "while true; do
+               python scripts/etl/prune_parking.py || true;
+               sleep 86400;
+             done"
+
+  # 예측 로그 백필 — ops_metrics 의 입력을 만든다.
+  #
+  # 2026-08-10 까지 정기 실행이 없었다. 그래서 08-06~07 예측 31행이 사흘 넘게
+  # 미라벨로 남아 있었고, ops 지표가 늘 뒤처진 표본으로 계산됐다.
+  #
+  # 주기 1시간인 이유: eta 최대가 60분이라 예측 시점 + 60분이 지나야 target_at 이
+  # 온다. 여기에 settle margin 6분(수집 지연을 '상태 유지'로 오해하지 않으려는
+  # 여유)이 붙는다. 1시간이면 예측 후 최대 ~2시간 안에 라벨이 채워지고, 트래픽이
+  # 없을 때는 pending 0건 조회 한 번으로 끝나 사실상 부하가 없다.
+  #
+  # --relabel 은 붙이지 않는다. 라벨 방식을 바꾼 직후 1회용이라 정기로 돌리면
+  # 매번 전량을 다시 매긴다. 평상시엔 미처리 행만 채우는 기본 동작이 맞다.
+  #
+  # DB 계정은 공용(.env DB_USER)을 그대로 쓴다. api 의 최소권한 리더
+  # (ev_model_reader)는 prediction_log INSERT 만 있고 UPDATE 가 없어 백필을 못 한다.
+  backfill:
+    <<: *common
+    container_name: charger-backfill
+    command: >
+      sh -c "while true; do
+               python -m recommend_api.backfill_outcomes || true;
+               sleep 3600;
+             done"
